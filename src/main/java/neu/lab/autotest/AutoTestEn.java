@@ -1,7 +1,50 @@
 package neu.lab.autotest;
 
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.apache.commons.exec.CommandLine;
+import org.apache.commons.exec.DefaultExecutor;
+import org.apache.commons.exec.ExecuteException;
+
 public class AutoTestEn {
-	public static void main() {
-		
+	static String distanceFile = "D:\\ws_testcase\\distance\\commons-jxpath+commons-jxpath+1.3.txt";
+	static int exeNum = 1;
+	static int exedNum = 0;
+
+	public static void main(String[] args) throws Exception {
+
+		MethodDistance md = new MethodDistance(distanceFile);
+		Set<String> exedClses = new HashSet<String>();
+		String nextCls = md.getNextExe(exedClses);
+		while (nextCls != null&&exedNum<exeNum) {
+			exedClses.add(nextCls);
+			System.out.println("to generate for:" + nextCls);
+			nextCls = md.getNextExe(exedClses);
+			String mvnCmd = getMvnCmd(nextCls);
+			try {
+				System.out.println("mvnCmd:"+mvnCmd);
+				exeMvn(mvnCmd);
+			} catch (Exception e) {
+				System.out.println("exe mvn error");
+				e.printStackTrace();
+			}
+			exedNum++;
+		}
+	}
+
+	private static String getMvnCmd(String cut) {
+		String line = "cmd.exe /C ";
+		line = line + "mvn -Dmaven.test.skip=true org.evosuite.plugins:evosuite-maven-plugin:8.15:generate "
+				+ "-f=D:\\cWS\\sharedProject\\commons-jxpath-1.3-src " + "-Dclass=" + cut + " -Ddistance_file="
+				+ distanceFile + " -Dcriterion=RISK -e ";
+		return line;
+	}
+
+	private static void exeMvn(String mvnCmd) throws ExecuteException, IOException {
+		CommandLine cmdLine = CommandLine.parse(mvnCmd);
+		DefaultExecutor executor = new DefaultExecutor();
+		executor.execute(cmdLine);
 	}
 }
