@@ -10,7 +10,7 @@ import org.apache.commons.exec.ExecuteException;
 
 public class AutoTestEn {
 	static String distanceFile = "D:\\ws_testcase\\distance\\commons-jxpath+commons-jxpath+1.3.txt";
-	static int exeNum = 1;
+	static int exeNum = 100;
 	static int exedNum = 0;
 
 	public static void main(String[] args) throws Exception {
@@ -21,7 +21,6 @@ public class AutoTestEn {
 		while (nextCls != null&&exedNum<exeNum) {
 			exedClses.add(nextCls);
 			System.out.println("to generate for:" + nextCls);
-			nextCls = md.getNextExe(exedClses);
 			String mvnCmd = getMvnCmd(nextCls);
 			try {
 				System.out.println("mvnCmd:"+mvnCmd);
@@ -31,6 +30,7 @@ public class AutoTestEn {
 				e.printStackTrace();
 			}
 			exedNum++;
+			nextCls = md.getNextExe(exedClses);
 		}
 	}
 
