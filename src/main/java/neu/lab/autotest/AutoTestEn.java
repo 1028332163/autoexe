@@ -37,7 +37,7 @@ public class AutoTestEn {
 	private static String getMvnCmd(String cut) {
 		String line = "cmd.exe /C ";
 		line = line + "mvn -Dmaven.test.skip=true org.evosuite.plugins:evosuite-maven-plugin:8.15:generate "
-				+ "-f=D:\\cWS\\sharedProject\\commons-jxpath-1.3-src " + "-Dclass=" + cut + " -Ddistance_file="
+				+ "-f=D:\\ws_testcase\\projects\\commons-jxpath-1.3-src " + "-Dclass=" + cut + " -Ddistance_file="
 				+ distanceFile + " -Dcriterion=RISK -e ";
 		return line;
 	}
