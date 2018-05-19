@@ -10,7 +10,8 @@ import org.apache.commons.exec.ExecuteException;
 
 public class AutoTestEn {
 	static String distanceFile = "D:\\ws_testcase\\distance\\commons-jxpath+commons-jxpath+1.3.txt";
-	static int exeNum = 100;
+	static String pomPath = "D:\\ws_testcase\\projects\\commons-jxpath-1.3-src";
+	static int exeNum = 10000;
 	static int exedNum = 0;
 
 	public static void main(String[] args) throws Exception {
@@ -18,12 +19,12 @@ public class AutoTestEn {
 		MethodDistance md = new MethodDistance(distanceFile);
 		Set<String> exedClses = new HashSet<String>();
 		String nextCls = md.getNextExe(exedClses);
-		while (nextCls != null&&exedNum<exeNum) {
+		while (nextCls != null && exedNum < exeNum) {
 			exedClses.add(nextCls);
 			System.out.println("to generate for:" + nextCls);
 			String mvnCmd = getMvnCmd(nextCls);
 			try {
-				System.out.println("mvnCmd:"+mvnCmd);
+				System.out.println("mvnCmd:" + mvnCmd);
 				exeMvn(mvnCmd);
 			} catch (Exception e) {
 				System.out.println("exe mvn error");
@@ -32,13 +33,13 @@ public class AutoTestEn {
 			exedNum++;
 			nextCls = md.getNextExe(exedClses);
 		}
+		System.out.println(exedNum);
 	}
 
 	private static String getMvnCmd(String cut) {
 		String line = "cmd.exe /C ";
-		line = line + "mvn -Dmaven.test.skip=true org.evosuite.plugins:evosuite-maven-plugin:8.15:generate "
-				+ "-f=D:\\ws_testcase\\projects\\commons-jxpath-1.3-src " + "-Dclass=" + cut + " -Ddistance_file="
-				+ distanceFile + " -Dcriterion=RISK -e ";
+		line = line + "mvn -Dmaven.test.skip=true org.evosuite.plugins:evosuite-maven-plugin:8.15:generate -f="
+				+ pomPath + " -Dclass=" + cut + " -Ddistance_file=" + distanceFile + " -Dcriterion=RISK -e ";
 		return line;
 	}
 
