@@ -9,8 +9,8 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 
 public class AutoTestEn {
-	static String distanceFile = "D:\\ws_testcase\\distance\\commons-jxpath+commons-jxpath+1.3.txt";
-	static String pomPath = "D:\\ws_testcase\\projects\\commons-jxpath-1.3-src";
+	static String distanceFile = "D:\\ws_testcase\\distance\\org.apache.commons+commons-pool2+2.5.0.txt";
+	static String pomPath = "D:\\ws_testcase\\projects\\commons-pool2-2.5.0-src";
 	static int exeNum = 10000;
 	static int exedNum = 0;
 
