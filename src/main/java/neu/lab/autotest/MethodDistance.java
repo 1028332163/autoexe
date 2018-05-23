@@ -24,8 +24,8 @@ public class MethodDistance {
 			if (!"".equals(line)) {
 				String[] mmdh = line.split(">,");// method-method-distance-host
 				if ("true".equals(mmdh[2].split(",")[1])) {
-					String bottom = mmdh[0]+">";
-					String top = mmdh[1]+">";
+					String bottom = mmdh[0] + ">";
+					String top = mmdh[1] + ">";
 					Double distance = Double.valueOf(mmdh[2].split(",")[0]);
 					Map<String, Double> m2d = m_b2t2d.get(bottom);
 					if (null == m2d) {
@@ -44,15 +44,19 @@ public class MethodDistance {
 		int maxRchNum = 0;
 		String nextCls = null;
 		for (String topCls : c_t2p2d.keySet()) {
-			if(!exedClses.contains(topCls)) {
+			if (!exedClses.contains(topCls)) {
 				int rchNum = c_t2p2d.get(topCls).size();
-				if(rchNum>maxRchNum) {
+				if (rchNum > maxRchNum) {
 					nextCls = topCls;
 					maxRchNum = rchNum;
 				}
 			}
 		}
 		return nextCls;
+	}
+
+	public int getEntryClsNum() {
+		return c_t2p2d.keySet().size();
 	}
 
 	private void initClsDist() {

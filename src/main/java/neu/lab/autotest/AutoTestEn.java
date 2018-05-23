@@ -22,14 +22,15 @@ public class AutoTestEn {
 		while (nextCls != null && exedNum < exeNum) {
 			exedClses.add(nextCls);
 			System.out.println("to generate for:" + nextCls);
+			System.out.println("exed/all:" +exedNum+"/" +md.getEntryClsNum());
 			String mvnCmd = getMvnCmd(nextCls);
-			try {
-				System.out.println("mvnCmd:" + mvnCmd);
-				exeMvn(mvnCmd);
-			} catch (Exception e) {
-				System.out.println("exe mvn error");
-				e.printStackTrace();
-			}
+//			try {
+//				System.out.println("mvnCmd:" + mvnCmd);
+//				exeMvn(mvnCmd);
+//			} catch (Exception e) {
+//				System.out.println("exe mvn error");
+//				e.printStackTrace();
+//			}
 			exedNum++;
 			nextCls = md.getNextExe(exedClses);
 		}
