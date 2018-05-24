@@ -26,6 +26,7 @@ public class AutoTestEn {
 			String mvnCmd = getMvnCmd(nextCls);
 			try {
 				System.out.println("mvnCmd:" + mvnCmd);
+				FileUtil.delFolder(pomPath+"\\evosuite-report");
 				exeMvn(mvnCmd);
 			} catch (Exception e) {
 				System.out.println("exe mvn error");
@@ -36,6 +37,8 @@ public class AutoTestEn {
 		}
 		System.out.println(exedNum);
 	}
+	
+
 
 	private static String getMvnCmd(String cut) {
 		String line = "cmd.exe /C ";
