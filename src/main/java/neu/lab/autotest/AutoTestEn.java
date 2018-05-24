@@ -9,9 +9,9 @@ import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
 
 public class AutoTestEn {
-	static String distanceFile = "D:\\ws_testcase\\distance\\org.apache.commons+commons-pool2+2.5.0.txt";
-	static String pomPath = "D:\\ws_testcase\\projects\\commons-pool2-2.5.0-src";
-	static int exeNum = 10000;
+	static String distanceFile = "D:\\ws_testcase\\distance\\org.apache.accumulo+accumulo-core+1.7.2.txt";
+	static String pomPath = "D:\\ws\\gitHub_old\\accumulo-rel-1.7.2\\core";
+	static int exeNum = 1000;
 	static int exedNum = 0;
 
 	public static void main(String[] args) throws Exception {
@@ -24,13 +24,13 @@ public class AutoTestEn {
 			System.out.println("to generate for:" + nextCls);
 			System.out.println("exed/all:" +exedNum+"/" +md.getEntryClsNum());
 			String mvnCmd = getMvnCmd(nextCls);
-//			try {
-//				System.out.println("mvnCmd:" + mvnCmd);
-//				exeMvn(mvnCmd);
-//			} catch (Exception e) {
-//				System.out.println("exe mvn error");
-//				e.printStackTrace();
-//			}
+			try {
+				System.out.println("mvnCmd:" + mvnCmd);
+				exeMvn(mvnCmd);
+			} catch (Exception e) {
+				System.out.println("exe mvn error");
+				e.printStackTrace();
+			}
 			exedNum++;
 			nextCls = md.getNextExe(exedClses);
 		}
