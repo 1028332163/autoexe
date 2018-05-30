@@ -5,10 +5,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import neu.lab.autoexe.AutoClsDetect;
-import neu.lab.autoexe.AutoDebug;
-import neu.lab.autoexe.AutoDetect;
-import neu.lab.autoexe.AutoSta;
 
 public class AutoExeEntrance {
 
@@ -17,13 +13,13 @@ public class AutoExeEntrance {
 	public static final String clsDetectProjectDir = "D:\\ws\\final_3\\gitHub_old\\";
 	public static final String upVerProjectDir = "D:\\ws\\solvebug\\ignite-master\\";
 	public static final String findVerDir = "D:\\ws\\solvebug\\ignite-master\\";
-	public static final String debugDir = "D:\\ws\\gitHub_old\\";
+	public static final String debugDir = "D:\\ws\\project_small_apache\\";
 
 	public static void main(String[] args) throws IOException {
-		 new AutoDebug().autoExe(true);
-//		new AutoDetect().autoExe(true);
-//		new AutoClsDetect().autoExe(true);
-		// new AutoSta().autoExe(true);
+		new neu.lab.autoexe.AutoDebug().autoExe(true);
+		// new neu.lab.autoexe.AutoDetect().autoExe(true);
+		// new neu.lab.autoexe.AutoClsDetect().autoExe(true);
+		// new neu.lab.autoexe.AutoSta().autoExe(true);
 	}
 
 	public static void printExePath() {
