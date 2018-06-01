@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class MethodDistance {
+public class MethodDistance implements NodeDistance{
 	private Map<String, Map<String, Double>> m_b2t2d;// <bottom-method,<top-method,distance>>
 
 	private Map<String, Map<String, Double>> c_t2p2d;// <top-class,<bottom-class,distance>>
@@ -27,12 +27,12 @@ public class MethodDistance {
 					String bottom = mmdh[0] + ">";
 					String top = mmdh[1] + ">";
 					Double distance = Double.valueOf(mmdh[2].split(",")[0]);
-					Map<String, Double> m2d = m_b2t2d.get(bottom);
-					if (null == m2d) {
-						m2d = new HashMap<String, Double>();
-						m_b2t2d.put(bottom, m2d);
+					Map<String, Double> t2d = m_b2t2d.get(bottom);
+					if (null == t2d) {
+						t2d = new HashMap<String, Double>();
+						m_b2t2d.put(bottom, t2d);
 					}
-					m2d.put(top, distance);
+					t2d.put(top, distance);
 				}
 			}
 			line = reader.readLine();

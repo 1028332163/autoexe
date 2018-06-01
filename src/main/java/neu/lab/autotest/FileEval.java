@@ -8,13 +8,13 @@ import java.io.FileReader;
 /**
  * evaluate the level of file . level-0:file is empty. level-1:file has data.
  * level-2:file has record from host.
- * 
+ * level-3:file has record from host && class is not inner-class.
  * @author asus
  *
  */
 public class FileEval {
 	public static void main(String[] args) throws Exception {
-		String dirPath = "D:\\ws\\distance_cls";
+		String dirPath = "D:\\ws_testcase\\distance_cls";
 		File dir = new File(dirPath);
 		for (File distanceFile : dir.listFiles()) {
 			if (!distanceFile.getName().startsWith("level_"))
@@ -29,10 +29,15 @@ public class FileEval {
 		int level = 0;
 		while (line != null) {
 			if (!"".equals(line)) {
-				level = 1;
+				if (level < 1)
+					level = 1;
 				if (line.endsWith("true")) {
-					level = 2;
-					break;
+					if (level < 2)
+						level = 2;
+					if(!line.contains("$")) {
+						level=3;
+						break;
+					}
 				}
 			}
 			line = reader.readLine();
@@ -40,6 +45,7 @@ public class FileEval {
 		if (level != 0)
 			System.out.println(distanceFile + " level is " + level);
 		reader.close();
-		distanceFile.renameTo(new File(distanceFile.getParent()+File.separator+"level_" + level + "_" + distanceFile.getName()));
+		distanceFile.renameTo(
+				new File(distanceFile.getParent() + File.separator + "level_" + level + "_" + distanceFile.getName()));
 	}
 }

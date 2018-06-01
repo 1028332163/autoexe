@@ -66,6 +66,8 @@ public abstract class AutoExe {
 				int exeIndex = (int) (leftProjects.size() * Math.random());
 				String pomPath = leftProjects.get(exeIndex);
 				handleOnePom(pomPath);
+				donePjct.add(path2name(pomPath));
+				completeSize++;
 				leftProjects.remove(exeIndex);
 			}
 		}
@@ -85,6 +87,10 @@ public abstract class AutoExe {
 				|| pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-common-release-2.5.0-rc0")
 				|| pomPath.startsWith("D:\\ws\\gitHub_old\\flink-release-1.4.0-rc2\\")) {
 			System.out.println("skip long time project:"+pomPath);
+			return;
+		}
+		if (pomPath.contains("example")) {
+			System.out.println("skip example project:"+pomPath);
 			return;
 		}
 
@@ -124,8 +130,6 @@ public abstract class AutoExe {
 		long runtime = (System.currentTimeMillis() - startTime) / 1000;
 		outResult.append(" "+runtime);
 		System.out.println(outResult.toString());
-		donePjct.add(path2name(pomPath));
-		completeSize++;
 	}
 
 	protected abstract String getProjectDir();
