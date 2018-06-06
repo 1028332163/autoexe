@@ -18,6 +18,7 @@ import org.dom4j.DocumentException;
 
 import neu.lab.autoexe.util.FileSyn;
 import neu.lab.autoexe.util.PomReader;
+import neu.lab.autotest.FileUtil;
 
 public abstract class AutoExe {
 	public FileSyn donePjct;// project has done;
@@ -87,6 +88,7 @@ public abstract class AutoExe {
 	protected void handleOnePom(String pomPath) {
 		System.out.println("complete/all: " + completeSize + "/" + allTask);
 		System.out.println("handle pom for:" + pomPath);
+		FileUtil.delFolder(pomPath + "\\evosuite-report");
 		if (pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-release-3.0.0-alpha1-RC0")
 				|| pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-common-release-2.5.0-rc0")
 				|| pomPath.startsWith("D:\\ws\\gitHub_old\\flink-release-1.4.0-rc2\\")) {
