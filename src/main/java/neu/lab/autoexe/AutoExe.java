@@ -64,16 +64,15 @@ public abstract class AutoExe {
 
 		if (exeByOrder) {
 			for (String pomPath : leftProjects) {
-				handleOnePom(pomPath);
+				handleProject(pomPath);
 			}
 		} else {
 			while (leftProjects.size() != 0) {
 				int exeIndex = (int) (leftProjects.size() * Math.random());
 				String pomPath = leftProjects.get(exeIndex);
-				handleOnePom(pomPath);
-				donePjct.add(path2name(pomPath));
-				completeSize++;
+				handleProject(pomPath);
 				leftProjects.remove(exeIndex);
+				
 			}
 		}
 
@@ -84,30 +83,44 @@ public abstract class AutoExe {
 		List<String> pomDirs = getPomDirs();
 		autoExe(pomDirs, exeByOrder);
 	}
+	
+	private void handleProject(String pomPath) {
+		String handleResult = getProjectResult(pomPath);
+		System.out.println(handleResult);
+		donePjct.add(path2name(pomPath));
+		completeSize++;
+	}
 
-	protected void handleOnePom(String pomPath) {
+	protected String getProjectResult(String pomPath) {
 		System.out.println("complete/all: " + completeSize + "/" + allTask);
 		System.out.println("handle pom for:" + pomPath);
+		
+		StringBuilder outResult = new StringBuilder("exeResult for ");
 		FileUtil.delFolder(pomPath + "\\evosuite-report");
-		if (pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-release-3.0.0-alpha1-RC0")
-				|| pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-common-release-2.5.0-rc0")
-				|| pomPath.startsWith("D:\\ws\\gitHub_old\\flink-release-1.4.0-rc2\\")) {
-			System.out.println("skip long time project:" + pomPath);
-			return;
-		}
-		if (pomPath.contains("\\example") || pomPath.contains("\\tests")) {
-			System.out.println("skip example project:" + pomPath);
-			return;
-		}
+
 
 		String projectName = path2name(pomPath);
-		StringBuilder outResult = new StringBuilder("exeResult for ");
+		
 		long startTime = System.currentTimeMillis();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println("start time：" + sdf.format(new Date()));
 		try {
 			PomReader reader = new PomReader(pomPath + "\\pom.xml");
 			outResult.append(reader.getCoordinate() + " ");
+			
+			if (pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-release-3.0.0-alpha1-RC0")
+					|| pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-common-release-2.5.0-rc0")
+					|| pomPath.startsWith("D:\\ws\\gitHub_old\\flink-release-1.4.0-rc2\\")) {
+				System.out.println("skip long time project:" + pomPath);
+				outResult.append("skip-long");
+				return outResult.toString();
+			}
+			if (pomPath.contains("\\example") || pomPath.contains("\\tests")) {
+				System.out.println("skip example project:" + pomPath);
+				outResult.append("skip-example");
+				return outResult.toString();
+			}
+			
 			if ("jar".equals(reader.getPckType())) {
 				if (!donePjct.contains(projectName) && !mvnExpPjt.contains(projectName)
 						&& !notJarPjct.contains(projectName)) {
@@ -135,7 +148,7 @@ public abstract class AutoExe {
 		System.out.println("end time：" + sdf.format(new Date()));
 		long runtime = (System.currentTimeMillis() - startTime) / 1000;
 		outResult.append(" " + runtime);
-		System.out.println(outResult.toString());
+		return outResult.toString();
 	}
 
 	protected abstract String getProjectDir();
