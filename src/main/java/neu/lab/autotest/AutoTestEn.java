@@ -21,12 +21,16 @@ public class AutoTestEn {
 	static FileSyn doneProject;// record project-mvn-coordinate
 
 	public static void main(String[] args) throws Exception {
+		File stateDirFile = new File(stateDir);
+		if (!stateDirFile.exists()) {
+			stateDirFile.mkdirs();
+		}
 		doneProject = new FileSyn(stateDir, "1exed.txt");
 		Map<String, String> id2path = new PomFinder().getId2path(new File(pomRoot));
 		List<File> highLevelFiles = getHighLevelFiles(new File(distanceRoot));
 		for (File highLevelFile : highLevelFiles) {
 			String mvnId = name2id(highLevelFile.getName());
-			if(!doneProject.contains(mvnId)) {//have not done
+			if (!doneProject.contains(mvnId)) {// have not done
 				String pomPath = id2path.get(mvnId);
 				if (pomPath != null) {
 					String distanceFile = highLevelFile.getAbsolutePath();

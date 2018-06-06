@@ -13,7 +13,7 @@ public class AutoDebug extends AutoExe {
 
 	@Override
 	protected String getStateDir() {
-		return "D:\\ws\\state_debug\\";
+		return "D:\\ws_testcase\\image\\state_debug\\";
 	}
 
 	@Override

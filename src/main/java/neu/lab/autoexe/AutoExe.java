@@ -44,6 +44,10 @@ public abstract class AutoExe {
 	}
 
 	public void autoExe(List<String> pomDirs, boolean exeByOrder) throws IOException {
+		File stateDir = new File(getStateDir());
+		if (!stateDir.exists()) {
+			stateDir.mkdirs();
+		}
 		readState();
 		allTask = pomDirs.size();
 		completeSize = 0;
@@ -86,11 +90,11 @@ public abstract class AutoExe {
 		if (pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-release-3.0.0-alpha1-RC0")
 				|| pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-common-release-2.5.0-rc0")
 				|| pomPath.startsWith("D:\\ws\\gitHub_old\\flink-release-1.4.0-rc2\\")) {
-			System.out.println("skip long time project:"+pomPath);
+			System.out.println("skip long time project:" + pomPath);
 			return;
 		}
-		if (pomPath.contains("example")) {
-			System.out.println("skip example project:"+pomPath);
+		if (pomPath.contains("\\example") || pomPath.contains("\\tests")) {
+			System.out.println("skip example project:" + pomPath);
 			return;
 		}
 
@@ -110,7 +114,7 @@ public abstract class AutoExe {
 						// success
 						successPjt.add(path2name(pomPath));
 						outResult.append("success");
-					} catch (Exception e) {//failed
+					} catch (Exception e) {// failed
 						e.printStackTrace();
 						mvnExpPjt.add(path2name(pomPath));
 						outResult.append("failed");
@@ -128,7 +132,7 @@ public abstract class AutoExe {
 		}
 		System.out.println("end time：" + sdf.format(new Date()));
 		long runtime = (System.currentTimeMillis() - startTime) / 1000;
-		outResult.append(" "+runtime);
+		outResult.append(" " + runtime);
 		System.out.println(outResult.toString());
 	}
 

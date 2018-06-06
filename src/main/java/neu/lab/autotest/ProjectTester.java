@@ -1,5 +1,6 @@
 package neu.lab.autotest;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
@@ -32,7 +33,7 @@ public class ProjectTester {
 				String mvnCmd = getMvnCmd(nextCls, pomPath, distanceFile, "cls");
 				try {
 					System.out.println("mvnCmd:" + mvnCmd);
-					FileUtil.delFolder(pomPath + "\\evosuite-report");
+					FileUtil.delFolder(new File(pomPath).getParent() + "\\evosuite-report");
 //					exeMvn(mvnCmd);
 				} catch (Exception e) {
 					System.out.println("exe mvn error");
