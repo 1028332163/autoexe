@@ -34,7 +34,7 @@ public class ProjectTester {
 				try {
 					System.out.println("mvnCmd:" + mvnCmd);
 					FileUtil.delFolder(new File(pomPath).getParent() + "\\evosuite-report");
-//					exeMvn(mvnCmd);
+					exeMvn(mvnCmd);
 					FileUtil.delFolder(new File(pomPath).getParent() + "\\evosuite-report");
 				} catch (Exception e) {
 					System.out.println("exe mvn error");
