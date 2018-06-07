@@ -17,7 +17,7 @@ public class AutoTestEn {
 	static String cls_type = "cls";
 	static String pomRoot = "D:\\ws\\gitHub_old";
 	static String distanceRoot = "D:\\ws_testcase\\distance_cls";
-	static String stateDir = "D:\\ws_testcase\\exeState\\";
+	static String stateDir = "D:\\ws_testcase\\image\\exeState\\";
 	static FileSyn doneProject;// record project-mvn-coordinate
 
 	public static void main(String[] args) throws Exception {
