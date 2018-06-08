@@ -37,6 +37,7 @@ public class AutoTestEn {
 		List<File> highLevelFiles = getHighLevelFiles(new File(distanceRoot));
 		for (File highLevelFile : highLevelFiles) {
 			if(skipProjects.contains(highLevelFile.getAbsolutePath())) {
+				System.out.println("skip project:"+highLevelFile.getAbsolutePath());
 				continue;
 			}
 			String mvnId = name2id(highLevelFile.getName());

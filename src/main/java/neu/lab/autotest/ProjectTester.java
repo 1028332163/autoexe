@@ -2,6 +2,8 @@ package neu.lab.autotest;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,6 +31,9 @@ public class ProjectTester {
 			// && exedNum < exeNum
 			if(!doneCls.contains(nextCls)) {
 				System.out.println("to generate for:" + nextCls);
+				
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+				System.out.println("start time：" + sdf.format(new Date()));
 				System.out.println("exed/all:" + exedNum + "/" + md.getEntryClsNum());
 				String mvnCmd = getMvnCmd(nextCls, pomPath, distanceFile, "cls");
 				try {
