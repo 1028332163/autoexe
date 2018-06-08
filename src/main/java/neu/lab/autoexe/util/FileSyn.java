@@ -40,6 +40,10 @@ public class FileSyn {
 	public boolean contains(String projectName) {
 		return lines.contains(projectName);
 	}
+	
+	public int recordNum() {
+		return lines.size();
+	}
 
 	private List<String> readFile(String filePath) {
 		List<String> fileList = new ArrayList<String>();
@@ -48,8 +52,10 @@ public class FileSyn {
 			reader = new BufferedReader(new FileReader(filePath));
 			String line = reader.readLine();
 			while (line != null) {
-				if (!fileList.contains(line)) {
-					fileList.add(line);
+				if(!"".equals(line)) {
+					if (!fileList.contains(line)) {
+						fileList.add(line);
+					}
 				}
 				line = reader.readLine();
 			}

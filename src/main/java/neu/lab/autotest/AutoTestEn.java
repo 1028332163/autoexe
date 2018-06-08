@@ -1,7 +1,13 @@
 package neu.lab.autotest;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -24,20 +30,54 @@ public class AutoTestEn {
 	static Set<String> skipProjects;
 	static {
 		skipProjects = new HashSet<String>();
-		skipProjects.add(distanceRoot+"level_3_eagle+eagle-embed-hbase+0.3.0-incubating.txt");
+		skipProjects.add(distanceRoot + "level_3_eagle+eagle-embed-hbase+0.3.0-incubating.txt");
+		skipProjects.add(distanceRoot + "level_3_org.apache.atlas+hive-bridge+0.7.1-incubating.txt");
 	}
 
 	public static void main(String[] args) throws Exception {
+		autoTest();
+	}
+
+	private static Map<String, String> readId2path(String filePath) throws Exception {
+		// Map<String, String> id2path = new PomFinder().getId2path(new File(pomRoot));
+		// PrintWriter printer = new PrintWriter(
+		// new BufferedWriter(new FileWriter(new
+		// File("projectFile\\projectId2path.txt"))));
+		// for (String id : id2path.keySet()) {
+		// printer.println(id + "," + id2path.get(id));
+		// }
+		// printer.close();
+		Map<String, String> id2path = new HashMap<String, String>();
+		BufferedReader reader = new BufferedReader(new FileReader(new File(filePath)));
+		String line = reader.readLine();
+		while (line != null) {
+			if (!line.equals("")) {
+				String[] id_path = line.split(",");
+				if (id_path.length == 2)
+					id2path.put(id_path[0], id_path[1]);
+			}
+			line = reader.readLine();
+		}
+		reader.close();
+		return id2path;
+	}
+
+	private static void autoTest() throws Exception {
 		File stateDirFile = new File(stateDir);
 		if (!stateDirFile.exists()) {
 			stateDirFile.mkdirs();
 		}
 		doneProject = new FileSyn(stateDir, "1exed.txt");
-		Map<String, String> id2path = new PomFinder().getId2path(new File(pomRoot));
+		// Map<String, String> id2path = new PomFinder().getId2path(new File(pomRoot));
+		Map<String, String> id2path = readId2path("projectFile\\projectId2path.txt");
 		List<File> highLevelFiles = getHighLevelFiles(new File(distanceRoot));
+		int doneProjectNum = doneProject.recordNum();
+		System.out.println("all highLevelProject is " + highLevelFiles.size() + " already done in last autoEvo is "
+				+ doneProjectNum);
 		for (File highLevelFile : highLevelFiles) {
-			if(skipProjects.contains(highLevelFile.getAbsolutePath())) {
-				System.out.println("skip project:"+highLevelFile.getAbsolutePath());
+			System.out.println("==========highLevelProject:" + highLevelFile);
+			if (skipProjects.contains(highLevelFile.getAbsolutePath())) {
+				System.out.println("skip project:" + highLevelFile.getAbsolutePath());
 				continue;
 			}
 			String mvnId = name2id(highLevelFile.getName());
@@ -53,13 +93,11 @@ public class AutoTestEn {
 				}
 				doneProject.add(mvnId);
 			}
+			doneProjectNum++;
+			System.out.println("doneProject/all:" + doneProjectNum + "/" + highLevelFiles.size());
 		}
-		// String pomPath =
-		// "D:\\ws_testcase\\projects\\accumulo-rel-1.7.2\\server\\master";
-		// String distanceFile =
-		// "D:\\ws_testcase\\distance_cls\\level_3_org.apache.accumulo+accumulo-master+1.7.2.txt";
-		// runOneProject(pomPath, distanceFile, cls_type);
 	}
+
 	private static List<File> getHighLevelFiles(File distanceRoot) {
 		List<File> highLevelFiles = new ArrayList<File>();
 		for (File distanceFile : distanceRoot.listFiles()) {
