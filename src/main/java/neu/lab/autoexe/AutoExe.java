@@ -51,7 +51,7 @@ public abstract class AutoExe {
 		}
 		readState();
 		allTask = pomDirs.size();
-		completeSize = donePjct.recordNum();
+		completeSize = 0;
 		List<String> leftProjects = new ArrayList<String>();
 		for (String pomPath : pomDirs) {
 			if (!donePjct.contains(path2name(pomPath))) {

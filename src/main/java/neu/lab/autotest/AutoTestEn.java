@@ -1,11 +1,8 @@
 package neu.lab.autotest;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -14,7 +11,6 @@ import java.util.Map;
 import java.util.Set;
 
 import neu.lab.autoexe.util.FileSyn;
-import neu.lab.autoexe.util.PomFinder;
 
 public class AutoTestEn {
 	// static String distanceFile =
@@ -32,6 +28,7 @@ public class AutoTestEn {
 		skipProjects = new HashSet<String>();
 		skipProjects.add(distanceRoot + "level_3_eagle+eagle-embed-hbase+0.3.0-incubating.txt");
 		skipProjects.add(distanceRoot + "level_3_org.apache.atlas+hive-bridge+0.7.1-incubating.txt");
+		skipProjects.add(distanceRoot + "level_3_org.apache.camel+camel-spark-starter+2.19.4.txt");
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -71,9 +68,9 @@ public class AutoTestEn {
 		// Map<String, String> id2path = new PomFinder().getId2path(new File(pomRoot));
 		Map<String, String> id2path = readId2path("projectFile\\projectId2path.txt");
 		List<File> highLevelFiles = getHighLevelFiles(new File(distanceRoot));
-		int doneProjectNum = doneProject.recordNum();
 		System.out.println("all highLevelProject is " + highLevelFiles.size() + " already done in last autoEvo is "
-				+ doneProjectNum);
+				+ doneProject.recordNum());
+		int doneProjectNum = 0;
 		for (File highLevelFile : highLevelFiles) {
 			System.out.println("==========highLevelProject:" + highLevelFile);
 			if (skipProjects.contains(highLevelFile.getAbsolutePath())) {
