@@ -22,7 +22,7 @@ public class AutoTestEn {
 	static String stateDir = "D:\\ws_testcase\\image\\state_autoEvo\\";
 	static FileSyn doneProject;// record project-mvn-coordinate
 	static Set<String> skipProjects;
-	{
+	static {
 		skipProjects = new HashSet<String>();
 		skipProjects.add(distanceRoot+"level_3_eagle+eagle-embed-hbase+0.3.0-incubating.txt");
 	}
