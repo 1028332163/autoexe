@@ -30,6 +30,7 @@ public class AutoTestEn {
 		skipProjects.add(distanceRoot + "level_3_org.apache.atlas+hive-bridge+0.7.1-incubating.txt");
 		skipProjects.add(distanceRoot + "level_3_org.apache.camel+camel-spark-starter+2.19.4.txt");
 		skipProjects.add(distanceRoot + "level_3_org.apache.carbondata+carbondata-spark2+1.1.1.txt");
+		skipProjects.add(distanceRoot + "level_3_org.apache.crunch+crunch-hbase+0.11.0-cdh5.12.2.txt");
 	}
 
 	public static void main(String[] args) throws Exception {
