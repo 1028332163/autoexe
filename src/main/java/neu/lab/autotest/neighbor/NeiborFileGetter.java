@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -56,7 +58,6 @@ public class NeiborFileGetter {
 					System.out.println("dis:" + distanceFile);
 					System.out.println("pom:" + pomPath);
 					String mvnCmd = getMvnCmd(pomPath);
-					System.out.println("mvn cmd:" + mvnCmd);
 					try {
 						exeMvn(mvnCmd);
 					}catch(Exception e) {
@@ -97,6 +98,9 @@ public class NeiborFileGetter {
 	}
 	
 	private static void exeMvn(String mvnCmd) throws ExecuteException, IOException {
+		System.out.println("mvn cmd:" + mvnCmd);
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		System.out.println("start time：" + sdf.format(new Date()));
 		CommandLine cmdLine = CommandLine.parse(mvnCmd);
 		DefaultExecutor executor = new DefaultExecutor();
 		executor.execute(cmdLine);
