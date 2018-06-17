@@ -56,8 +56,13 @@ public class NeiborFileGetter {
 					System.out.println("dis:" + distanceFile);
 					System.out.println("pom:" + pomPath);
 					String mvnCmd = getMvnCmd(pomPath);
-					System.out.println("mvn cmd" + mvnCmd);
-					exeMvn(mvnCmd);
+					System.out.println("mvn cmd:" + mvnCmd);
+					try {
+						exeMvn(mvnCmd);
+					}catch(Exception e) {
+						e.printStackTrace();
+					}
+					
 				} else {
 					System.out.println("can't find pomFile for " + highLevelFile.getName());
 				}
@@ -100,7 +105,7 @@ public class NeiborFileGetter {
 	private static String getMvnCmd(String pomPath) {
 //		mvn -f=D:\ws_testcase\projects\commons-pool2-2.5.0-src -Dmaven.test.skip=true neu.lab:decca:1.0:debug 
 		String line = "cmd.exe /C ";
-		line = line + "-f="+pomPath+" -Dmaven.test.skip=true neu.lab:decca:1.0:debug";
+		line = line + "mvn -f="+pomPath+" -Dmaven.test.skip=true neu.lab:decca:1.0:debug";
 		return line;
 	}
 }
