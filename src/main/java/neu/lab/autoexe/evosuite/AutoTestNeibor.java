@@ -32,8 +32,10 @@ public class AutoTestNeibor {
 	private static void autoTest() throws Exception {
 		int projectNum = 0;
 		for (String pom : pom2tester.keySet()) {
-			if (!skipProjects.contains(pom))
+			if (!skipProjects.contains(pom)) {
+				System.out.println("handle project:"+pom);
 				pom2tester.get(pom).runTest(projectNum);
+			}
 			else 
 				System.out.println("skip pom:"+pom);
 			projectNum++;
