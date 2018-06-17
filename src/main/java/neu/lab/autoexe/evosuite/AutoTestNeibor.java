@@ -22,6 +22,7 @@ public class AutoTestNeibor {
 		skipProjects.add("D:\\ws\\gitHub_old\\incubator-atlas-release-0.7.1-rc2\\addons\\hive-bridge\\pom.xml");
 		skipProjects.add(
 				"D:\\ws\\gitHub_old\\cxf-cxf-3.1.14\\distribution\\src\\main\\release\\samples\\jax_rs\\spring_boot_scan\\eureka-registry\\pom.xml");
+		skipProjects.add("D:\\ws\\gitHub_old\\crunch-apache-crunch-0.12.0\\crunch-test\\pom.xml");
 	}
 
 	public static void main(String[] args) throws Exception {
