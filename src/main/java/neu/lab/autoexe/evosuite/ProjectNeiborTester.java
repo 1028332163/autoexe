@@ -23,7 +23,7 @@ public class ProjectNeiborTester {
 
 	public void runTest(int projectOrder) throws Exception {
 		FileSyn doneNeibor = new FileSyn("D:\\ws_testcase\\image\\state_neiborTest\\"
-				+ pomPath.substring(pomPath.lastIndexOf("\\") + 1).replace(".pom", ".txt"));
+				+ pomPath.hashCode()+".txt");
 		for (String neibor : neibor2jarPath.keySet()) {
 			if (!doneNeibor.contains(neibor)) {
 				try {
