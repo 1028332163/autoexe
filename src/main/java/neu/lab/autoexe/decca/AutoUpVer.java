@@ -1,27 +1,27 @@
-package neu.lab.autoexe;
+package neu.lab.autoexe.decca;
 
 import neu.lab.autoexe.entrance.AutoExeEntrance;
 
-public class AutoFindVer extends AutoExe{
+public class AutoUpVer extends AutoDecca{
 
 	@Override
 	protected String getStateDir() {
-		return "D:\\ws\\state_findVer\\";
+		return "D:\\ws\\state_upVer\\";
 	}
 
 	@Override
 	protected String getProjectDir() {
-		return AutoExeEntrance.findVerDir;
+		return AutoExeEntrance.upVerProjectDir;
 	}
 
 	@Override
 	public String getBatPath() {
-		return "D:\\ws\\findVer.bat";
+		return "D:\\ws\\upVer.bat";
 	}
 
 	@Override
 	public String getCommand() {
-		return "mvn neu.lab:decca:1.0:findVersion -e";
+		return "mvn neu.lab:decca:1.0:upVersion -e";
 	}
 
 }

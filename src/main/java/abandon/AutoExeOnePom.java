@@ -1,4 +1,4 @@
-package neu.lab.autoexe.abandon;
+package abandon;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -6,9 +6,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import neu.lab.autoexe.AutoExe;
+import neu.lab.autoexe.decca.AutoDecca;
 
-public class AutoExeOnePom extends AutoExe{
+public class AutoExeOnePom extends AutoDecca{
 
 	@Override
 	protected String getStateDir() {

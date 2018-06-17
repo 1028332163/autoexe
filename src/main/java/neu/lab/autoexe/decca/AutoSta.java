@@ -1,8 +1,8 @@
-package neu.lab.autoexe;
+package neu.lab.autoexe.decca;
 
 import neu.lab.autoexe.entrance.AutoExeEntrance;
 
-public class AutoSta extends AutoExe {
+public class AutoSta extends AutoDecca {
 	public String getBatPath() {
 		return "D:\\ws\\sta.bat";
 	}

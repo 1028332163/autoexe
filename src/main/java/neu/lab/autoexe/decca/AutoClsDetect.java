@@ -1,8 +1,8 @@
-package neu.lab.autoexe;
+package neu.lab.autoexe.decca;
 
 import neu.lab.autoexe.entrance.AutoExeEntrance;
 
-public class AutoClsDetect extends AutoExe{
+public class AutoClsDetect extends AutoDecca{
 
 	@Override
 	protected String getStateDir() {

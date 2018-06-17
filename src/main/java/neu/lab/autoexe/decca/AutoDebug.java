@@ -1,8 +1,8 @@
-package neu.lab.autoexe;
+package neu.lab.autoexe.decca;
 
 import neu.lab.autoexe.entrance.AutoExeEntrance;
 
-public class AutoDebug extends AutoExe {
+public class AutoDebug extends AutoDecca {
 	public String getBatPath() {
 		return "D:\\ws\\debug.bat";
 	}

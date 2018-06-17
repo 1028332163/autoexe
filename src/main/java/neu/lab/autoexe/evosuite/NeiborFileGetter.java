@@ -1,4 +1,4 @@
-package neu.lab.autotest.neighbor;
+package neu.lab.autoexe.evosuite;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -30,6 +30,8 @@ public class NeiborFileGetter {
 		skipProjects.add(distanceRoot + "level_3_org.apache.carbondata+carbondata-spark2+1.1.1.txt");
 		skipProjects.add(distanceRoot + "level_3_org.apache.crunch+crunch-hbase+0.11.0-cdh5.12.2.txt");
 		skipProjects.add(distanceRoot + "level_3_org.apache.cxf.samples+spring-boot-sample-rs-scan-eureka+3.1.14.txt");
+		
+
 	}
 	
 	private static String levelDir = "D:\\ws_testcase\\distance_cls\\";
@@ -63,7 +65,6 @@ public class NeiborFileGetter {
 					}catch(Exception e) {
 						e.printStackTrace();
 					}
-					
 				} else {
 					System.out.println("can't find pomFile for " + highLevelFile.getName());
 				}

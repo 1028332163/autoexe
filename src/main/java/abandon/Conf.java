@@ -1,4 +1,4 @@
-package neu.lab.autoexe.abandon;
+package abandon;
 
 public class Conf {
 	public static final String OnePomProjectDir = "D:\\ws\\release\\";

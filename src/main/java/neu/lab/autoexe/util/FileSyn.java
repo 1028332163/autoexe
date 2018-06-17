@@ -24,6 +24,14 @@ public class FileSyn {
 		lines = readFile(stateDir + fileName);
 		printer = new PrintWriter(new BufferedWriter(new FileWriter(stateDir + fileName, true)));
 	}
+	
+	public FileSyn(String filePath) throws IOException {
+		File dir = new File(filePath).getParentFile();
+		if (!dir.exists())
+			dir.mkdirs();
+		lines = readFile(filePath);
+		printer = new PrintWriter(new BufferedWriter(new FileWriter(filePath, true)));
+	}
 
 	public void add(String line) {
 		if (!lines.contains(line)) {

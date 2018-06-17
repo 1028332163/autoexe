@@ -16,7 +16,7 @@ public class AutoExeEntrance {
 	public static final String debugDir = "D:\\ws\\gitHub_old\\";
 //	D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
-		new neu.lab.autoexe.AutoDebug().autoExe(true);
+		new neu.lab.autoexe.decca.AutoDebug().autoExe(true);
 		// new neu.lab.autoexe.AutoDetect().autoExe(true);
 		// new neu.lab.autoexe.AutoClsDetect().autoExe(true);
 		// new neu.lab.autoexe.AutoSta().autoExe(true);

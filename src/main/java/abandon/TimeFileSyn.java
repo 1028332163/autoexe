@@ -1,4 +1,4 @@
-package neu.lab.autoexe.abandon;
+package abandon;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
