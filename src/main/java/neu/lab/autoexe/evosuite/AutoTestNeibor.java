@@ -24,7 +24,7 @@ public class AutoTestNeibor {
 				"D:\\ws\\gitHub_old\\cxf-cxf-3.1.14\\distribution\\src\\main\\release\\samples\\jax_rs\\spring_boot_scan\\eureka-registry\\pom.xml");
 	}
 
-	public void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 		readNeiborFile();
 		autoTest();
 	}
