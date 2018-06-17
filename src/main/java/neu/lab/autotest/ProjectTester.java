@@ -38,7 +38,6 @@ public class ProjectTester {
 				String mvnCmd = getMvnCmd(nextCls, pomPath, distanceFile, "cls");
 				try {
 					System.out.println("mvnCmd:" + mvnCmd);
-					FileUtil.delFolder(new File(pomPath).getParent() + "\\evosuite-report");
 					exeMvn(mvnCmd);
 					FileUtil.delFolder(new File(pomPath).getParent() + "\\evosuite-report");
 				} catch (Exception e) {
