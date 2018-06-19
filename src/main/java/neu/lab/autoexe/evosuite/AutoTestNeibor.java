@@ -24,6 +24,7 @@ public class AutoTestNeibor {
 				"D:\\ws\\gitHub_old\\cxf-cxf-3.1.14\\distribution\\src\\main\\release\\samples\\jax_rs\\spring_boot_scan\\eureka-registry\\pom.xml");
 		skipProjects.add("D:\\ws\\gitHub_old\\crunch-apache-crunch-0.12.0\\crunch-test\\pom.xml");
 		skipProjects.add("D:\\ws\\gitHub_old\\hive-release-1.2.0\\testutils\\pom.xml");
+		skipProjects.add("D:\\ws\\gitHub_old\\stocator-1.0.10\\pom.xml");
 	}
 
 	public static void main(String[] args) throws Exception {
