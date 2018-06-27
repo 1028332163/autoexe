@@ -13,7 +13,7 @@ public class AutoExeEntrance {
 	public static final String clsDetectProjectDir = "D:\\ws\\final_3\\gitHub_old\\";
 	public static final String upVerProjectDir = "D:\\ws\\solvebug\\ignite-master\\";
 	public static final String findVerDir = "D:\\ws\\solvebug\\ignite-master\\";
-	public static final String debugDir = "D:\\ws\\gitHub_old\\";
+	public static final String debugDir = "D:\\ws\\gitHub_new\\";
 //	D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
 		new neu.lab.autoexe.decca.AutoDebug().autoExe(true);
