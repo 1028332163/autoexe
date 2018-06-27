@@ -1,16 +1,17 @@
 package neu.lab.autotest;
 
-import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 import neu.lab.autoexe.util.FileSyn;
+import neu.lab.autoexe.util.PomFinder;
 
 public class AutoTestEn {
 	// static String distanceFile =
@@ -35,30 +36,30 @@ public class AutoTestEn {
 	}
 
 	public static void main(String[] args) throws Exception {
-		autoTest();
+//		autoTest();
+		readId2path("");
 	}
 
 	private static Map<String, String> readId2path(String filePath) throws Exception {
-		// Map<String, String> id2path = new PomFinder().getId2path(new File(pomRoot));
-		// PrintWriter printer = new PrintWriter(
-		// new BufferedWriter(new FileWriter(new
-		// File("projectFile\\projectId2path.txt"))));
-		// for (String id : id2path.keySet()) {
-		// printer.println(id + "," + id2path.get(id));
-		// }
-		// printer.close();
-		Map<String, String> id2path = new HashMap<String, String>();
-		BufferedReader reader = new BufferedReader(new FileReader(new File(filePath)));
-		String line = reader.readLine();
-		while (line != null) {
-			if (!line.equals("")) {
-				String[] id_path = line.split(",");
-				if (id_path.length == 2)
-					id2path.put(id_path[0], id_path[1]);
-			}
-			line = reader.readLine();
+		Map<String, String> id2path = new PomFinder().getId2path(new File("D:\\ws\\bugreport\\atlas-release-0.8.2-rc0"));
+
+		for (String id : id2path.keySet()) {
+			System.out.println(id + "," + id2path.get(id));
 		}
-		reader.close();
+
+		// Map<String, String> id2path = new HashMap<String, String>();
+		// BufferedReader reader = new BufferedReader(new FileReader(new
+		// File(filePath)));
+		// String line = reader.readLine();
+		// while (line != null) {
+		// if (!line.equals("")) {
+		// String[] id_path = line.split(",");
+		// if (id_path.length == 2)
+		// id2path.put(id_path[0], id_path[1]);
+		// }
+		// line = reader.readLine();
+		// }
+		// reader.close();
 		return id2path;
 	}
 
