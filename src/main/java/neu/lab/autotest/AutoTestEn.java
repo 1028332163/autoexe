@@ -71,7 +71,7 @@ public class AutoTestEn {
 		doneProject = new FileSyn(stateDir, "1exed.txt");
 		// Map<String, String> id2path = new PomFinder().getId2path(new File(pomRoot));
 		Map<String, String> id2path = readId2path("projectFile\\projectId2path.txt");
-		List<File> highLevelFiles = getHighLevelFiles(new File(distanceRoot));
+		List<File> highLevelFiles = FileEval.getHighLevelFiles(new File(distanceRoot));
 		System.out.println("all highLevelProject is " + highLevelFiles.size() + " already done in last autoEvo is "
 				+ doneProject.recordNum());
 		int doneProjectNum = 0;
@@ -99,15 +99,7 @@ public class AutoTestEn {
 		}
 	}
 
-	private static List<File> getHighLevelFiles(File distanceRoot) {
-		List<File> highLevelFiles = new ArrayList<File>();
-		for (File distanceFile : distanceRoot.listFiles()) {
-			if (distanceFile.getName().startsWith("level_3")) {
-				highLevelFiles.add(distanceFile);
-			}
-		}
-		return highLevelFiles;
-	}
+
 
 	/**
 	 * file name instead of path

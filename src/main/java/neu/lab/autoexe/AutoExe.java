@@ -1,14 +1,8 @@
 package neu.lab.autoexe;
 
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.commons.exec.CommandLine;
-import org.apache.commons.exec.DefaultExecutor;
-import org.apache.commons.exec.ExecuteException;
 
 import neu.lab.autoexe.util.ExecUtil;
 import neu.lab.autoexe.util.FileSyn;
@@ -16,18 +10,15 @@ import neu.lab.autoexe.util.FileSyn;
 public abstract class AutoExe {
 
 	protected List<String> pomPaths;// list of pom-path
-	protected Set<String> skipProject;
 	protected FileSyn doneProject;
 
 	public AutoExe() {
 		initPomPaths();
-		initSkip();
 		initFileSyn();
 	}
 
 	protected abstract void initPomPaths();
 
-	protected abstract void initSkip();
 
 	protected abstract void initFileSyn();
 
@@ -45,7 +36,7 @@ public abstract class AutoExe {
 		System.out.println(" already done in last autotest is " + doneProject.recordNum());
 		for (String pomPath : pomPaths) {
 			if (!doneProject.contains(pomPath)) {
-				if (!skipProject.contains(pomPath)) {
+				if (!shouldSkip(pomPath)) {
 					String mvnCmd = getNextMvnCmd();
 					beforeExeMvn();
 					try {
@@ -64,6 +55,8 @@ public abstract class AutoExe {
 			System.out.println("doneProject/all:" + doneProject.recordNum() + "/" + pomPaths.size());
 		}
 	}
+	
+	protected abstract boolean shouldSkip(String pomPath);
 
 
 }

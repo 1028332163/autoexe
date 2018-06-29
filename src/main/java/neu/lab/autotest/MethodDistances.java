@@ -2,16 +2,21 @@ package neu.lab.autotest;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class MethodDistance implements NodeDistance{
-	private Map<String, Map<String, Double>> m_b2t2d;// <bottom-method,<top-method,distance>>
+import neu.lab.autotest2.TestParams;
+
+public class MethodDistances implements NodeDistance{
+	// <bottom-method,<top-method,distance>>,top-method is host method.
+	private Map<String, Map<String, Double>> m_b2t2d;
 
 	private Map<String, Map<String, Double>> c_t2p2d;// <top-class,<bottom-class,distance>>
 
-	public MethodDistance(String distanceFile) throws Exception {
+	public MethodDistances(String distanceFile) throws Exception {
 		initMthdDist(distanceFile);
 		initClsDist();
 	}
@@ -38,6 +43,17 @@ public class MethodDistance implements NodeDistance{
 			line = reader.readLine();
 		}
 		reader.close();
+	}
+	
+	public List<TestParams> getTestParams(){
+		List<TestParams> params = new ArrayList<TestParams>();
+		for(String bottom:m_b2t2d.keySet()) {
+			Map<String,Double> t2d = m_b2t2d.get(bottom);
+			for(String top:t2d.keySet()) {
+				params.add(new TestParams(bottom,top,t2d.get(top)));
+			}
+		}
+		return params;
 	}
 
 	public String getNextExe(Set<String> exedClses) {

@@ -22,7 +22,7 @@ public class ProjectTester {
 		if ("cls".equals(risktype)) {
 			md = new ClassDistance(distanceFile);
 		} else {
-			md = new MethodDistance(distanceFile);
+			md = new MethodDistances(distanceFile);
 		}
 		Set<String> pickedClses = new HashSet<String>();
 		String nextCls = md.getNextExe(pickedClses);

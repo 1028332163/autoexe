@@ -16,7 +16,7 @@ public class AutoExeEntrance {
 	public static final String debugDir = "D:\\ws\\gitHub_new\\";
 //	D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
-		new neu.lab.autoexe.decca.AutoDebug().autoExe(true);
+		new neu.lab.autoexe.decca.AutoDebug().autoExe(getPomPaths(),true);
 		// new neu.lab.autoexe.AutoDetect().autoExe(true);
 		// new neu.lab.autoexe.AutoClsDetect().autoExe(true);
 		// new neu.lab.autoexe.AutoSta().autoExe(true);
@@ -45,27 +45,29 @@ public class AutoExeEntrance {
 
 	private static List<String> getPomPaths() {
 		List<String> list = new ArrayList<String>();
-		list.add("D:\\ws\\gitHub_old\\incubator-omid-release-0.8.2.0\\codahale-metrics");
-		list.add("D:\\ws\\gitHub_old\\tuscany-sca-2.x-2.0\\modules\\binding-http-runtime");
-		list.add("D:\\ws\\gitHub_old\\any23-any23-2.1\\plugins\\office-scraper");
-		list.add("D:\\ws\\gitHub_old\\oodt-1.2.1\\curator\\sso");
-		list.add(
-				"D:\\ws\\gitHub_old\\apache-maven-3.5.0\\maven-core\\src\\test\\resources-project-builder\\dual-execution-ids\\sub");
-		list.add("D:\\ws\\gitHub_old\\activemq-cpp-activemq-cpp-pom-3.1.0-RC1\\activemq-cpp-openwire-generator");
-		list.add("D:\\ws\\gitHub_old\\activemq-artemis-2.1.0\\artemis-journal");
-		list.add("D:\\ws\\gitHub_old\\activemq-artemis-2.1.0\\artemis-service-extensions");
-		list.add(
-				"D:\\ws\\gitHub_old\\hadoop-common-release-2.5.0-rc0\\hadoop-mapreduce-project\\hadoop-mapreduce-client\\hadoop-mapreduce-client-core");
-		list.add("D:\\ws\\gitHub_old\\cxf-cxf-3.1.14\\distribution\\src\\main\\release\\samples\\corba\\hello_world");
-		list.add("D:\\ws\\gitHub_old\\activemq-artemis-2.1.0\\artemis-ra");
-		list.add("D:\\ws\\gitHub_old\\activemq-artemis-2.1.0\\artemis-junit");
-		list.add("D:\\ws\\gitHub_old\\airavata-airavata-0.13\\modules\\credential-store-service\\credential-store");
-		list.add("D:\\ws\\gitHub_old\\activemq-artemis-2.1.0\\artemis-cdi-client");
-		list.add("D:\\ws\\gitHub_old\\airavata-airavata-0.13\\airavata-api\\airavata-client-sdks\\java-client-samples");
-		list.add("D:\\ws\\gitHub_old\\brooklyn-server-rel-apache-brooklyn-0.12.0-rc1\\utils\\rest-swagger");
-		list.add("D:\\ws\\gitHub_old\\flink-release-1.4.0-rc2\\flink-connectors\\flink-connector-rabbitmq");
-		list.add(
-				"D:\\ws\\gitHub_old\\nifi-minifi-rel-minifi-0.1.0\\minifi-nar-bundles\\minifi-framework-bundle\\minifi-framework\\minifi-runtime");
+		list.add("D:\\ws\\gitHub_new\\accumulo-rel-1.7.3\\fate");
+		list.add("D:\\ws\\gitHub_new\\airavata-airavata-0.16\\modules\\commons");
+		list.add("D:\\ws\\gitHub_new\\airavata-airavata-0.16\\modules\\credential-store\\credential-store-stubs");
+		list.add("D:\\ws\\gitHub_new\\airavata-airavata-0.16\\modules\\messaging\\client");
+		list.add("D:\\ws\\gitHub_new\\airavata-airavata-0.16\\modules\\messaging\\core");
+		list.add("D:\\ws\\gitHub_new\\airavata-airavata-0.16\\modules\\monitoring");
+		list.add("D:\\ws\\gitHub_new\\airavata-airavata-0.16\\modules\\registry\\registry-cpi");
+		list.add("D:\\ws\\gitHub_new\\airavata-airavata-0.16\\modules\\security");
+		list.add("D:\\ws\\gitHub_new\\archiva-redback-core-redback-2.6\\redback-users\\redback-users-tests");
+		list.add("D:\\ws\\gitHub_new\\axis2-java-1.7.7\\modules\\adb");
+		list.add("D:\\ws\\gitHub_new\\axis2-java-1.7.7\\modules\\samples\\transport\\https-sample\\httpsClient");
+		list.add("D:\\ws\\gitHub_new\\beam-2.3.0-RC3\\model\\fn-execution");
+		list.add("D:\\ws\\gitHub_new\\beam-2.3.0-RC3\\model\\job-management");
+		list.add("D:\\ws\\gitHub_new\\beam-2.3.0-RC3\\runners\\core-java");
+		list.add("D:\\ws\\gitHub_new\\beam-2.3.0-RC3\\runners\\local-java");
+		list.add("D:\\ws\\gitHub_new\\beam-2.3.0-RC3\\runners\\reference\\java");
+		list.add("D:\\ws\\gitHub_new\\beam-2.3.0-RC3\\sdks\\java\\extensions\\protobuf");
+		list.add("D:\\ws\\gitHub_new\\beam-2.3.0-RC3\\sdks\\java\\io\\amazon-web-services");
+		list.add("D:\\ws\\gitHub_new\\Apache-maven-3.5.0\\maven-compat");
+		list.add("D:\\ws\\gitHub_new\\Apache-maven-3.5.0\\maven-core");
+		list.add("D:\\ws\\gitHub_new\\Apache-maven-3.5.0\\maven-embedder");
+		list.add("D:\\ws\\gitHub_new\\Apache-maven-3.5.0\\maven-model-builder");
+		list.add("D:\\ws\\gitHub_new\\Apache-maven-3.5.0\\maven-resolver-provider");
 		return list;
 	}
 }

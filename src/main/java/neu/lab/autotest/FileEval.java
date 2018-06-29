@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * evaluate the level of file . level-0:file is empty. level-1:file has data.
@@ -14,7 +16,7 @@ import java.io.FileReader;
  */
 public class FileEval {
 	public static void main(String[] args) throws Exception {
-		String dirPath = "D:\\ws_testcase\\distance_cls";
+		String dirPath = "D:\\ws_testcase\\distance_mthdProb";
 		File dir = new File(dirPath);
 		for (File distanceFile : dir.listFiles()) {
 			if (!distanceFile.getName().startsWith("level_"))
@@ -47,5 +49,14 @@ public class FileEval {
 		reader.close();
 		distanceFile.renameTo(
 				new File(distanceFile.getParent() + File.separator + "level_" + level + "_" + distanceFile.getName()));
+	}
+	public static List<File> getHighLevelFiles(File distanceRoot) {
+		List<File> highLevelFiles = new ArrayList<File>();
+		for (File distanceFile : distanceRoot.listFiles()) {
+			if (distanceFile.getName().startsWith("level_3")) {
+				highLevelFiles.add(distanceFile);
+			}
+		}
+		return highLevelFiles;
 	}
 }
