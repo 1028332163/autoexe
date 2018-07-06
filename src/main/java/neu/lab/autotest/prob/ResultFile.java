@@ -1,4 +1,4 @@
-package neu.lab.autotest2;
+package neu.lab.autotest.prob;
 
 import java.util.Map;
 

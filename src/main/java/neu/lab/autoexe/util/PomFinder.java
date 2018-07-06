@@ -56,22 +56,5 @@ public class PomFinder {
 		}
 	}
 	
-	public static void main(String[] args) {
-		Map<String,String> id2path = new PomFinder().getId2path(new File("D:\\ws\\gitHub_new\\"));
-		
-		List<String> ids = new ArrayList<String>();
-		for(File levelFile:new File("D:\\ws_testcase\\distance_mthdProb").listFiles()) {
-			String id = levelFile.getName().substring(0,levelFile.getName().indexOf("@")).replace("+", ":");
-			if(!ids.contains(id)) {
-				ids.add(id);
-			}
-		}
-		for(String id:ids) {
-//			list.add("D:\\ws\\gitHub_old\\incubator-omid-release-0.8.2.0\\codahale-metrics");
-			String path = id2path.get(id);
-			System.out.println("list.add(\""
-					+path.replace("\\pom.xml", "").replace("\\", "\\\\")
-					+ "\");");
-		}
-	}
+
 }

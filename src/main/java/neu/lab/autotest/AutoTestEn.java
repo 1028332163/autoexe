@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import neu.lab.autoexe.util.FileEval;
 import neu.lab.autoexe.util.FileSyn;
 import neu.lab.autoexe.util.PomFinder;
 

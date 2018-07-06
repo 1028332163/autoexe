@@ -8,13 +8,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import neu.lab.autotest2.TestParams;
+import neu.lab.autotest.prob.TestParams;
 
-public class MethodDistances implements NodeDistance{
+public class MethodDistances implements NodeDistance {
+	protected static final boolean addComplexMthd = true;
 	// <bottom-method,<top-method,distance>>,top-method is host method.
-	private Map<String, Map<String, Double>> m_b2t2d;
+	protected Map<String, Map<String, Double>> m_b2t2d;
 
-	private Map<String, Map<String, Double>> c_t2p2d;// <top-class,<bottom-class,distance>>
+	protected Map<String, Map<String, Double>> c_t2p2d;// <top-class,<bottom-class,distance>>
 
 	public MethodDistances(String distanceFile) throws Exception {
 		initMthdDist(distanceFile);
@@ -30,30 +31,21 @@ public class MethodDistances implements NodeDistance{
 				String[] mmdh = line.split(">,");// method-method-distance-host
 				if ("true".equals(mmdh[2].split(",")[1])) {
 					String bottom = mmdh[0] + ">";
-					String top = mmdh[1] + ">";
-					Double distance = Double.valueOf(mmdh[2].split(",")[0]);
-					Map<String, Double> t2d = m_b2t2d.get(bottom);
-					if (null == t2d) {
-						t2d = new HashMap<String, Double>();
-						m_b2t2d.put(bottom, t2d);
+					if (addComplexMthd || (!addComplexMthd && !bottom.contains("$"))) {
+						String top = mmdh[1] + ">";
+						Double distance = Double.valueOf(mmdh[2].split(",")[0]);
+						Map<String, Double> t2d = m_b2t2d.get(bottom);
+						if (null == t2d) {
+							t2d = new HashMap<String, Double>();
+							m_b2t2d.put(bottom, t2d);
+						}
+						t2d.put(top, distance);
 					}
-					t2d.put(top, distance);
 				}
 			}
 			line = reader.readLine();
 		}
 		reader.close();
-	}
-	
-	public List<TestParams> getTestParams(){
-		List<TestParams> params = new ArrayList<TestParams>();
-		for(String bottom:m_b2t2d.keySet()) {
-			Map<String,Double> t2d = m_b2t2d.get(bottom);
-			for(String top:t2d.keySet()) {
-				params.add(new TestParams(bottom,top,t2d.get(top)));
-			}
-		}
-		return params;
 	}
 
 	public String getNextExe(Set<String> exedClses) {
