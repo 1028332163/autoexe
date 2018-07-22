@@ -44,6 +44,7 @@ org.apache.tajo:tajo-docs:0.11.3,D:+ws+gitHub_new+tajo-release-0.11.3-rc0+tajo-d
 org.apache.nifi:nifi-dbcp-service-api:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-standard-services+nifi-dbcp-service-api+pom.xml
 org.apache.atlas:atlas-graphdb-titan1:0.8.2,D:+ws+gitHub_new+atlas-release-0.8.2-rc0+graphdb+titan1+pom.xml
 org.apache.clerezza.provisioning:site.tools:1.0.1-SNAPSHOT,D:+ws+gitHub_new+clerezza-201604+provisioning+site.tools+pom.xml
+com.amazonaws:aws-java-sdk-core:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-core+pom.xml
 org.apache.tuscany.sca:contribution-doc-lit-disablewrapped:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+contribution-doc-lit-disablewrapped+pom.xml
 org.apache.james:james-server-cassandra-ldap-guice:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+server+container+guice+cassandra-ldap-guice+pom.xml
 org.apache.maven.archetype:archetype-catalog:3.0.1,D:+ws+gitHub_new+maven-archetype-maven-archetype-3.0.1+archetype-models+archetype-catalog+pom.xml
@@ -448,6 +449,7 @@ org.apache.tuscany.sca:itest-ws-contribution-java-first:2.0.1,D:+ws+gitHub_new+t
 org.apache.npanday:dotnet-model-netdependency:1.4.0-incubating,D:+ws+gitHub_new+npanday-npanday-1.4.0-incubating+components+dotnet-model+netdependency+pom.xml
 org.apache.tuscany.sca:tuscany-base-runtime:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+modules+base-runtime+pom.xml
 org.apache.clerezza:platform.graphnodeprovider:1.0.1-SNAPSHOT,D:+ws+gitHub_new+clerezza-201604+platform+graphnodeprovider+pom.xml
+com.amazonaws:aws-java-sdk-simpledb:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-simpledb+pom.xml
 org.apache.calcite:calcite-pig:1.15.0,D:+ws+gitHub_new+calcite-calcite-1.15.0+pig+pom.xml
 org.apache.camel:camel-test-spring:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-test-spring+pom.xml
 groupId:subproject3:1.0,D:+ws+gitHub_new+maven-release-maven-release-2.5.3+maven-release-manager+src+test+resources+projects+rewrite-for-development+internal-managed-snapshot-dependency+subproject3+pom.xml
@@ -604,6 +606,7 @@ org.apache.lens:lens-server:2.7.1,D:+ws+gitHub_new+lens-apache-lens-2.7.1+lens-s
 org.apache.nifi:nifi-data-provenance-utils:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-commons+nifi-data-provenance-utils+pom.xml
 org.apache.struts:struts2-gxp-plugin:2.2.3,D:+ws+gitHub_new+struts2-STRUTS_2_2_3+plugins+gxp+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.juel:2.1.3_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+juel-2.1.3+pom.xml
+com.amazonaws:aws-java-sdk-autoscaling:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-autoscaling+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.jruby:9.1.15.0_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+jruby-9.1.15.0+pom.xml
 org.apache.edgent.java7:edgent-runtime-jmxcontrol:9.10.0,D:+ws+gitHub_new+incubator-edgent-edgent-9.10.0+platforms+java7+runtime+jmxcontrol+pom.xml
 org.apache.streams:streams-converters:0.5.1,D:+ws+gitHub_new+streams-streams-project-0.5.1+streams-components+streams-converters+pom.xml
@@ -705,6 +708,7 @@ org.apache.deltaspike.cdictrl:deltaspike-cdictrl-openejb:1.8.0,D:+ws+gitHub_new+
 org.apache.ranger:ranger-plugins-installer:0.7.1,D:+ws+gitHub_new+ranger-release-ranger-0.7.1+agents-installer+pom.xml
 org.apache.tuscany.sca:itest-nodes-helloworld-service-a:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+nodes+helloworld-service-a+pom.xml
 org.wicketstuff:jqplot-examples:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+jqplot-parent+jqplot-examples+pom.xml
+com.amazonaws:aws-java-sdk-directconnect:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-directconnect+pom.xml
 org.apache.hadoop:hadoop-yarn-site:2.5.0,D:+ws+gitHub_new+hadoop-common-release-2.5.0+hadoop-yarn-project+hadoop-yarn+hadoop-yarn-site+pom.xml
 org.apache.maven.its.it0021:test:1.0-SNAPSHOT,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+profile-dependencies-multiple-profiles+pom.xml
 org.apache.servicemix.tooling:servicemix-cxf-code-first-osgi-bundle:2013.01,D:+ws+gitHub_new+servicemix-archetypes-archetypes-2013.01+servicemix-cxf-code-first-osgi-bundle+pom.xml
@@ -752,6 +756,7 @@ org.wicketstuff:progressbar-parent:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-co
 org.apache.cxf:cxf-rt-databinding-aegis:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+rt+databinding+aegis+pom.xml
 nl.basjes.parse.utils:PojoGenerator:5.0,D:+ws+gitHub_new+logparser-5.0+utils+PojoGenerator+pom.xml
 org.apache.nifi:nifi-tcp-nar:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-tcp-bundle+nifi-tcp-nar+pom.xml
+com.amazonaws:aws-java-sdk-efs:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-efs+pom.xml
 org.apache.archiva:archiva-test-utils:2.2.3,D:+ws+gitHub_new+archiva-archiva-2.2.3+archiva-modules+archiva-base+archiva-test-utils+pom.xml
 org.superbiz:realm-in-tomee:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+examples+realm-in-tomee+pom.xml
 org.apache.tuscany.sca:itest-distribution-src-dsitro-rat:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+distribution+src-distro-rat+pom.xml
@@ -1059,6 +1064,7 @@ org.apache.nifi:nifi-social-media-bundle:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.
 org.apache.openejb:arquillian-tomee-embedded:1.7.5,D:+ws+gitHub_new+tomee-tomee-1.7.5+arquillian+arquillian-tomee-embedded+pom.xml
 org.apache.slider.packages:slider-storm-app-package:0.90.2-incubating,D:+ws+gitHub_new+incubator-slider-release-0.90.2-incubating-rc0+app-packages+storm+pom.xml
 org.apache.stanbol:org.apache.stanbol.launchers.bundlelists.ontologymanager:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+launchers+bundlelists+ontologymanager+pom.xml
+com.amazonaws:aws-java-sdk-elasticbeanstalk:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-elasticbeanstalk+pom.xml
 org.apache.cxf.samples:jax_rs_websocket:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+distribution+src+main+release+samples+jax_rs+websocket+pom.xml
 org.apache.nifi:nifi-distributed-cache-client-service-api:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-standard-services+nifi-distributed-cache-client-service-api+pom.xml
 org.apache.flex.utilities.converter:flex-sdk-converter-maven-extension:1.0.0-SNAPSHOT,D:+ws+gitHub_new+flex-utilities-apache-flex-sdk-installer-3.3.0+flex-maven-tools+flex-sdk-converter+maven-extension+pom.xml
@@ -1121,6 +1127,7 @@ org.apache.giraph:giraph-core:1.2.0,D:+ws+gitHub_new+giraph-rel-1.2.0-RC1+giraph
 org.apache.stratos:python-cartridge-agent-distribution:4.1.6,D:+ws+gitHub_new+stratos-4.1.6+products+python-cartridge-agent+modules+distribution+pom.xml
 org.apache.syncope.ext.scimv2:syncope-ext-scimv2-rest-api:2.0.7,D:+ws+gitHub_new+syncope-syncope-2.0.7+ext+scimv2+rest-api+pom.xml
 org.apache.servicemix.specs:org.apache.servicemix.specs.locator:2.4.0,D:+ws+gitHub_new+servicemix4-specs-specs-2.4.0+locator+pom.xml
+com.amazonaws:aws-java-sdk-codedeploy:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-codedeploy+pom.xml
 org.skywalking:collector-naming-define:3.2.6-2017,D:+ws+gitHub_new+apacheproj-3.2.6+apm-collector+apm-collector-naming+collector-naming-define+pom.xml
 maven.t02:p5:1.0,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-compat+src+test+resources+inheritance-repo+t02+p0+p1+p2+p3+p4+p5+pom.xml
 org.apache.clerezza:platform.language.ontologies:1.0.0-SNAPSHOT,D:+ws+gitHub_new+clerezza-201604+platform+language+platform.language.ontologies+pom.xml
@@ -1361,6 +1368,7 @@ org.apache.syncope.ide:syncope-ide-eclipse:2.0.7,D:+ws+gitHub_new+syncope-syncop
 org.apache.activemq:activemq-client:5.15.3,D:+ws+gitHub_new+activemq-activemq-5.15.3+activemq-client+pom.xml
 org.apache.twill:twill-discovery-api:0.7.0-incubating,D:+ws+gitHub_new+incubator-twill-0.7.0-incubating+twill-discovery-api+pom.xml
 org.apache.activemq.tests:artemis-test-support:2.4.0,D:+ws+gitHub_new+activemq-artemis-2.4.0+tests+artemis-test-support+pom.xml
+com.amazonaws:aws-java-sdk-ses:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-ses+pom.xml
 org.apache.stanbol:org.apache.stanbol.ontologymanager.web:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+ontologymanager+web+pom.xml
 org.apache.ws.commons.axiom:xml-utils:1.2.20,D:+ws+gitHub_new+webservices-axiom-1.2.20+components+xml-utils+pom.xml
 org.apache.maven.plugins.javadoc.it:foo:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-plugins-maven-javadoc-plugin-3.0.0+src+it+projects+MJAVADOC-498_aggr_modulepath+foo+pom.xml
@@ -1451,6 +1459,7 @@ org.superbiz:cucumber-jvm:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+exam
 org.apache.manifoldcf:mcf-kafka-connector:2.9.1,D:+ws+gitHub_new+manifoldcf-release-2.9.1+connectors+kafka+pom.xml
 org.apache.clerezza:platform.globalmenu.api:1.0.1-SNAPSHOT,D:+ws+gitHub_new+clerezza-201604+platform+globalmenu.api+pom.xml
 com.github.ekryd.sortpom:sortpom-sorter:2.8.0,D:+ws+gitHub_new+sortpom-sortpom-parent-2.8.0+sorter+pom.xml
+com.amazonaws:aws-java-sdk-osgi:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-osgi+pom.xml
 org.apache.camel:camel-itest-spring-boot:2.20.0-SNAPSHOT,D:+ws+gitHub_new+camel-camel-2.20.2+tests+camel-itest-spring-boot+pom.xml
 org.apache.tuscany.sca:itest-contribution-export-composite:1.6-SNAPSHOT,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+contribution-import-export+export-composite+pom.xml
 org.apache.ignite:ignite-hadoop:2.4.0,D:+ws+gitHub_new+ignite-2.4.0-rc1+modules+hadoop+pom.xml
@@ -1642,7 +1651,9 @@ org.apache.james:apache-james-mpt-imapmailbox-cyrus:3.0.1,D:+ws+gitHub_new+james
 org.apache.jackrabbit:jackrabbit-perf-jackrabbit22:1-SNAPSHOT,D:+ws+gitHub_new+jackrabbit-jackrabbit-2.16.1+test+performance+jackrabbit22+pom.xml
 test:test-run:1.0-SNAPSHOT,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+tooling+karaf-maven-plugin+src+it+test-run+pom.xml
 org.apache.servicemix.examples:drools-simple:7.0.1,D:+ws+gitHub_new+servicemix-servicemix-7.0.1+examples+drools+drools-simple+pom.xml
+com.amazonaws:aws-java-sdk-importexport:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-importexport+pom.xml
 org.apache.deltaspike.modules:proxy-module-project:1.8.0,D:+ws+gitHub_new+deltaspike-deltaspike-1.8.0+deltaspike+modules+proxy+pom.xml
+org.apache.hadoop:hadoop-mapreduce-client-common:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-mapreduce-client+hadoop-mapreduce-client-common+pom.xml
 org.apache.maven.its.mng2254:utf-8:0.1-SNAPSHOT,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+pom-encoding+utf-8+pom.xml
 org.apache.cayenne.docs:docbook-stylesheets:3.1.2,D:+ws+gitHub_new+cayenne-3.1.2+docs+docbook+docbook-stylesheets+pom.xml
 org.apache.batchee:batchee-cli:0.5-incubating,D:+ws+gitHub_new+incubator-batchee-batchee-0.5-incubating+tools+cli+pom.xml
@@ -1650,6 +1661,7 @@ org.apache.nifi:nifi-jetty-bundle:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nif
 org.apache.activemq.examples.broker:message-counters:2.4.0,D:+ws+gitHub_new+activemq-artemis-2.4.0+examples+features+standard+message-counters+pom.xml
 org.apache.chemistry.opencmis:chemistry-opencmis-server-inmemory:1.1.0,D:+ws+gitHub_new+chemistry-opencmis-chemistry-opencmis-1.1.0+chemistry-opencmis-server+chemistry-opencmis-server-inmemory+pom.xml
 org.apache.karaf.diagnostic:org.apache.karaf.diagnostic.core:4.2.0.M2,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+diagnostic+core+pom.xml
+com.amazonaws:aws-java-sdk-ecs:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-ecs+pom.xml
 org.apache.camel.example:camel-example-zipkin-service2:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+examples+camel-example-zipkin+service2+pom.xml
 org.apache.myfaces.extensions.scripting:myfaces21-extscript-weld-example:1.0.6-SNAPSHOT,D:+ws+gitHub_new+myfaces-scripting-extscript-root-1.0.6+extscript-examples+weld-example+pom.xml
 org.jvnet.hudson.main:hudson-war:2.2.1,D:+ws+gitHub_new+hudson-2.x-hudson-2.2.1+hudson-war+pom.xml
@@ -1664,6 +1676,7 @@ org.apache.maven.its.mng3846:child:0.1,D:+ws+gitHub_new+Apache-maven-3.5.0+maven
 org.sculptorgenerator:sculptor-cartridge-builder:3.1.0,D:+ws+gitHub_new+sculptor-3.1.0+sculptor-cartridges+sculptor-cartridge-builder+pom.xml
 org.apache.marmotta:ldclient-parent:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+libraries+ldclient+pom.xml
 org.apache.fluo:fluo-recipes:1.1.0-incubating,D:+ws+gitHub_new+fluo-recipes-rel-fluo-recipes-1.1.0-incubating+pom.xml
+org.apache.hadoop:hadoop-yarn-server-tests:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+hadoop-yarn-server+hadoop-yarn-server-tests+pom.xml
 org.wicketstuff:wicketstuff-openlayers3:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+openlayers3-parent+openlayers3+pom.xml
 org.apache.hadoop:hadoop-minikdc:2.5.0,D:+ws+gitHub_new+hadoop-common-release-2.5.0+hadoop-common-project+hadoop-minikdc+pom.xml
 org.apache.openjpa:openjpa-lib:2.4.2,D:+ws+gitHub_new+openjpa-2.4.2+openjpa-lib+pom.xml
@@ -1802,6 +1815,7 @@ org.apache.tuscany.sca:tuscany-implementation-widget-runtime-dojo:2.0.1,D:+ws+gi
 org.apache.tuscany.sca:tuscany-interface-java-jaxws:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+modules+interface-java-jaxws+pom.xml
 org.apache.camel:camel-azure:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-azure+pom.xml
 org.apache.servicemix.samples.cxf-wsdl-first:wsdl-first-cxfse-su:3.4.1,D:+ws+gitHub_new+servicemix3-servicemix-3.4.1+samples+cxf-wsdl-first+wsdl-first-cxfse-su+pom.xml
+com.amazonaws:aws-java-sdk-pom:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+pom.xml
 org.apache.camel:camel-xmlrpc-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-xmlrpc-starter+pom.xml
 org.apache.edgent.java7:edgent-console-servlets:9.10.0,D:+ws+gitHub_new+incubator-edgent-edgent-9.10.0+platforms+java7+console+servlets+pom.xml
 org.apache.flex.components:packager-air:1.0.0-SNAPSHOT,D:+ws+gitHub_new+flex-utilities-apache-flex-sdk-installer-3.3.0+flex-maven-tools+flex-maven-plugin+components+packager+packager-air+pom.xml
@@ -1994,6 +2008,7 @@ org.apache.karaf.cave.deployer:org.apache.karaf.cave.deployer.management:4.1.0,D
 org.apache.tuscany.sca:tuscany-sca-client-impl:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+modules+sca-client-impl+pom.xml
 org.apache.edgent:edgent-api:9.10.0,D:+ws+gitHub_new+incubator-edgent-edgent-9.10.0+api+pom.xml
 org.apache.bigtop.itest:datafu-smoke:1.2.1,D:+ws+gitHub_new+bigtop-release-1.2.1+bigtop-tests+test-artifacts+datafu+pom.xml
+com.amazonaws:aws-java-sdk-ec2:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-ec2+pom.xml
 org.apache.servicemix:servicemix-audit:3.4.1,D:+ws+gitHub_new+servicemix3-servicemix-3.4.1+core+servicemix-audit+pom.xml
 org.apache.rampart:rampart-dist:1.7.1,D:+ws+gitHub_new+rampart-1.7.1+modules+distribution+pom.xml
 org.apache.gora:gora-orientdb:0.8,D:+ws+gitHub_new+gora-apache-gora-0.8+gora-orientdb+pom.xml
@@ -2367,6 +2382,7 @@ org.apache.apex:malhar-examples-jdbc:3.8.0,D:+ws+gitHub_new+apex-malhar-3.8.0+ex
 org.apache.activemq:artemis-maven-plugin:2.4.0,D:+ws+gitHub_new+activemq-artemis-2.4.0+artemis-maven-plugin+pom.xml
 org.apache.tuscany.sca:tuscany-endpoint-tribes:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+modules+endpoint-tribes+pom.xml
 org.apache.tuscany.sca:tuscany-extensibility-equinox:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+extensibility-equinox+pom.xml
+org.apache.hadoop:hadoop-yarn:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+pom.xml
 org.apache.livy:livy-client-http:0.5.0-incubating,D:+ws+gitHub_new+incubator-livy-0.5.0-incubating+client-http+pom.xml
 com.goldmansachs:gs-collections-forkjoin:7.0.2,D:+ws+gitHub_new+gs-collections-7.0.2+gs-collections-forkjoin+pom.xml
 org.apache.openejb:openejb-activemq:4.7.5,D:+ws+gitHub_new+tomee-tomee-1.7.5+server+openejb-activemq+pom.xml
@@ -2457,6 +2473,7 @@ org.apache.clerezza:bundledevtool:1.0.0-SNAPSHOT,D:+ws+gitHub_new+clerezza-20160
 org.apache.knox:gateway-shell-release:1.0.0,D:+ws+gitHub_new+knox-1.0.0-release+gateway-shell-release+pom.xml
 org.apache.servicemix.examples:camel-drools-blueprint:7.0.1,D:+ws+gitHub_new+servicemix-servicemix-7.0.1+examples+camel+camel-drools-blueprint+pom.xml
 org.apache.struts:struts2-sitegraph-plugin:2.2.3,D:+ws+gitHub_new+struts2-STRUTS_2_2_3+plugins+sitegraph+pom.xml
+com.amazonaws:aws-java-sdk-cloudsearch:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cloudsearch+pom.xml
 org.apache.jackrabbit:jackrabbit-perf-base:1-SNAPSHOT,D:+ws+gitHub_new+jackrabbit-jackrabbit-2.16.1+test+performance+base+pom.xml
 org.superbiz:webservice-handlerchain:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+examples+webservice-handlerchain+pom.xml
 org.apache.logging.log4j:log4j-bom:2.10.0,D:+ws+gitHub_new+logging-log4j2-log4j-2.10.0+log4j-bom+pom.xml
@@ -2790,6 +2807,7 @@ org.apache.shiro:shiro-web:1.4.0,D:+ws+gitHub_new+shiro-shiro-root-1.4.0+web+pom
 org.apache.cxf.systests.wsdl_maven:cxf-systests-java2ws:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+systests+wsdl_maven+java2ws+pom.xml
 com.ibm.stocator:stocator:1.0.13,D:+ws+gitHub_new+stocator-1.0.13+pom.xml
 org.apache.atlas:atlas-graphdb-api:0.8.2,D:+ws+gitHub_new+atlas-release-0.8.2-rc0+graphdb+api+pom.xml
+com.amazonaws:aws-java-sdk-config:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-config+pom.xml
 org.apache.tuscany.sca:itest-import-export-imports:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+import-export+imports+pom.xml
 org.apache.spark:spark-docker-integration-tests_2.11:2.3.0,D:+ws+gitHub_new+spark-2.3.0-rc2+external+docker-integration-tests+pom.xml
 org.apache.camel:camel-olingo2-parent:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-olingo2+pom.xml
@@ -2923,6 +2941,7 @@ org.apache.chemistry.opencmis:chemistry-opencmis-client-bindings:1.1.0,D:+ws+git
 org.apache.maven.plugins.compiler.it:test1:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-compiler-plugin-maven-compiler-plugin-3.7.0+src+it+test1+pom.xml
 org.apache.npanday:NPanday.Model.AutomationExtensibility:1.4.0-incubating,D:+ws+gitHub_new+npanday-npanday-1.4.0-incubating+dotnet+assemblies+NPanday.Model.AutomationExtensibility+pom.xml
 org.apache.clerezza:uima.utils:1.0.0-SNAPSHOT,D:+ws+gitHub_new+clerezza-201604+uima+uima.utils+pom.xml
+com.amazonaws:aws-java-sdk-datapipeline:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-datapipeline+pom.xml
 org.apache.maven.plugins.plugin.its:mplugin-191:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-plugin-tools-maven-plugin-tools-3.5.1+maven-plugin-plugin+src+it+mplugin-191+pom.xml
 org.apache.maven.plugin.release:module-b:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-release-maven-release-2.5.3+maven-release-plugin+src+it+projects+prepare+flat-multi-module+module-b+pom.xml
 org.apache.nifi:nifi-elasticsearch-processors:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-elasticsearch-bundle+nifi-elasticsearch-processors+pom.xml
@@ -2976,6 +2995,7 @@ org.apache.marmotta:ldpath-core-bundle:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+lib
 org.apache.maven.plugins.surefire:additional-classpath:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-surefire-surefire-2.20.1+surefire-integration-tests+src+test+resources+additional-classpath+pom.xml
 org.apache.tuscany.sca:tuscany-binding-hessian:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+binding-hessian+pom.xml
 org.apache.oozie:oozie-hadoop-utils:hadoop-2-4.3.1,D:+ws+gitHub_new+oozie-release-4.3.1-rc4+hadooplibs+hadoop-utils-2+pom.xml
+com.amazonaws:aws-java-sdk-kms:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-kms+pom.xml
 org.apache.manifoldcf:mcf-forcedmetadata-connector:2.9.1,D:+ws+gitHub_new+manifoldcf-release-2.9.1+connectors+forcedmetadata+pom.xml
 org.apache.tuscany.sca:itest-contribution-import-export:1.6-SNAPSHOT,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+contribution-import-export+pom.xml
 org.apache.flex.pmd:as3-parser:1.3-SNAPSHOT,D:+ws+gitHub_new+flex-utilities-apache-flex-sdk-installer-3.3.0+FlexPMD+flex-pmd-java+as3-parser+pom.xml
@@ -3065,6 +3085,7 @@ org.apache.nifi:nifi-elasticsearch-bundle:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1
 org.apache.gora:gora-tutorial:0.8,D:+ws+gitHub_new+gora-apache-gora-0.8+gora-tutorial+pom.xml
 org.apache.ambari:phone-list-upgrade-view:2.1.0.0-SNAPSHOT,D:+ws+gitHub_new+ambari-release-2.6.1+ambari-views+examples+phone-list-upgrade-view+pom.xml
 org.apache.jackrabbit:jackrabbit-bc-create10:SNAPSHOT,D:+ws+gitHub_new+jackrabbit-jackrabbit-2.16.1+test+compatibility+create10+pom.xml
+org.apache.hadoop:hadoop-common:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-common-project+hadoop-common+pom.xml
 org.apache.tuscany.sca:tuscany-implementation-notification:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+implementation-notification+pom.xml
 org.apache.knox:gateway-provider-identity-assertion-switchcase:1.0.0,D:+ws+gitHub_new+knox-1.0.0-release+gateway-provider-identity-assertion-switchcase+pom.xml
 org.apache.tuscany.sca:itest-oneway:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+oneway+pom.xml
@@ -3159,6 +3180,7 @@ org.apache.servicemix:servicemix-itests:3.4.1,D:+ws+gitHub_new+servicemix3-servi
 org.apache.johnzon:johnzon-maven-plugin:1.1.5,D:+ws+gitHub_new+johnzon-1.1.5+johnzon-maven-plugin+pom.xml
 org.apache.qpid:apache-qpid-proton-j:0.25.0,D:+ws+gitHub_new+qpid-proton-j-0.25.0+apache-qpid-proton-j+pom.xml
 org.apache.camel:camel-beanstalk-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-beanstalk-starter+pom.xml
+org.apache.hadoop:hadoop-project:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-project+pom.xml
 org.apache.beam:beam-runners-parent:2.3.0,D:+ws+gitHub_new+beam-2.3.0-RC3+runners+pom.xml
 org.apache.tuscany.sca:helloworld-scaclient-servlet:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+distribution+tomcat+testing+helloworld-scaclient-servlet+pom.xml
 org.apache.struts:struts2-plugins:2.2.3,D:+ws+gitHub_new+struts2-STRUTS_2_2_3+plugins+pom.xml
@@ -3303,6 +3325,7 @@ org.apache.myfaces.extensions.cdi.examples:playground-trinidad12:1.0.6,D:+ws+git
 test:test-recursive:1.0-SNAPSHOT,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+tooling+karaf-maven-plugin+src+it+test-recursive+pom.xml
 org.apache.maven.release:maven-release-semver-policy:2.5.2-SNAPSHOT,D:+ws+gitHub_new+maven-release-maven-release-2.5.3+maven-release-policies+maven-release-semver-policy+pom.xml
 org.apache.camel:camel-jetty9:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-jetty9+pom.xml
+com.amazonaws:aws-java-sdk-elasticache:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-elasticache+pom.xml
 org.apache.mahout:mahout-buildtools:0.13.1,D:+ws+gitHub_new+mahout-mahout-0.13.1-rc1+buildtools+pom.xml
 org.apache.maven.wagon:wagon-tck-http:3.0.0,D:+ws+gitHub_new+maven-wagon-wagon-3.0.0+wagon-tcks+wagon-tck-http+pom.xml
 org.apache.phoenix:phoenix-pherf:5.0.0-alpha-HBase-2.0,D:+ws+gitHub_new+phoenix-5.0.0-alpha-HBase-2.0-rc1+phoenix-pherf+pom.xml
@@ -3634,6 +3657,7 @@ org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-context-suppo
 org.apache.oodt:cas-workflow:1.2.2,D:+ws+gitHub_new+oodt-1.2.2+workflow+pom.xml
 org.apache.stratos.autoscaler:autoscaler-parent:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+products+autoscaler+pom.xml
 org.apache.rya:rya.indexing.pcj:3.2.11-incubating,D:+ws+gitHub_new+incubator-rya-rel-rya-incubating-3.2.11+extras+rya.indexing.pcj+pom.xml
+com.amazonaws:aws-java-sdk-bom:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-bom+pom.xml
 org.apache.jclouds.provider:elastichosts-syd-v:2.0.3,D:+ws+gitHub_new+jclouds-rel-jclouds-2.0.3+providers+elastichosts-syd-v+pom.xml
 org.apache.apex:malhar-kafka:3.8.0,D:+ws+gitHub_new+apex-malhar-3.8.0+kafka+kafka09+pom.xml
 org.apache.camel:apt:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+tooling+apt+pom.xml
@@ -3837,6 +3861,7 @@ org.apache.nifi:nifi-couchbase-services-api:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi
 org.apache.jena:jena-elephas-io:3.6.0,D:+ws+gitHub_new+jena-jena-3.6.0+jena-elephas+jena-elephas-io+pom.xml
 org.apache.james:apache-james-mailbox-tool:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+mailbox+tool+pom.xml
 org.apache.maven.its.mng3938:child:0.1,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+plugin-exec-merging+w-plugin-mgmt+sub+pom.xml
+com.amazonaws:aws-java-sdk-cloudwatch:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cloudwatch+pom.xml
 org.apache.james:james-server-onami:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+server+container+guice+onami+pom.xml
 org.sonatype.nexus:nexus-proxy:1.3.0-SNAPSHOT,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+duplicate-exclusions-dependency+sub+pom.xml
 org.apache.nifi:nifi-splunk-bundle:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-splunk-bundle+pom.xml
@@ -4172,6 +4197,7 @@ org.apache.maven.plugins.surefire:failureOutput:1.0-SNAPSHOT,D:+ws+gitHub_new+ma
 org.apache.james:apache-james-backends-es:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+backends-common+elasticsearch+pom.xml
 org.apache.shiro:shiro-root:1.4.0,D:+ws+gitHub_new+shiro-shiro-root-1.4.0+pom.xml
 org.apache.meecrowave:beanvalidation:1.2.0,D:+ws+gitHub_new+meecrowave-meecrowave-1.2.0+integration-tests+beanvalidation+pom.xml
+com.amazonaws:aws-java-sdk-logs:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-logs+pom.xml
 org.apache.knox:gateway-provider-ha:1.0.0,D:+ws+gitHub_new+knox-1.0.0-release+gateway-provider-ha+pom.xml
 org.apache.archiva.redback:redback-keys-api:2.6,D:+ws+gitHub_new+archiva-redback-core-redback-2.6+redback-keys+redback-keys-api+pom.xml
 org.apache.ambari:python-client:2.6.1.0.0,D:+ws+gitHub_new+ambari-release-2.6.1+ambari-client+python-client+pom.xml
@@ -4243,6 +4269,7 @@ org.apache.ws.commons.axiom:buildutils:1.2.20,D:+ws+gitHub_new+webservices-axiom
 org.apache.ws.commons.axiom:axiom-compat:1.2.20,D:+ws+gitHub_new+webservices-axiom-1.2.20+axiom-compat+pom.xml
 org.commonjava.maven.ext.versioning.test:simple-numeric:1.0,D:+ws+gitHub_new+pom-manipulation-ext-pom-manipulation-parent-2.7.1+integration-test+src+it+cdata+pom.xml
 org.apache.marmotta:plugins-reactor:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+build+plugins+pom.xml
+org.apache.hadoop:hadoop-auth-examples:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-common-project+hadoop-auth-examples+pom.xml
 org.apache.tuscany.sca:itest-endpoints:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+endpoints+pom.xml
 org.apache.streams:streams-schema-activitystreams:0.5.1,D:+ws+gitHub_new+streams-streams-project-0.5.1+streams-schemas+streams-schema-activitystreams+pom.xml
 org.apache.activemq:artemis-dto:2.4.0,D:+ws+gitHub_new+activemq-artemis-2.4.0+artemis-dto+pom.xml
@@ -4848,6 +4875,7 @@ org.apache.jackrabbit:jackrabbit-bc:SNAPSHOT,D:+ws+gitHub_new+jackrabbit-jackrab
 org.commonjava.maven.ext:parent-child-profile-version:1.0-SNAPSHOT,D:+ws+gitHub_new+pom-manipulation-ext-pom-manipulation-parent-2.7.1+integration-test+src+it+parent-child-profile-version+pom.xml
 org.apache.karaf.services:services:4.2.0.M2,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+services+pom.xml
 org.apache.lens:lens-dist:2.7.1,D:+ws+gitHub_new+lens-apache-lens-2.7.1+lens-dist+pom.xml
+org.apache.hadoop:hadoop-mapreduce-client-app:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-mapreduce-client+hadoop-mapreduce-client-app+pom.xml
 org.apache.helix:0.6.5-docs:0.8.1-SNAPSHOT,D:+ws+gitHub_new+helix-helix-0.8.0+website+0.6.5+pom.xml
 org.apache.cxf.xjcplugins:cxf-xjc-javadoc:3.2.1,D:+ws+gitHub_new+cxf-xjc-utils-xjc-utils-3.2.1+javadoc+pom.xml
 org.apache.mnemonic:mnemonic-nvml-vmem-service:0.10.0-incubating,D:+ws+gitHub_new+mnemonic-0.10.0-incubating+mnemonic-memory-services+mnemonic-nvml-vmem-service+pom.xml
@@ -4959,6 +4987,7 @@ org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-beans:4.2.9.R
 org.apache.camel:camel-flatpack:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-flatpack+pom.xml
 org.camelcookbook.examples:runtime-wildfly-swarm:2.0-SNAPSHOT,D:+ws+gitHub_new+camel-cookbook-examples-Camel-v2.19.1+camel-cookbook-runtimes+runtime-wildfly-swarm+pom.xml
 org.apache.hawq:hawq-ambari-plugin:2.2.0.0,D:+ws+gitHub_new+incubator-hawq-rel-v2.2.0.0-incubating+contrib+hawq-ambari-plugin+pom.xml
+com.amazonaws:aws-java-sdk-cloudfront:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cloudfront+pom.xml
 org.apache.abdera:abdera-extensions-rss:1.1.3,D:+ws+gitHub_new+abdera-abdera-1.1.3-RC2+extensions+rss+pom.xml
 org.apache.ws.commons.axiom:fom-testsuite:1.2.20,D:+ws+gitHub_new+webservices-axiom-1.2.20+testing+fom-testsuite+pom.xml
 org.apache.servicemix.assemblies:shared:4.5.3,D:+ws+gitHub_new+servicemix4-features-features-4.5.3+assemblies+shared+pom.xml
@@ -5304,6 +5333,7 @@ org.apache.rampart:rampart-sample:1.7.1,D:+ws+gitHub_new+rampart-1.7.1+modules+r
 org.apache.hyracks:hyracks-yarn-client:0.2.1-SNAPSHOT,D:+ws+gitHub_new+incubator-asterixdb-hyracks-apache-asterixdb-hyracks-0.2.17-incubating+hyracks+hyracks-yarn+hyracks-yarn-client+pom.xml
 org.apache.logging.log4j:log4j-jul:2.10.0,D:+ws+gitHub_new+logging-log4j2-log4j-2.10.0+log4j-jul+pom.xml
 org.jboss:User-Guide-${translation}:5,D:+ws+gitHub_new+mod_cluster-1.2.14.Final+docs+userguide+pom.xml
+org.apache.hadoop:hadoop-mapreduce-client-core:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-mapreduce-client+hadoop-mapreduce-client-core+pom.xml
 org.apache.ranger:ranger-hive-plugin:0.7.1,D:+ws+gitHub_new+ranger-release-ranger-0.7.1+hive-agent+pom.xml
 org.apache.hadoop:hadoop-gridmix:2.5.0,D:+ws+gitHub_new+hadoop-common-release-2.5.0+hadoop-tools+hadoop-gridmix+pom.xml
 org.apache.calcite.avatica:avatica-docker:1.10.0,D:+ws+gitHub_new+calcite-avatica-rel-avatica-1.10.0+docker+pom.xml
@@ -5811,6 +5841,7 @@ org.apache.hadoop:hadoop-mapreduce-client-hs-plugins:2.5.0,D:+ws+gitHub_new+hado
 org.apache.hyracks:hyracks-dataflow-std:0.2.17-incubating,D:+ws+gitHub_new+incubator-asterixdb-hyracks-apache-asterixdb-hyracks-0.2.17-incubating+hyracks+hyracks-dataflow-std+pom.xml
 org.apache.crunch:crunch-dist:0.15.0,D:+ws+gitHub_new+crunch-apache-crunch-0.15.0+crunch-dist+pom.xml
 org.eclipse.collections:acceptance-tests:9.2.0.M1,D:+ws+gitHub_new+eclipse-collections-9.2.0.M1+acceptance-tests+pom.xml
+com.amazonaws:aws-java-sdk-dynamodb:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-dynamodb+pom.xml
 org.apache.activemq.examples.clustered:clustered-static-oneway:2.4.0,D:+ws+gitHub_new+activemq-artemis-2.4.0+examples+features+clustered+clustered-static-oneway+pom.xml
 org.apache.archiva.redback:redback-rbac-providers:2.6,D:+ws+gitHub_new+archiva-redback-core-redback-2.6+redback-rbac+redback-rbac-providers+pom.xml
 org.apache.tez:tez-runtime-library:0.9.1,D:+ws+gitHub_new+tez-rel-release-0.9.1+tez-runtime-library+pom.xml
@@ -5819,6 +5850,7 @@ org.apache.commons:commons-rdf-parent:0.5.0,D:+ws+gitHub_new+commons-rdf-0.5.0+p
 org.apache.marmotta:ldcache-sail-kiwi:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+libraries+ldcache+ldcache-sail-kiwi+pom.xml
 org.apache.axis2:axis2-java2wsdl:1.7.7,D:+ws+gitHub_new+axis2-java-1.7.7+modules+java2wsdl+pom.xml
 groupId:subproject4:1.0,D:+ws+gitHub_new+maven-release-maven-release-2.5.3+maven-release-manager+src+test+resources+projects+rewrite-for-development+internal-snapshot-dependencies+subproject4+pom.xml
+com.amazonaws:aws-java-sdk-elastictranscoder:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-elastictranscoder+pom.xml
 org.apache.myfaces.extensions.validator.examples:examples-feature-set_01:2.0.8-SNAPSHOT,D:+ws+gitHub_new+myfaces-extval-extval-2.0.8+examples+feature-set_01+pom.xml
 org.apache.edgent.java7:edgent-apps-iot:9.10.0,D:+ws+gitHub_new+incubator-edgent-edgent-9.10.0+platforms+java7+apps+iot+pom.xml
 my.group.id:DemoService-DeepInsertPreparation:4.4.0,D:+ws+gitHub_new+olingo-odata4-4.4.0+samples+tutorials+p12_deep_insert_preparation+pom.xml
@@ -6004,10 +6036,12 @@ io.hops:distributedLoadSimulator:2.4.0,D:+ws+gitHub_new+hops-YARN-2.4.1+hadoop-t
 org.apache.flex.pmd:flex-pmd-automator:1.3-SNAPSHOT,D:+ws+gitHub_new+flex-utilities-apache-flex-sdk-installer-3.3.0+FlexPMD+flex-pmd-hybrid+flex-pmd-automator+pom.xml
 org.apache.edgent.java7:edgent-analytics-math3:9.10.0,D:+ws+gitHub_new+incubator-edgent-edgent-9.10.0+platforms+java7+analytics+math3+pom.xml
 org.apache.tuscany.sca:tuscany-binding-sca-runtime2:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+modules+binding-sca-runtime2+pom.xml
+org.apache.hadoop:hadoop-main:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+pom.xml
 org.apache.provisionr:provisionr-parent:0.4.0-incubating,D:+ws+gitHub_new+incubator-provisionr-provisionr-0.4.0-incubating+parent+pom.xml
 gid:aid:1.0,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+plugin-inheritance-simple+pom.xml
 org.apache.spark:spark-hadoop-cloud_2.11:2.3.0,D:+ws+gitHub_new+spark-2.3.0-rc2+hadoop-cloud+pom.xml
 org.apache.uima:uima-ducc-common:2.2.1,D:+ws+gitHub_new+uima-ducc-uima-ducc-2.2.1+uima-ducc-common+pom.xml
+com.amazonaws:aws-java-sdk-directory:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-directory+pom.xml
 org.apache.oodt:cas-resource:1.2.2,D:+ws+gitHub_new+oodt-1.2.2+resource+pom.xml
 org.apache.camel:camel-stringtemplate:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-stringtemplate+pom.xml
 org.apache.accumulo:accumulo:1.7.3,D:+ws+gitHub_new+accumulo-rel-1.7.3+assemble+pom.xml
@@ -6093,6 +6127,7 @@ org.apache.edgent.java7:edgent-test-svt:9.10.0,D:+ws+gitHub_new+incubator-edgent
 org.apache.ignite:ignite-jcl:2.4.0,D:+ws+gitHub_new+ignite-2.4.0-rc1+modules+jcl+pom.xml
 org.apache.falcon:falcon-main:0.11,D:+ws+gitHub_new+falcon-release-0.11-rc1+pom.xml
 ${groupId}:nifi-${artifactBaseName}-api-nar:${version},D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-maven-archetypes+nifi-service-bundle-archetype+src+main+resources+archetype-resources+nifi-__artifactBaseName__-api-nar+pom.xml
+org.apache.hadoop:hadoop-common-project:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-common-project+pom.xml
 org.apache.tajo:tajo-catalog-client:0.2.0-incubating,D:+ws+gitHub_new+incubator-tajo-release-0.2.0+tajo-catalog+tajo-catalog-client+pom.xml
 org.apache.activemq-cpp:activemq-cpp-openwire-generator:3.9.4-SNAPSHOT,D:+ws+gitHub_new+activemq-cpp-activemq-cpp-3.9.4+activemq-cpp-openwire-generator+pom.xml
 org.apache.stanbol:org.apache.stanbol.enhancer.nlp:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+enhancer+generic+nlp+pom.xml
@@ -6129,6 +6164,7 @@ org.apache.ws.commons.axiom:spring-ws-tests:1.2.20,D:+ws+gitHub_new+webservices-
 org.apache.cxf.systests:cxf-systests-transport-undertow:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+systests+transport-undertow+pom.xml
 com.axemblr.provisionr:provisionr-amazon-tests:0.3.0,D:+ws+gitHub_new+axemblr-provisionr-provisionr-0.3.0+providers+amazon-tests+pom.xml
 org.apache.falcon:falcon-oozie-el-extension:0.11,D:+ws+gitHub_new+falcon-release-0.11-rc1+oozie-el-extensions+pom.xml
+com.amazonaws:aws-java-sdk-cloudhsm:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cloudhsm+pom.xml
 org.apache.bahir:spark-sql-streaming-akka_2.11:2.2.0,D:+ws+gitHub_new+bahir-2.2.0+sql-streaming-akka+pom.xml
 org.apache.meecrowave.test:test:0.1-SNAPSHOT,D:+ws+gitHub_new+meecrowave-meecrowave-1.2.0+meecrowave-maven-plugin+src+test+resources+MeecrowaveRunMojoTest+pom.xml
 org.apache.axis2:axis2-aar-maven-plugin:1.7.7,D:+ws+gitHub_new+axis2-java-1.7.7+modules+tool+axis2-aar-maven-plugin+pom.xml
@@ -6208,6 +6244,7 @@ org.apache.deltaspike.modules:jpa-module-project:1.8.0,D:+ws+gitHub_new+deltaspi
 org.apache.tuscany.sca:tuscany-feature-webservice:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+features+webservice+pom.xml
 org.apache.servicemix.specs:org.apache.servicemix.specs.jaxws-api-2.1:2.10-SNAPSHOT,D:+ws+gitHub_new+servicemix-specs-org.apache.servicemix.specs.jaxrs-api-2.1-2.9.1+jaxws-api-2.1+pom.xml
 org.apache.sentry:sentry-binding-solr:1.6.0-incubating,D:+ws+gitHub_new+incubator-sentry-release-1.6.0-rc0+sentry-binding+sentry-binding-solr+pom.xml
+org.apache.hadoop:hadoop-auth:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-common-project+hadoop-auth+pom.xml
 org.apache.servicemix.features:servicemix-examples:7.0.1,D:+ws+gitHub_new+servicemix-servicemix-7.0.1+assemblies+features+servicemix-examples+pom.xml
 org.apache.eagle:alert-metadata-parent:0.5.0,D:+ws+gitHub_new+eagle-0.5.0+eagle-core+eagle-alert-parent+eagle-alert+alert-metadata-parent+pom.xml
 org.apache.airavata:credential-store:0.16,D:+ws+gitHub_new+airavata-airavata-0.16+modules+credential-store+pom.xml
@@ -6581,6 +6618,7 @@ org.eclipse.jetty:jetty-maven-plugin:9.2.24.v20180105,D:+ws+gitHub_new+jetty.pro
 org.apache.archiva.redback:redback-users:2.6,D:+ws+gitHub_new+archiva-redback-core-redback-2.6+redback-users+pom.xml
 org.apache.storm:storm-sql-hdfs:1.1.2,D:+ws+gitHub_new+storm-1.1.2+external+sql+storm-sql-external+storm-sql-hdfs+pom.xml
 org.apache.tuscany.sca:tuscany-host-tomcat:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+host-tomcat+pom.xml
+org.apache.hadoop:hadoop-mapreduce-client-hs:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-mapreduce-client+hadoop-mapreduce-client-hs+pom.xml
 org.apache.maven.its.mng3925:parent:0.1,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+merged-plugin-exec-order+w-plugin-mgmt+pom.xml
 org.apache.cayenne.docs:cayenne-doc:3.1.2,D:+ws+gitHub_new+cayenne-3.1.2+docs+doc+pom.xml
 org.apache.brooklyn:brooklyn-utils-groovy:0.12.0,D:+ws+gitHub_new+brooklyn-server-rel-apache-brooklyn-0.12.0+utils+groovy+pom.xml
@@ -6682,6 +6720,7 @@ org.apache.camel.example:camel-example-hystrix-service1:2.20.2,D:+ws+gitHub_new+
 org.apache.bahir:spark-sql-cloudant_2.11:2.2.0,D:+ws+gitHub_new+bahir-2.2.0+sql-cloudant+pom.xml
 org.apache.maven.its.mng3836:child:1.0-SNAPSHOT,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+plugin-config-merging+child+pom.xml
 org.apache.openjpa:openjpa-integration-examples:2.4.2,D:+ws+gitHub_new+openjpa-2.4.2+openjpa-integration+examples+pom.xml
+com.amazonaws:aws-java-sdk-s3:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-s3+pom.xml
 org.apache.edgent:edgent-connectors-websocket-base:9.10.0,D:+ws+gitHub_new+incubator-edgent-edgent-9.10.0+connectors+websocket-base+pom.xml
 org.apache.nifi:nifi-example-nar:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-external+nifi-example-bundle+nifi-nifi-example-nar+pom.xml
 org.apache.tuscany.sca:itest-ws-authentication-basic:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+ws+authentication-basic+pom.xml
@@ -6913,6 +6952,7 @@ org.apache.knox:gateway-server-launcher:1.0.0,D:+ws+gitHub_new+knox-1.0.0-releas
 org.apache.maven.mae:mae:1.0-alpha-1,D:+ws+gitHub_new+maven-sandbox-mae-1.0-alpha-1+pom.xml
 org.apache.tuscany.sca:tuscany-contribution-impl:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+contribution-impl+pom.xml
 org.apache.karaf.shell:org.apache.karaf.shell.commands:4.2.0.M2,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+shell+commands+pom.xml
+com.amazonaws:aws-java-sdk-sqs:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-sqs+pom.xml
 org.apache.karaf.features:spring:4.2.0.M2,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+assemblies+features+spring+pom.xml
 org.apache.rave:rave-shindig:0.9-incubating,D:+ws+gitHub_new+rave-0.9-incubating+rave-shindig+pom.xml
 org.apache.nifi:nifi-hl7-query-language:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-commons+nifi-hl7-query-language+pom.xml
@@ -6951,6 +6991,7 @@ org.eclipse.collections:unit-tests:9.2.0.M1,D:+ws+gitHub_new+eclipse-collections
 org.apache.bahir:spark-streaming-pubsub_2.11:2.2.0,D:+ws+gitHub_new+bahir-2.2.0+streaming-pubsub+pom.xml
 org.apache.stratos:org.apache.stratos.billing.mgt.stub:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+service-stubs+org.apache.stratos.billing.mgt.stub+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.avro-ipc:1.8.2_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+avro-ipc-1.8.2+pom.xml
+org.apache.hadoop:hadoop-yarn-server-resourcemanager:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+hadoop-yarn-server+hadoop-yarn-server-resourcemanager+pom.xml
 org.apache.maven.plugins.surefire:jiras-surefire-1202:1.0,D:+ws+gitHub_new+maven-surefire-surefire-2.20.1+surefire-integration-tests+src+test+resources+surefire-1202-rerun-and-failfast+pom.xml
 org.apache.photark:photark-flickr:M3-incubating,D:+ws+gitHub_new+photark-M3-incubating-RC2+photark-flickr+pom.xml
 org.apache.archiva:maven2-repository:2.2.3,D:+ws+gitHub_new+archiva-archiva-2.2.3+archiva-modules+plugins+maven2-repository+pom.xml
@@ -7059,6 +7100,7 @@ org.apache.maven.plugins.surefire:surefire-733-allOverridesCaptured:1.0-SNAPSHOT
 org.apache.jena:jena-dboe-transaction:3.6.0,D:+ws+gitHub_new+jena-jena-3.6.0+jena-db+jena-dboe-transaction+pom.xml
 org.apache.shiro:shiro-support:1.4.0,D:+ws+gitHub_new+shiro-shiro-root-1.4.0+support+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-xml:2.4.0.RELEASE_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+spring-xml-2.4.0.RELEASE+pom.xml
+com.amazonaws:aws-java-sdk-emr:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-emr+pom.xml
 org.apache.axis2:axis2-transport-base:1.7.7,D:+ws+gitHub_new+axis2-java-1.7.7+modules+transport+base+pom.xml
 org.apache.servicemix:servicemix-xmpp:2013.01,D:+ws+gitHub_new+servicemix-components-components-2013.01+bindings+servicemix-xmpp+pom.xml
 example:example-embedded-broker:0.1-SNAPSHOT,D:+ws+gitHub_new+activemq-apollo-apollo-project-1.7.1+apollo-distro+src+main+release+examples+java-embedded-broker+pom.xml
@@ -7079,6 +7121,7 @@ org.apache.pdfbox:xmpbox:2.0.8,D:+ws+gitHub_new+pdfbox-2.0.8+xmpbox+pom.xml
 org.apache.camel:camel-exec:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-exec+pom.xml
 org.apache.maven.plugins.compiler.it:ta2-plus:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-compiler-plugin-maven-compiler-plugin-3.7.0+src+it+setup_module-transitive+pom.xml
 org.apache.camel:camel-iec60870-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-iec60870-starter+pom.xml
+org.apache.hadoop:hadoop-mapreduce-client-shuffle:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-mapreduce-client+hadoop-mapreduce-client-shuffle+pom.xml
 org.apache.apex:malhar-examples-exactly-once:3.8.0,D:+ws+gitHub_new+apex-malhar-3.8.0+examples+exactly-once+pom.xml
 com.theoryinpractise.it:marginalia:testing,D:+ws+gitHub_new+clojure-maven-plugin-clojure-maven-plugin-1.8.1+src+it+marginalia+pom.xml
 org.apache.activemq:activemq-rar:5.15.3,D:+ws+gitHub_new+activemq-activemq-5.15.3+activemq-rar+pom.xml
@@ -7087,6 +7130,7 @@ org.apache.chemistry.opencmis:chemistry-opencmis-server-fileshare:1.1.0,D:+ws+gi
 org.apache.servicemix.examples:akka-examples:7.0.1,D:+ws+gitHub_new+servicemix-servicemix-7.0.1+examples+akka+pom.xml
 org.apache.tuscany.sca:tuscany-interface:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+interface+pom.xml
 org.apache.stratos:org.apache.stratos.adc.reponotification.service.stub:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+service-stubs+org.apache.stratos.adc.reponotification.service.stub+pom.xml
+com.amazonaws:aws-java-sdk:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk+pom.xml
 org.apache.servicemix.samples:camel-simple-su:3.4.1,D:+ws+gitHub_new+servicemix3-servicemix-3.4.1+samples+camel+camel-simple-su+pom.xml
 org.apache.maven:maven-artifact-test:2.2.1,D:+ws+gitHub_new+maven-2-maven-2.2.1+maven-artifact-test+pom.xml
 org.apache.stanbol:org.apache.stanbol.launchers.bundlelists.stanbolcommons:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+launchers+bundlelists+stanbolcommons+pom.xml
@@ -7159,6 +7203,7 @@ org.apache.struts:struts2-struts1-plugin:2.2.3,D:+ws+gitHub_new+struts2-STRUTS_2
 org.apache.clerezza.provisioning:rdf.web:1.0.1,D:+ws+gitHub_new+clerezza-201604+provisioning+rdf.web+pom.xml
 org.apache.stratos:org.apache.stratos.manager.styles.feature:4.1.6,D:+ws+gitHub_new+stratos-4.1.6+features+manager+styles+org.apache.stratos.manager.styles.feature+pom.xml
 com.datastax.cassandra:cassandra-driver-core:3.4.0,D:+ws+gitHub_new+java-driver-3.4.0+driver-core+pom.xml
+org.apache.hadoop:hadoop-assemblies:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-assemblies+pom.xml
 org.apache.ambari.contrib.views:tez-view:${tez.view.version},D:+ws+gitHub_new+ambari-release-2.6.1+contrib+views+tez+pom.xml
 org.apache.commons:commons-lang3:3.7,D:+ws+gitHub_new+commons-lang-LANG_3_7+pom.xml
 org.apache.stanbol:org.apache.stanbol.commons.cors:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+commons+cors+pom.xml
@@ -7228,6 +7273,7 @@ org.codehaus.mojo.rat.test:it1:1.0,D:+ws+gitHub_new+creadur-rat-apache-rat-proje
 org.apache.kerby:kerby-provider:1.1.0,D:+ws+gitHub_new+directory-kerby-kerby-all-1.1.0+kerby-provider+pom.xml
 org.apache.falcon.regression:falcon-merlin:0.11,D:+ws+gitHub_new+falcon-release-0.11-rc1+falcon-regression+merlin+pom.xml
 org.apache.sling:org.apache.sling.scripting.core:2.0.50,D:+ws+gitHub_new+sling-old-svn-mirror-org.apache.sling.scripting.core-2.0.50+pom.xml
+com.amazonaws:aws-java-sdk-simpleworkflow:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-simpleworkflow+pom.xml
 org.apache.beam:beam-runners-local-java-core:2.3.0,D:+ws+gitHub_new+beam-2.3.0-RC3+runners+local-java+pom.xml
 org.apache.nifi:nifi-standard-content-viewer:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-standard-bundle+nifi-standard-content-viewer+pom.xml
 org.apache.eagle:eagle-hadoop-queue:0.5.0,D:+ws+gitHub_new+eagle-0.5.0+eagle-jpm+eagle-hadoop-queue+pom.xml
@@ -7342,6 +7388,7 @@ org.apache.tinkerpop:gremlin-benchmark:3.3.1,D:+ws+gitHub_new+tinkerpop-3.3.1+gr
 org.apache.shindig:shindig-social-api:2.5.2,D:+ws+gitHub_new+shindig-shindig-project-2.5.2+java+social-api+pom.xml
 org.eclipse:org.eclipse.dawnsci.plotting.examples:1.0.0-SNAPSHOT,D:+ws+gitHub_new+dawnsci-dawn-2.2rel+org.eclipse.dawnsci.plotting.examples+pom.xml
 org.sonatype.aether:aether-demo:1.13.1,D:+ws+gitHub_new+sonatype-aether-aether-1.13.1+aether-demo+pom.xml
+com.amazonaws:aws-java-sdk-support:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-support+pom.xml
 org.apache.karaf.scheduler:org.apache.karaf.scheduler.core:4.2.0.M2,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+scheduler+pom.xml
 org.apache.crunch:crunch-scrunch:0.11.0-cdh5.14.0,D:+ws+gitHub_new+crunch-cdh5.14.0-release+crunch-scrunch+pom.xml
 org.apache.jackrabbit.vault:vault-davex:3.1.42,D:+ws+gitHub_new+jackrabbit-filevault-jackrabbit-filevault-3.1.42+vault-davex+pom.xml
@@ -7382,6 +7429,7 @@ org.apache.oltu.oauth2:org.apache.oltu.oauth2.jwt:1.0.3,D:+ws+gitHub_new+oltu-or
 org.apache.stratos:stratos-distribution:4.1.6,D:+ws+gitHub_new+stratos-4.1.6+products+stratos+modules+distribution+pom.xml
 org.apache.eagle:eagle-external-parent:0.5.0,D:+ws+gitHub_new+eagle-0.5.0+eagle-external+pom.xml
 org.apache.eagle:eagle-log4jkafka:0.5.0,D:+ws+gitHub_new+eagle-0.5.0+eagle-external+eagle-log4jkafka+pom.xml
+com.amazonaws:aws-java-sdk-cognitosync:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cognitosync+pom.xml
 org.skywalking:apm-toolkit-opentracing-activation:3.2.6-2017,D:+ws+gitHub_new+apacheproj-3.2.6+apm-sniffer+apm-toolkit-activation+apm-toolkit-opentracing-activation+pom.xml
 org.apache.olingo:olingo-odata2-annotation-processor-api:2.0.10-RC01,D:+ws+gitHub_new+olingo-odata2-2.0.10-RC01+odata2-annotation-processor+annotation-processor-api+pom.xml
 org.apache.stratos:org.apache.stratos.adc.topologymgt.service.stub:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+service-stubs+org.apache.stratos.adc.topologymgt.service.stub+pom.xml
@@ -7462,6 +7510,7 @@ org.apache.tuscany.sca:tuscany-binding-jms:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.
 org.apache.rya:rya.giraph:3.2.11-incubating,D:+ws+gitHub_new+incubator-rya-rel-rya-incubating-3.2.11+extras+rya.giraph+pom.xml
 org.apache.nifi:nifi-toolkit-encrypt-config:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-toolkit+nifi-toolkit-encrypt-config+pom.xml
 org.apache.crunch:crunch-scrunch:0.15.0,D:+ws+gitHub_new+crunch-apache-crunch-0.15.0+crunch-scrunch+pom.xml
+com.amazonaws:aws-java-sdk-glacier:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-glacier+pom.xml
 org.apache.stratos:org.apache.stratos.common.stub:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+service-stubs+org.apache.stratos.common.stub+pom.xml
 org.apache.tuscany.sca:itest-callback-two-nodes:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+callback-two-nodes+pom.xml
 org.apache.any23:apache-any23-csvutils:2.2,D:+ws+gitHub_new+any23-any23-2.2+csvutils+pom.xml
@@ -7638,6 +7687,7 @@ nl.basjes.parse.devtools:devtools:5.0,D:+ws+gitHub_new+logparser-5.0+devtools+po
 org.apache.maven.mercury:mercury-util:1.0.0-alpha-3-SNAPSHOT,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+dual-execution-ids+sub+pom.xml
 org.apache.servicemix:servicemix:7.0.1,D:+ws+gitHub_new+servicemix-servicemix-7.0.1+pom.xml
 org.skywalking:apm-toolkit-log4j-2.x-activation:3.2.6-2017,D:+ws+gitHub_new+apacheproj-3.2.6+apm-sniffer+apm-toolkit-activation+apm-toolkit-log4j-2.x-activation+pom.xml
+com.amazonaws:aws-java-sdk-machinelearning:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-machinelearning+pom.xml
 org.eclipse.jetty.tests:jmx-webapp:9.2.24.v20180105,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+tests+test-jmx+jmx-webapp+pom.xml
 org.eclipse.jetty:jetty-jsp:9.2.24.v20180105,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+jetty-jsp+pom.xml
 org.apache.james:james-server-guice-mailet:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+server+container+guice+mailet+pom.xml
@@ -7790,6 +7840,7 @@ org.apache.marmotta:kiwi-loader:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+libraries+
 org.apache.maven.its.mng3925:child:0.1,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-core+src+test+resources-project-builder+merged-plugin-exec-order+w-plugin-mgmt+sub+pom.xml
 ru.concerteza.spring-embedded-tomcat:etomcat8:1.5.2,D:+ws+gitHub_new+spring-embedded-tomcat-1.5.2+etomcat8+pom.xml
 org.apache.hyracks:hyracks:0.2.17-incubating,D:+ws+gitHub_new+incubator-asterixdb-hyracks-apache-asterixdb-hyracks-0.2.17-incubating+hyracks+pom.xml
+com.amazonaws:aws-java-sdk-codecommit:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-codecommit+pom.xml
 org.apache.ignite:apache-ignite:2.4.0,D:+ws+gitHub_new+ignite-2.4.0-rc1+pom.xml
 org.apache.logging.log4j:log4j-api:2.10.0,D:+ws+gitHub_new+logging-log4j2-log4j-2.10.0+log4j-api+pom.xml
 org.apache.uima:DictionaryAnnotator:2.3.1,D:+ws+gitHub_new+uima-addons-uima-addons-2.3.1+DictionaryAnnotator+pom.xml
@@ -7901,6 +7952,7 @@ org.wicketstuff:wicketstuff-datastore-ignite:8.0.0-M8,D:+ws+gitHub_new+core-wick
 org.sculptorgenerator.examples:helloworld:3.1.0,D:+ws+gitHub_new+sculptor-3.1.0+sculptor-examples+helloworld-example+helloworld+pom.xml
 org.apache.servicemix.specs:org.apache.servicemix.specs.jsr303-api-1.0.0:2.4.0,D:+ws+gitHub_new+servicemix4-specs-specs-2.4.0+jsr303-api-1.0.0+pom.xml
 org.apache.abdera:abdera-spring:1.1.3,D:+ws+gitHub_new+abdera-abdera-1.1.3-RC2+spring+pom.xml
+com.amazonaws:aws-java-sdk-swf-libraries:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-swf-libraries+pom.xml
 org.apache.helix:0.7.0-incubating-docs:0.8.1-SNAPSHOT,D:+ws+gitHub_new+helix-helix-0.8.0+website+0.7.0-incubating+pom.xml
 org.apache.stanbol:org.apache.stanbol.commons.jobs.api:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+commons+jobs+api+pom.xml
 org.apache.uima:ruta-ep-core-ext:2.6.1,D:+ws+gitHub_new+uima-ruta-ruta-2.6.1+ruta-ep-core-ext+pom.xml
@@ -8074,6 +8126,7 @@ org.apache.beam:beam-sdks-java-maven-archetypes-starter:2.3.0,D:+ws+gitHub_new+b
 org.apache.assembly.it:misc-excludes:1,D:+ws+gitHub_new+maven-resources-apache-source-release-assembly-descriptor-1.0.6+src+test+resources+misc-excludes+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.bazaarvoice-jolt:0.1.0_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+bazaarvoice-jolt-0.1.0+pom.xml
 org.apache.jena:jena-dboe-index-test:3.6.0,D:+ws+gitHub_new+jena-jena-3.6.0+jena-db+jena-dboe-index-test+pom.xml
+org.apache.hadoop:hadoop-yarn-common:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+hadoop-yarn-common+pom.xml
 org.apache.falcon:falcon-acquisition:0.11,D:+ws+gitHub_new+falcon-release-0.11-rc1+acquisition+pom.xml
 org.eclipse.jetty.spdy:spdy-client:9.2.24.v20180105,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+jetty-spdy+spdy-client+pom.xml
 org.apache.flink:flink-filesystems:1.4.1,D:+ws+gitHub_new+flink-release-1.4.1-rc1+flink-filesystems+pom.xml
@@ -8107,6 +8160,7 @@ org.apache.nifi:nifi-livy-controller-service-api:1.5.0,D:+ws+gitHub_new+nifi-rel
 org.apache.marmotta:marmotta-loader-kiwi:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+loader+marmotta-loader-kiwi+pom.xml
 org.apache.maven.plugins.maven-javadoc-plugin.it:MJAVADOC-280-1-modB:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-plugins-maven-javadoc-plugin-3.0.0+src+it+projects+dependencySource-1+MJAVADOC-280-1-modB+pom.xml
 org.apache.ode.ping-pong:ping-pong-http-su:1.0.0,D:+ws+gitHub_new+ode-APACHE_ODE_1.3.7+distro+src+examples-jbi+maven2+ping-pong+http-su+pom.xml
+org.apache.hadoop:hadoop-yarn-server-nodemanager:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+hadoop-yarn-server+hadoop-yarn-server-nodemanager+pom.xml
 org.skywalking:apm-resttemplate-4.3.x-plugin:3.2.6-2017,D:+ws+gitHub_new+apacheproj-3.2.6+apm-sniffer+apm-sdk-plugin+spring-plugins+resttemplate-4.x-plugin+pom.xml
 org.apache.oozie:oozie-sharelib-hcatalog:4.3.1,D:+ws+gitHub_new+oozie-release-4.3.1-rc4+sharelib+hcatalog+pom.xml
 org.apache.camel:camel-jgroups-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-jgroups-starter+pom.xml
@@ -8240,6 +8294,7 @@ org.sculptorgenerator.examples.mongodb-samples:library-mongodb:3.1.0,D:+ws+gitHu
 de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.api.lexmorph-asl:1.7.0,D:+ws+gitHub_new+dkpro-core-latest-stable+de.tudarmstadt.ukp.dkpro.core.api.lexmorph-asl+pom.xml
 org.eclipse.jetty.dist:dist-parent:9.0.0-SNAPSHOT,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+dists+pom.xml
 org.wicketstuff:wicketstuff-dashboard-parent:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+dashboard-parent+pom.xml
+com.amazonaws:aws-java-sdk-workspaces:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-workspaces+pom.xml
 org.apache.blur:blur-titan:0.2.4-incubating,D:+ws+gitHub_new+incubator-blur-release-0.2.4-incubating-rc1+contrib+blur-titan+pom.xml
 org.apache.shiro:shiro-quartz:1.4.0,D:+ws+gitHub_new+shiro-shiro-root-1.4.0+support+quartz+pom.xml
 org.superbiz:ejb-webservice:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+examples+ejb-webservice+pom.xml
@@ -8356,6 +8411,7 @@ org.apache.storm:storm-sql-mongodb:1.1.2,D:+ws+gitHub_new+storm-1.1.2+external+s
 org.apache.wink:wink-spring-support:1.4,D:+ws+gitHub_new+wink-wink-1.4.0+wink-spring-support+pom.xml
 org.apache.maven.surefire-257-rerunningTests.module2:module2:0.0.1-SNAPSHOT,D:+ws+gitHub_new+maven-surefire-surefire-2.20.1+surefire-integration-tests+src+test+resources+surefire-257-rerunningTests+module2+pom.xml
 org.apache.tuscany.sca:itest-policy-matching:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+policy+matching+pom.xml
+com.amazonaws:aws-java-sdk-cloudtrail:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cloudtrail+pom.xml
 org.apache.nifi.minifi:minifi-framework-bundle:0.4.0,D:+ws+gitHub_new+nifi-minifi-rel-minifi-0.4.0+minifi-nar-bundles+minifi-framework-bundle+pom.xml
 org.apache.jclouds.provider:elastichosts-lon-b:2.0.3,D:+ws+gitHub_new+jclouds-rel-jclouds-2.0.3+providers+elastichosts-lon-b+pom.xml
 org.apache.nifi:nifi-spring-processors:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-spring-bundle+nifi-spring-processors+pom.xml
@@ -8401,6 +8457,7 @@ org.apache.maven.jxr.it:mixed-plugin-report:1-SNAPSHOT,D:+ws+gitHub_new+maven-jx
 org.wicketstuff:async-tasks-parent:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+async-tasks-parent+pom.xml
 org.apache.metron:metron-common:0.4.2,D:+ws+gitHub_new+metron-apache-metron-0.4.2-release+metron-platform+metron-common+pom.xml
 org.wicketstuff:wicketstuff-plugin:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+plugin+pom.xml
+com.amazonaws:aws-java-sdk-cognitoidentity:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cognitoidentity+pom.xml
 org.apache.nifi:nifi-documentation:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-framework-bundle+nifi-framework+nifi-documentation+pom.xml
 org.apache.wicket.experimental.wicket8:wicket-http2-core:0.4-SNAPSHOT,D:+ws+gitHub_new+wicket-rel-wicket-eclipse-settings-4+wicket-experimental+wicket-http2+wicket-http2-core+pom.xml
 de.tudarmstadt.ukp.dkpro.core:de.tudarmstadt.ukp.dkpro.core.api.ner-asl:1.7.0,D:+ws+gitHub_new+dkpro-core-latest-stable+de.tudarmstadt.ukp.dkpro.core.api.ner-asl+pom.xml
@@ -8553,6 +8610,7 @@ org.codehaus.mojo.tomcat.it:tomcat-run-multi-config:1.0-SNAPSHOT,D:+ws+gitHub_ne
 org.apache.tez:tez-mapreduce:0.4.1-incubating,D:+ws+gitHub_new+incubator-tez-release-0.4.1-incubating+tez-mapreduce+pom.xml
 org.apache.marmotta:ldclient-provider-ldap:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+libraries+ldclient+ldclient-provider-ldap+pom.xml
 org.openx.data:json:1.3.8,D:+ws+gitHub_new+Hive-JSON-Serde-1.3.8+json+pom.xml
+com.amazonaws:aws-java-sdk-storagegateway:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-storagegateway+pom.xml
 org.apache.ws.commons.axiom:fom-aspects:1.2.20,D:+ws+gitHub_new+webservices-axiom-1.2.20+aspects+fom-aspects+pom.xml
 org.apache.camel:camel-tarfile:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-tarfile+pom.xml
 org.apache.maven.plugins.javadoc.it:mjavadoc494:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-plugins-maven-javadoc-plugin-3.0.0+src+it+projects+MJAVADOC-494_aggregate-repositories+pom.xml
@@ -8605,6 +8663,7 @@ org.apache.edgent:edgent-spi-topology:9.10.0,D:+ws+gitHub_new+incubator-edgent-e
 org.apache.servicemix.activiti:org.apache.servicemix.activiti.config:7.0.1,D:+ws+gitHub_new+servicemix-servicemix-7.0.1+activiti+activiti-config+pom.xml
 org.apache.drill.contrib.storage-hive:drill-storage-hive-core:1.4.0,D:+ws+gitHub_new+drill-drill-1.4.0+contrib+storage-hive+core+pom.xml
 org.apache.tuscany.sca:itest-jms-external-broker:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+jms+externalBroker+pom.xml
+org.apache.hadoop:hadoop-mapreduce:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+pom.xml
 org.apache.camel:camel-digitalocean-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-digitalocean-starter+pom.xml
 org.apache.gora:gora-jcache:0.8,D:+ws+gitHub_new+gora-apache-gora-0.8+gora-jcache+pom.xml
 org.apache.camel:camel-urlrewrite-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-urlrewrite-starter+pom.xml
@@ -8615,6 +8674,7 @@ org.apache.camel:camel-guava-eventbus:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2
 org.commonjava.maven.ext:pluginMgmt2:1.0,D:+ws+gitHub_new+pom-manipulation-ext-pom-manipulation-parent-2.7.1+integration-test+src+it+setup+pluginMgmt2+pom.xml
 org.apache.stratos:org.apache.stratos.gapp.feature:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+features+manager+gapp+org.apache.stratos.gapp.feature+pom.xml
 org.apache.knox:gateway-provider-security-hadoopauth:1.0.0,D:+ws+gitHub_new+knox-1.0.0-release+gateway-provider-security-hadoopauth+pom.xml
+com.amazonaws:aws-java-sdk-cloudwatchmetrics:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cloudwatchmetrics+pom.xml
 org.apache.edgent.android:edgent-connectors-websocket-base:9.10.0,D:+ws+gitHub_new+incubator-edgent-edgent-9.10.0+platforms+android+connectors+websocket-base+pom.xml
 com.pivotal.hawq:hawq-hadoop:1.1.0,D:+ws+gitHub_new+incubator-hawq-rel-v2.2.0.0-incubating+contrib+hawq-hadoop+pom.xml
 org.apache.maven.archetypes:maven-mojo:2.0-SNAPSHOT,D:+ws+gitHub_new+maven-archetype-maven-archetype-3.0.1+archetype-samples+mojo+pom.xml
@@ -9050,6 +9110,7 @@ org.apache.james:apache-james-mpt-antlib:3.0.1,D:+ws+gitHub_new+james-project-ja
 org.apache.ws.commons.axiom:jar-resource-bundle:1.2.20,D:+ws+gitHub_new+webservices-axiom-1.2.20+buildutils+jar-resource-bundle+pom.xml
 org.apache.struts:struts2-plexus-plugin:2.5.15,D:+ws+gitHub_new+struts-STRUTS_2_5_15+plugins+plexus+pom.xml
 org.apache.hadoop:hadoop-distcp:2.5.0,D:+ws+gitHub_new+hadoop-common-release-2.5.0+hadoop-tools+hadoop-distcp+pom.xml
+com.amazonaws:aws-java-sdk-sts:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-sts+pom.xml
 org.apache.nifi:nifi-spring-nar:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-spring-bundle+nifi-spring-nar+pom.xml
 org.apache.hawq:ranger-plugin:2.1.0.0,D:+ws+gitHub_new+incubator-hawq-rel-v2.2.0.0-incubating+ranger-plugin+pom.xml
 ${groupId}:${projectName}-test2:${version},D:+ws+gitHub_new+maven-archetype-maven-archetype-3.0.1+maven-archetype-plugin+src+it+projects+ARCHETYPE-241_filter-directory+archetype+src+main+resources+archetype-resources+__projectName__-test2+pom.xml
@@ -9078,6 +9139,7 @@ org.superbiz:simple-osgi:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+examp
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.jfreechart:1.0.12_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+jfreechart-1.0.12+pom.xml
 org.apache.karaf:apache-karaf:4.2.0.M2,D:+ws+gitHub_new+karaf-karaf-4.2.0.M2+assemblies+apache-karaf+pom.xml
 org.eclipse.collections:serialization-tests:9.2.0.M1,D:+ws+gitHub_new+eclipse-collections-9.2.0.M1+serialization-tests+pom.xml
+com.amazonaws:aws-java-sdk-ssm:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-ssm+pom.xml
 org.apache.maven.shared.maven-reporting-exec.its:forked-lifecycle:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-shared-maven-reporting-exec-1.4+src+it+forked-lifecycle+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.digitalocean-api-client:2.13_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+digitalocean-api-client-2.13+pom.xml
 org.apache.ode:ode-bpel-dao:1.3.5,D:+ws+gitHub_new+ode-APACHE_ODE_1.3.7+bpel-dao+pom.xml
@@ -9115,6 +9177,7 @@ org.apache.airavata:airavata-data-models:0.16,D:+ws+gitHub_new+airavata-airavata
 org.reficio.rcp:test.feature:1.0.0,D:+ws+gitHub_new+p2-maven-plugin-1.3.0+examples+features+feature-bundle+test.feature+pom.xml
 org.apache.camel:camel-tika:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-tika+pom.xml
 org.apache.rya:rya.pcj.fluo.test.base:3.2.11-incubating,D:+ws+gitHub_new+incubator-rya-rel-rya-incubating-3.2.11+extras+rya.pcj.fluo+pcj.fluo.test.base+pom.xml
+com.amazonaws:aws-java-sdk-lambda:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-lambda+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.hibernate-validator:5.4.2.Final_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+hibernate-validator-5.4.2.Final+pom.xml
 org.apache.camel:camel-mvel-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-mvel-starter+pom.xml
 org.apache.tuscany.sca:itest-lifecycle:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+lifecycle+pom.xml
@@ -9140,6 +9203,7 @@ org.eclipse.leshan:leshan-bsserver-demo:0.1.11-M14,D:+ws+gitHub_new+leshan-lesha
 org.apache.xbean:xbean-classloader:4.6,D:+ws+gitHub_new+geronimo-xbean-xbean-4.6+xbean-classloader+pom.xml
 org.apache.beam:beam-sdks-java-maven-archetypes-examples:2.3.0,D:+ws+gitHub_new+beam-2.3.0-RC3+sdks+java+maven-archetypes+examples+pom.xml
 org.apache.npanday.plugins:NPanday.Plugin.Devenv:1.4.0-incubating,D:+ws+gitHub_new+npanday-npanday-1.4.0-incubating+plugins+netplugins+NPanday.Plugin.Devenv+pom.xml
+com.amazonaws:aws-java-sdk-codepipeline:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-codepipeline+pom.xml
 org.commonjava.maven.ext:groovy:1.0-SNAPSHOT,D:+ws+gitHub_new+pom-manipulation-ext-pom-manipulation-parent-2.7.1+integration-test+src+it+groovy-manipulator+pom.xml
 org.apache.marmotta:marmotta-ldcache-file:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+platform+ldcache+marmotta-ldcache-file+pom.xml
 org.apache.taverna.language:taverna-scufl2-wfdesc:0.15.1-incubating,D:+ws+gitHub_new+incubator-taverna-language-0.15.1-incubating+taverna-scufl2-wfdesc+pom.xml
@@ -9291,6 +9355,7 @@ org.apache.cxf:cxf-rt-ws-policy:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+rt+ws+polic
 org.apache.hyracks:algebricks-core:0.2.17-incubating,D:+ws+gitHub_new+incubator-asterixdb-hyracks-apache-asterixdb-hyracks-0.2.17-incubating+algebricks+algebricks-core+pom.xml
 org.apache.camel:camel-api-component-maven-plugin-it:1.0-SNAPSHOT,D:+ws+gitHub_new+camel-camel-2.20.2+tooling+maven+camel-api-component-maven-plugin+src+it+all-it+pom.xml
 org.apache.maven.scm:maven-scm-provider-gitexe:1.9.5,D:+ws+gitHub_new+maven-scm-maven-scm-1.9.5+maven-scm-providers+maven-scm-providers-git+maven-scm-provider-gitexe+pom.xml
+com.amazonaws:aws-java-sdk-redshift:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-redshift+pom.xml
 org.apache.stratos:org.apache.stratos.autoscaler.feature:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+features+autoscaler+org.apache.stratos.autoscaler.feature+pom.xml
 org.apache.roller:roller-project:5.2.0,D:+ws+gitHub_new+roller-roller-5.2.0+pom.xml
 org.apache.stanbol:org.apache.stanbol.commons.stanboltools.datafileprovider:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+commons+stanboltools+datafileprovider+pom.xml
@@ -9343,6 +9408,7 @@ org.apache.camel.example:camel-example-rest-producer:2.20.2,D:+ws+gitHub_new+cam
 org.eclipse.hono:hono-services:0.5,D:+ws+gitHub_new+hono-0.5+services+pom.xml
 org.apache.apex:malhar-examples-mobile:3.8.0,D:+ws+gitHub_new+apex-malhar-3.8.0+examples+mobile+pom.xml
 org.apache.myfaces.extensions.cdi.modules.jee5-support:myfaces-extcdi-jee5-openwebbeans-support:1.0.6,D:+ws+gitHub_new+myfaces-extcdi-extcdi-1.0.6+jee5-support-modules+openwebbeans-support+pom.xml
+com.amazonaws:aws-java-sdk-kinesis:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-kinesis+pom.xml
 org.wicketstuff:lightbox2-parent:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+lightbox2-parent+pom.xml
 org.eclipse:org.eclipse.dawnsci.slicing.api:1.0.0-SNAPSHOT,D:+ws+gitHub_new+dawnsci-dawn-2.2rel+org.eclipse.dawnsci.slicing.api+pom.xml
 org.apache.eagle:eagle-jpm-spark-running:0.5.0,D:+ws+gitHub_new+eagle-0.5.0+eagle-jpm+eagle-jpm-spark-running+pom.xml
@@ -9678,6 +9744,7 @@ optionaldependency:p01:0.0.1-SNAPSHOT,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-
 org.apache.stratos:org.apache.stratos.throttling.agent.feature:4.0.0-SNAPSHOT,D:+ws+gitHub_new+incubator-stratos-4.0.0-incubating-m5+features+manager+throttling+org.apache.stratos.throttling.agent.feature+pom.xml
 org.apache.james:james-server-dnsservice-library:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+server+dns-service+dnsservice-library+pom.xml
 org.apache.reef:reef-runtime-hdinsight:0.16.0,D:+ws+gitHub_new+reef-reef-project-0.16.0+lang+java+reef-runtime-hdinsight+pom.xml
+com.amazonaws:aws-java-sdk-devicefarm:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-devicefarm+pom.xml
 org.apache.wicket:wicket-threadtest:8.0.0-SNAPSHOT,D:+ws+gitHub_new+wicket-rel-wicket-eclipse-settings-4+testing+wicket-threadtest+pom.xml
 org.apache.rave.integration-tests:rave-default-account-tests:0.23,D:+ws+gitHub_new+rave-0.23+rave-integration-tests+rave-default-account-tests+pom.xml
 org.eclipse.jetty.tests:test-cdi-parent:9.2.4-SNAPSHOT,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+tests+test-cdi+pom.xml
@@ -10081,6 +10148,7 @@ org.apache.karaf.services:org.apache.karaf.services.eventadmin:4.2.0.M2,D:+ws+gi
 org.apache.aries.jpa:org.apache.aries.jpa.main:2.6.1,D:+ws+gitHub_new+aries-jpa-aries-jpa-2.6.1+pom.xml
 org.apache.apex:malhar-examples-r:3.8.0,D:+ws+gitHub_new+apex-malhar-3.8.0+examples+r+pom.xml
 org.apache.nifi:nifi-administration:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-framework-bundle+nifi-framework+nifi-administration+pom.xml
+com.amazonaws:aws-java-sdk-rds:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-rds+pom.xml
 org.apache.assembly.it:src-contains-output-dir-name-child2:1,D:+ws+gitHub_new+maven-resources-apache-source-release-assembly-descriptor-1.0.6+src+test+resources+src-contains-output-dir-name+src-contains-output-dir-name-child2+pom.xml
 org.apache.syncope:syncope-common:2.0.7,D:+ws+gitHub_new+syncope-syncope-2.0.7+common+pom.xml
 org.apache.tuscany.sca:itest-jms-rpc:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+jms+rpc+pom.xml
@@ -10089,6 +10157,7 @@ org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-context-suppo
 org.eclipse.jetty.osgi:jetty-osgi-npn:9.2.11-SNAPSHOT,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+jetty-osgi+jetty-osgi-npn+pom.xml
 org.apache.stanbol:org.apache.stanbol.enhancer.engines.dereference.core:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+enhancement-engines+dereference+core+pom.xml
 org.apache.stanbol:org.apache.stanbol.commons.security.core:1.0.1,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+commons+security+core+pom.xml
+org.apache.hadoop:hadoop-hdfs:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-hdfs-project+hadoop-hdfs+pom.xml
 org.apache.juneau:juneau-core-test:7.0.1,D:+ws+gitHub_new+juneau-juneau-7.0.1-RC1+juneau-core+juneau-core-test+pom.xml
 org.apache.nifi:nifi-distributed-cache-services-nar:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-standard-services+nifi-distributed-cache-services-bundle+nifi-distributed-cache-services-nar+pom.xml
 org.superbiz:simple-cdi-interceptor:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+examples+simple-cdi-interceptor+pom.xml
@@ -10440,6 +10509,7 @@ org.apache.nifi:nifi-rethinkdb-processors:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1
 org.apache.photark:photark-ui-security:M3-incubating,D:+ws+gitHub_new+photark-M3-incubating-RC2+photark-ui-security+pom.xml
 org.apache.impala:impala-frontend:0.1-SNAPSHOT,D:+ws+gitHub_new+impala-2.11.0+fe+pom.xml
 org.apache.archiva:repository-statistics:2.2.3,D:+ws+gitHub_new+archiva-archiva-2.2.3+archiva-modules+plugins+repository-statistics+pom.xml
+com.amazonaws:aws-java-sdk-cloudformation:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-cloudformation+pom.xml
 org.apache.activemq:artemis-mqtt-protocol:2.4.0,D:+ws+gitHub_new+activemq-artemis-2.4.0+artemis-protocols+artemis-mqtt-protocol+pom.xml
 org.apache.camel:camel-commands-core:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+commands+commands-core+pom.xml
 org.apache.clerezza:rdf-platform-reactor:1.0.0-SNAPSHOT,D:+ws+gitHub_new+clerezza-201604+platform+pom.xml
@@ -10586,6 +10656,7 @@ org.apache.openjpa.tools.openjpa-maven-plugin.testing:testDependency-B:1.0-SNAPS
 org.apache.tiles:tiles-test-pom:3.0.8,D:+ws+gitHub_new+tiles-tiles-parent-3.0.8+tiles-test-pom+pom.xml
 org.apache.stanbol:org.apache.stanbol.data.sentiment.sentiws:1.2.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+data+sentiment+sentiws+pom.xml
 org.apache.clerezza:platform.launcher.virtuoso:0.1-SNAPSHOT,D:+ws+gitHub_new+clerezza-201604+platform+launcher.virtuoso+pom.xml
+com.amazonaws:aws-java-sdk-sns:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-sns+pom.xml
 org.apache.maven.plugins.surefire:isolated-classloader:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-surefire-surefire-2.20.1+surefire-integration-tests+src+test+resources+isolated-classloader+pom.xml
 org.apache.maven.plugins.maven-javadoc-plugin.it:MJAVADOC-280-3-distro:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-plugins-maven-javadoc-plugin-3.0.0+src+it+projects+dependencySource-3+MJAVADOC-280-3-distro+pom.xml
 io.confluent.ksql:ksql-parent:4.1.0-SNAPSHOT,D:+ws+gitHub_new+ksql-0.4-rc1+pom.xml
@@ -10683,6 +10754,7 @@ org.apache.reef:tang-test-jarB-conflictA:0.16.0,D:+ws+gitHub_new+reef-reef-proje
 org.apache.maven.skins.its:@project.artifactId@-mskins-24:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-skins-maven-fluido-skin-1.6+src+it+mskins-24+pom.xml
 org.apache.npanday.visualstudio:NPanday.ImporterProjectParent:1.4.0-incubating,D:+ws+gitHub_new+npanday-npanday-1.4.0-incubating+dotnet+assemblies+NPanday.ProjectImporter+pom.xml
 org.apache.archiva.redback:redback-keys-providers:2.6,D:+ws+gitHub_new+archiva-redback-core-redback-2.6+redback-keys+redback-keys-providers+pom.xml
+org.apache.hadoop:hadoop-yarn-api:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+hadoop-yarn-api+pom.xml
 org.apache.hadoop:hadoop-common-project:3.0.0,D:+ws+gitHub_new+hadoop-rel-release-3.0.0+hadoop-common-project+pom.xml
 org.apache.uima.fit.maven.it:default:1.0-SNAPSHOT,D:+ws+gitHub_new+uima-uimafit-uimafit-2.4.0+uimafit-maven-plugin+src+it+default+pom.xml
 org.apache.flex.pmd:flex-pmd-cpd:1.3-SNAPSHOT,D:+ws+gitHub_new+flex-utilities-apache-flex-sdk-installer-3.3.0+FlexPMD+flex-pmd-java+flex-pmd-cpd+pom.xml
@@ -10935,7 +11007,9 @@ org.apache.camel:camel-univocity-parsers:2.20.2,D:+ws+gitHub_new+camel-camel-2.2
 org.apache.carbondata:carbondata-common:1.3.0,D:+ws+gitHub_new+carbondata-apache-carbondata-1.3.0-rc2+common+pom.xml
 org.apache.taverna.language:taverna-robundle:0.15.1-incubating,D:+ws+gitHub_new+incubator-taverna-language-0.15.1-incubating+taverna-robundle+pom.xml
 org.apache.atlas:atlas-plugin-classloader:0.8-incubating,D:+ws+gitHub_new+incubator-atlas-release-0.8-rc1+plugin-classloader+pom.xml
+org.apache.hadoop:hadoop-annotations:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-common-project+hadoop-annotations+pom.xml
 org.apache.tuscany.sca:tuscany-implementation-bpel:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+implementation-bpel+pom.xml
+com.amazonaws:aws-java-sdk-opsworks:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-opsworks+pom.xml
 org.apache.maven.test.error:project-mojo-failure:1,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-embedder+src+test+error-reporting-projects+project-mojo-failure+pom.xml
 org.apache.streams:streams-contrib:0.5.1,D:+ws+gitHub_new+streams-streams-project-0.5.1+streams-contrib+pom.xml
 org.apache.chemistry.opencmis:chemistry-opencmis-client-api:1.1.0,D:+ws+gitHub_new+chemistry-opencmis-chemistry-opencmis-1.1.0+chemistry-opencmis-client+chemistry-opencmis-client-api+pom.xml
@@ -10981,6 +11055,7 @@ org.apache.tuscany.sca:itest-ws-contribution-callback-wsdl-iface:2.0.1,D:+ws+git
 org.apache.james.karaf:james-karaf-distribution:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+server+karaf+distribution+pom.xml
 org.eclipse.hono:hono-artemis:0.5,D:+ws+gitHub_new+hono-0.5+broker+pom.xml
 org.apache.sentry:sentry-policy-indexer:1.6.0-incubating,D:+ws+gitHub_new+incubator-sentry-release-1.6.0-rc0+sentry-policy+sentry-policy-indexer+pom.xml
+com.amazonaws:aws-java-sdk-iam:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-iam+pom.xml
 org.apache.camel:camel-hawtdb:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+components+camel-hawtdb+pom.xml
 org.apache.stratos:stratos-components-parent:4.1.6,D:+ws+gitHub_new+stratos-4.1.6+components+pom.xml
 org.commonjava.maven.ext:groovy-bad:1.0-SNAPSHOT,D:+ws+gitHub_new+pom-manipulation-ext-pom-manipulation-parent-2.7.1+integration-test+src+it+groovy-manipulator-bad+pom.xml
@@ -11407,6 +11482,7 @@ org.apache.clerezza:platform.content:1.0.1-SNAPSHOT,D:+ws+gitHub_new+clerezza-20
 org.wicketstuff:wicketstuff-lambda-parent:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+lambda-parent+pom.xml
 org.apache.usergrid:queue:2.1.0,D:+ws+gitHub_new+usergrid-usergrid-2.1.0+stack+corepersistence+queue+pom.xml
 org.apache.maven.mercury:mercury:1.0-alpha-6,D:+ws+gitHub_new+maven-mercury-mercury-1.0-alpha-6+pom.xml
+com.amazonaws:aws-java-sdk-test-utils:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-test-utils+pom.xml
 org.apache.calcite:calcite-piglet:1.15.0,D:+ws+gitHub_new+calcite-calcite-1.15.0+piglet+pom.xml
 org.apache.servicemix:apache-servicemix-examples:7.0.1,D:+ws+gitHub_new+servicemix-servicemix-7.0.1+assemblies+apache-servicemix-examples+pom.xml
 org.apache.hive:hive-it-custom-udfs:2.3.2,D:+ws+gitHub_new+hive-rel-release-2.3.2+itests+custom-udfs+pom.xml
@@ -11634,6 +11710,7 @@ org.apache.marmotta:marmotta-client-js:3.3.0,D:+ws+gitHub_new+marmotta-3.3.0+cli
 org.apache.tuscany.sca:tuscany-domain-node:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+modules+domain-node+pom.xml
 org.apache.continuum.failing.project:continuum-failing-project:1.0-SNAPSHOT,D:+ws+gitHub_new+continuum-continuum-1.4.3+continuum-webapp-test+src+test+example-projects+continuum-failing-project+pom.xml
 org.apache.cxf:cxf-rt-transports-udp:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+rt+transports+udp+pom.xml
+org.apache.hadoop:hadoop-project-dist:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-project-dist+pom.xml
 org.apache.tuscany.sca:tuscany-node-api:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+node-api+pom.xml
 org.apache.maven:ext-plugin-artifact-missing:1,D:+ws+gitHub_new+Apache-maven-3.5.0+maven-embedder+src+test+error-reporting-projects+ext-plugin-artifact-missing+project+pom.xml
 org.apache.activemq:artemis-journal:2.4.0,D:+ws+gitHub_new+activemq-artemis-2.4.0+artemis-journal+pom.xml
@@ -11770,6 +11847,7 @@ org.apache.tuscany.sca:tuscany-compliance-test-java-caa:2.0.1,D:+ws+gitHub_new+t
 org.apache.stanbol:org.apache.stanbol.commons.web.viewable.writer:1.0.0,D:+ws+gitHub_new+stanbol-apache-stanbol-1.0.0+commons+web+viewable-writer+pom.xml
 org.apache.cxf:cxf-rt-rs-extension-rx:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+rt+rs+extensions+rx+pom.xml
 org.apache.flink:flink-shaded-hadoop2:1.4.1,D:+ws+gitHub_new+flink-release-1.4.1-rc1+flink-shaded-hadoop+flink-shaded-hadoop2+pom.xml
+org.apache.hadoop:hadoop-hdfs-project:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-hdfs-project+pom.xml
 org.superbiz:ws-pojo-cdi:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+examples+applicationcomposer-jaxws-cdi+pom.xml
 org.apache.aries.rsa.examples.echotcp:org.apache.aries.rsa.examples.echotcp.api:1.11.0,D:+ws+gitHub_new+aries-rsa-org.apache.aries.rsa-1.11.0+examples+echotcp+api+pom.xml
 org.apache.hadoop:hadoop-aws:3.0.0,D:+ws+gitHub_new+hadoop-rel-release-3.0.0+hadoop-tools+hadoop-aws+pom.xml
@@ -11821,6 +11899,7 @@ org.apache.abdera:abdera-extensions-json:1.1.3,D:+ws+gitHub_new+abdera-abdera-1.
 org.apache.twill:twill-yarn:0.7.0-incubating,D:+ws+gitHub_new+incubator-twill-0.7.0-incubating+twill-yarn+pom.xml
 org.apache.geronimo.devtools:org.apache.geronimo.st.v20.ui:3.0.1,D:+ws+gitHub_new+geronimo-devtools-geronimo-eclipse-plugin-3.0.1+plugins+org.apache.geronimo.st.v20.ui+pom.xml
 example:jms-example-transaction:0.1-SNAPSHOT,D:+ws+gitHub_new+activemq-activemq-5.15.3+assembly+src+release+examples+openwire+advanced-scenarios+jms-example-transaction+pom.xml
+org.apache.hadoop:hadoop-yarn-server:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+hadoop-yarn-server+pom.xml
 org.apache.camel:camel-sql-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-sql-starter+pom.xml
 org.apache.bookkeeper:bookkeeper-server-shaded:4.6.1,D:+ws+gitHub_new+bookkeeper-release-4.6.1+shaded+bookkeeper-server-shaded+pom.xml
 org.apache.camel:camel-xmlsecurity-starter:2.20.2,D:+ws+gitHub_new+camel-camel-2.20.2+platforms+spring-boot+components-starter+camel-xmlsecurity-starter+pom.xml
@@ -11996,6 +12075,7 @@ org.superbiz:rest-example:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+exam
 org.apache.tuscany.sca:tuscany-databinding-xmlbeans:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+databinding-xmlbeans+pom.xml
 org.apache.atlas:atlas-client-v2:0.8.2,D:+ws+gitHub_new+atlas-release-0.8.2-rc0+client+client-v2+pom.xml
 org.apache.james:james-server-webadmin-core:3.0.1,D:+ws+gitHub_new+james-project-james-project-3.0.1+server+protocols+webadmin+webadmin-core+pom.xml
+com.amazonaws:aws-java-sdk-elasticloadbalancing:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-elasticloadbalancing+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.ironmq:3.0.5_2-SNAPSHOT,D:+ws+gitHub_new+servicemix-bundles-org.apache.servicemix.bundles.spring-ws-test-2.4.2.RELEASE_1+ironmq-3.0.5+pom.xml
 org.apache.maven.plugins.surefire:testng-groups:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-surefire-surefire-2.20.1+surefire-integration-tests+src+test+resources+testng-groups+pom.xml
 org.apache.uima:uimafit-legacy-support:2.4.0,D:+ws+gitHub_new+uima-uimafit-uimafit-2.4.0+uimafit-legacy-support+pom.xml
@@ -12008,6 +12088,7 @@ org.apache.struts:struts2-cdi-plugin:2.5.15,D:+ws+gitHub_new+struts-STRUTS_2_5_1
 org.eclipse.jetty:jetty-overlay-deployer:9.1.0-SNAPSHOT,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+jetty-overlay-deployer+pom.xml
 org.apache.cxf:cxf-rt-bindings-coloc:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+rt+bindings+coloc+pom.xml
 org.apache.archiva:archiva-modules:2.2.3,D:+ws+gitHub_new+archiva-archiva-2.2.3+archiva-modules+pom.xml
+com.amazonaws:aws-java-sdk-route53:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-route53+pom.xml
 org.skywalking:collector-queue-disruptor-provider:3.2.6-2017,D:+ws+gitHub_new+apacheproj-3.2.6+apm-collector+apm-collector-queue+collector-queue-disruptor-provider+pom.xml
 org.apache.ambari.contrib.views:hawq-view:1.0.0.0-SNAPSHOT,D:+ws+gitHub_new+ambari-release-2.6.1+contrib+views+hawq+pom.xml
 org.apache.assembly.it:output-dir-contains-src-name-child1:1,D:+ws+gitHub_new+maven-resources-apache-source-release-assembly-descriptor-1.0.6+src+test+resources+output-dir-contains-src-name+output-dir-contains-src-name-child1+pom.xml
@@ -12037,6 +12118,7 @@ org.wicketstuff:wicket-mount-core:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-cor
 org.apache.cxf:cxf-rt-wsdl:3.2.2,D:+ws+gitHub_new+cxf-cxf-3.2.2+rt+wsdl+pom.xml
 org.apache.tuscany.sca:tuscany-compliance-test-assembly:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+compliance-tests+assembly+pom.xml
 org.apache.maven.its:plugin-report:1.0-SNAPSHOT,D:+ws+gitHub_new+maven-plugin-tools-maven-plugin-tools-3.5.1+maven-plugin-plugin+src+it+plugin-report+pom.xml
+org.apache.hadoop:hadoop-mapreduce-client:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-mapreduce-client+pom.xml
 org.eclipse.jetty:jetty-plus:9.2.24.v20180105,D:+ws+gitHub_new+jetty.project-jetty-9.2.24.v20180105+jetty-plus+pom.xml
 org.apache.tuscany.sca:tuscany-host-rmi:1.6,D:+ws+gitHub_new+tuscany-sca-1.x-1.6.1-TUSCANY-3909+host-rmi+pom.xml
 org.apache.struts:struts2-osgi-bundles:2.5.15,D:+ws+gitHub_new+struts-STRUTS_2_5_15+bundles+pom.xml
@@ -12176,6 +12258,7 @@ org.apache.knox:gateway-provider-rewrite-step-secure-query:1.0.0,D:+ws+gitHub_ne
 org.apache.storm:storm-hdfs-examples:1.1.2,D:+ws+gitHub_new+storm-1.1.2+examples+storm-hdfs-examples+pom.xml
 org.apache.uima:uima-ducc-pm:2.2.1,D:+ws+gitHub_new+uima-ducc-uima-ducc-2.2.1+uima-ducc-pm+pom.xml
 org.wicketstuff:wicketstuff-sitemap-xml:8.0.0-M8,D:+ws+gitHub_new+core-wicketstuff-core-8.0.0-M8+sitemap-xml-parent+sitemap-xml+pom.xml
+org.apache.hadoop:hadoop-yarn-server-common:${yarn.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-yarn+hadoop-yarn-server+hadoop-yarn-server-common+pom.xml
 org.apache.johnzon:johnzon:1.1.5,D:+ws+gitHub_new+johnzon-1.1.5+pom.xml
 org.apache.nifi:nifi-redis-nar:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-nar-bundles+nifi-redis-bundle+nifi-redis-nar+pom.xml
 org.superbiz:webservice-inheritance:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1.7.5+examples+webservice-inheritance+pom.xml
@@ -12356,6 +12439,7 @@ org.superbiz:cdi-produces-disposes:1.1.1-SNAPSHOT,D:+ws+gitHub_new+tomee-tomee-1
 org.skywalking:apm-xmemcached-2.x-plugin:3.2.6-2017,D:+ws+gitHub_new+apacheproj-3.2.6+apm-sniffer+apm-sdk-plugin+xmemcached-2.x-plugin+pom.xml
 org.apache.stratos:org.apache.stratos.mock.iaas.api.feature:4.1.6,D:+ws+gitHub_new+stratos-4.1.6+features+mock-iaas+org.apache.stratos.mock.iaas.api.feature+pom.xml
 org.apache.tuscany.sca:tuscany-binding-sca-runtime:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+modules+binding-sca-runtime+pom.xml
+org.apache.hadoop:hadoop-mapreduce-client-jobclient:${hadoop-mapreduce.version},D:+ws+gitHub_new+44-hadoop-7594+hadoop-mapreduce-project+hadoop-mapreduce-client+hadoop-mapreduce-client-jobclient+pom.xml
 org.apache.tuscany.sca:itest-policies:2.0.1,D:+ws+gitHub_new+tuscany-sca-2.x-2.0.1+testing+itest+policies+pom.xml
 org.apache.fluo:fluo-recipes-core:1.1.0-incubating,D:+ws+gitHub_new+fluo-recipes-rel-fluo-recipes-1.1.0-incubating+modules+core+pom.xml
 org.apache.nifi:nifi-write-ahead-log:1.5.0,D:+ws+gitHub_new+nifi-rel-nifi-1.5.0+nifi-commons+nifi-write-ahead-log+pom.xml
@@ -12394,5 +12478,3 @@ org.apache.assembly.it:output-dir-contains-src-name-child2:1,D:+ws+gitHub_new+ma
 com.facebook.presto.hadoop:hadoop-apache1:1.2.1-1,D:+ws+gitHub_new+presto-hadoop-apache1-1.2.1-1+pom.xml
 org.apache.sentry:solr-sentry-core:1.7.1,D:+ws+gitHub_new+sentry-release-1.7.1+sentry-solr+solr-sentry-core+pom.xml
 org.eclipse.hono:hono-adapter-kura:0.5,D:+ws+gitHub_new+hono-0.5+adapters+kura+pom.xml
-com.amazonaws:aws-java-sdk-core:1.10.6,D:+ws+gitHub_new+19-aws-sdk-java-1.10.6+aws-java-sdk-core+pom.xml
-org.apache.hadoop:hadoop-common:0.24.0-SNAPSHOT,D:+ws+gitHub_new+44-hadoop-7594+hadoop-common-project+hadoop-common+pom.xml

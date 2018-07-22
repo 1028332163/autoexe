@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import neu.lab.autotest.prob.TestParams;
+import neu.lab.autotest.prob.TestParam;
 
 public class MethodDistances implements NodeDistance {
 	protected static final boolean addComplexMthd = true;
@@ -31,7 +31,7 @@ public class MethodDistances implements NodeDistance {
 				String[] mmdh = line.split(">,");// method-method-distance-host
 				if ("true".equals(mmdh[2].split(",")[1])) {
 					String bottom = mmdh[0] + ">";
-					if (addComplexMthd || (!addComplexMthd && !bottom.contains("$"))) {
+					if (shoudAdd(bottom)) {
 						String top = mmdh[1] + ">";
 						Double distance = Double.valueOf(mmdh[2].split(",")[0]);
 						Map<String, Double> t2d = m_b2t2d.get(bottom);
@@ -46,6 +46,14 @@ public class MethodDistances implements NodeDistance {
 			line = reader.readLine();
 		}
 		reader.close();
+	}
+
+	protected boolean shoudAdd(String bottom) {
+		if (!bottom.contains("<clinit>")) {
+			if (addComplexMthd || (!addComplexMthd && !bottom.contains("$")))
+				return true;
+		}
+		return false;
 	}
 
 	public String getNextExe(Set<String> exedClses) {

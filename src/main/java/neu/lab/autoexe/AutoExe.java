@@ -35,7 +35,7 @@ public abstract class AutoExe {
 					String mvnCmd = param.getMvnCmd();
 					beforeExeMvn();
 					try {
-						 ExecUtil.exeMvn(mvnCmd);
+						 ExecUtil.exewxeCmd(mvnCmd);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

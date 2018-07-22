@@ -18,7 +18,6 @@ import org.dom4j.DocumentException;
 
 import neu.lab.autoexe.util.FileSyn;
 import neu.lab.autoexe.util.PomReader;
-import neu.lab.autotest.FileUtil;
 
 public abstract class AutoDecca {
 	public FileSyn donePjct;// project has done;
@@ -96,7 +95,7 @@ public abstract class AutoDecca {
 		System.out.println("handle pom for:" + pomPath);
 		
 		StringBuilder outResult = new StringBuilder("exeResult for ");
-		FileUtil.delFolder(pomPath + "\\evosuite-report");
+		neu.lab.autoexe.util.FileUtil.delFolder(pomPath + "\\evosuite-report");
 
 
 		String projectName = path2name(pomPath);

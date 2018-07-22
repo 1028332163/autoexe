@@ -5,7 +5,7 @@ import java.util.Map;
 import neu.lab.autoexe.ExeParam;
 import neu.lab.autoexe.util.MvnId2path;
 
-public class TestParams implements Comparable<TestParams>, ExeParam {
+public class TestParam implements Comparable<TestParam>, ExeParam {
 	static Map<String, String> id2path;
 	static {
 		id2path = MvnId2path.getNewId2path();
@@ -16,7 +16,7 @@ public class TestParams implements Comparable<TestParams>, ExeParam {
 	Double prob;
 	String distanceFile;
 
-	public TestParams(String bottom, String top, Double distance, Double prob, String distanceFile) {
+	public TestParam(String bottom, String top, Double distance, Double prob, String distanceFile) {
 		this.bottom = bottom;
 		this.top = top;
 		this.distance = distance;
@@ -24,14 +24,23 @@ public class TestParams implements Comparable<TestParams>, ExeParam {
 		this.distanceFile = distanceFile;
 	}
 
-	public int compareTo(TestParams o) {
+	public String getBottom() {
+		return bottom;
+	}
+
+	public String getDistanceFile() {
+		return distanceFile;
+	}
+
+	public int compareTo(TestParam o) {
+		 if (this.distance - o.distance > 0) {
+			return 1;
+		} else if (this.distance - o.distance < 0) {
+			return -1;
+		} else
 		if (this.prob - o.prob > 0) {
 			return 1;// des
 		} else if (this.prob - o.prob < 0) {
-			return -1;
-		} else if (this.distance - o.distance > 0) {
-			return 1;
-		} else if (this.distance - o.distance < 0) {
 			return -1;
 		} else {
 			return bottom.hashCode() + top.hashCode() - (o.bottom.hashCode() + o.top.hashCode());
@@ -60,7 +69,7 @@ public class TestParams implements Comparable<TestParams>, ExeParam {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		TestParams other = (TestParams) obj;
+		TestParam other = (TestParam) obj;
 		if (bottom == null) {
 			if (other.bottom != null) {
 				return false;
@@ -94,8 +103,8 @@ public class TestParams implements Comparable<TestParams>, ExeParam {
 
 	@Override
 	public String toString() {
-		return "[bottom=" + bottom + ", top=" + top + ", distance=" + distance + ", prob=" + prob + ", distanceFile="
-				+ distanceFile + "]";
+		return  bottom + "\n" + top + "\ndistance=" + distance + ", prob=" + prob + ", distanceFile="
+				+ distanceFile + "]+\n"+getMvnCmd();
 	}
 
 	private String getTopClass() {
@@ -109,9 +118,9 @@ public class TestParams implements Comparable<TestParams>, ExeParam {
 
 	public String getMvnCmd() {
 		String mvnCmd = "cmd.exe /C ";
-		mvnCmd += ("mvn -Dmaven.test.skip=true org.evosuite.plugins:evosuite-maven-plugin:8.15:generate -f="
+		mvnCmd += ("mvn org.evosuite.plugins:evosuite-maven-plugin:8.15:generate -f="
 				+ getPompath() + " -Dclass=" + getTopClass() + " -Dcriterion=MTHD_PROB_RISK " + "-Drisk_method=\""
-				+ bottom + "\" " + "-Dmthd_prob_distance_file=" + distanceFile + " -e");
+				+ bottom + "\" " + "-Dmthd_prob_distance_file=" + distanceFile + " -Dmaven.test.skip=true -e");
 		return mvnCmd;
 	}
 

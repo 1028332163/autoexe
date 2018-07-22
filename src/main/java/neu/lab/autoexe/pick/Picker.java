@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import neu.lab.autoexe.util.FileUtil;
+import neu.lab.autoexe.util.ZipUtil;
+
 public class Picker {
 	// private Map<String,String> project2path;
 

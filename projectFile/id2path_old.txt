@@ -1209,7 +1209,8 @@ org.apache.drill:drill-root:0.4.0-incubating-SNAPSHOT,D:+ws+gitHub_old+drill-dri
 org.apache.stratos:stratos-components-parent:4.0.0-SNAPSHOT,D:+ws+gitHub_old+incubator-stratos-4.0.0-incubating-m2+components+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-tx:4.3.1.RELEASE_2-SNAPSHOT,D:+ws+gitHub_old+servicemix-bundles-org.apache.servicemix.bundles.zxing-3.3.0_1+spring-tx-4.3.1.RELEASE+pom.xml
 org.apache.fluo:fluo-integration:1.1.0-incubating,D:+ws+gitHub_old+fluo-rel-fluo-1.1.0-incubating+modules+integration+pom.xml
-org.apache.maven.plugins.enforcer.test:snapshot-plugin-repositories-child:1.0-SNAPSHOT,D:+ws+gitHub_old+maven-enforcer-enforcer-1.4.1+enforcer-rules+src+test+resources+requireNoRepositories+snapshot-plugin-repositories+child+pom.xml
+org.apache.maven.plugins.enforcer.test
+    :snapshot-plugin-repositories-child:1.0-SNAPSHOT,D:+ws+gitHub_old+maven-enforcer-enforcer-1.4.1+enforcer-rules+src+test+resources+requireNoRepositories+snapshot-plugin-repositories+child+pom.xml
 org.apache.falcon:falcon-scheduler:0.11,D:+ws+gitHub_old+falcon-release-0.11-rc1+scheduler+pom.xml
 org.apache.james:james-server-data-hbase:3.0.0-RC1,D:+ws+gitHub_old+james-project-james-project-3.0.0-RC1+server+data+data-hbase+pom.xml
 org.apache.cxf.services.wsn:cxf-services-wsn-osgi:3.1.14,D:+ws+gitHub_old+cxf-cxf-3.1.14+services+wsn+wsn-osgi+pom.xml
@@ -2644,7 +2645,8 @@ org.apache.olingo:odata-lib:4.4.0,D:+ws+gitHub_old+olingo-odata4-4.4.0+lib+pom.x
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.spring-web:4.1.5.RELEASE_3-SNAPSHOT,D:+ws+gitHub_old+servicemix-bundles-org.apache.servicemix.bundles.zxing-3.3.0_1+spring-web-4.1.5.RELEASE+pom.xml
 org.apache.wink.example:CustomExceptionMapper:1.3.0,D:+ws+gitHub_old+wink-wink-1.3.0-RC1+wink-examples+core+CustomExceptionMapper+pom.xml
 org.apache.tuscany.sca:tuscany-host-jetty:2.0,D:+ws+gitHub_old+tuscany-sca-2.x-2.0+modules+host-jetty+pom.xml
-org.apache.maven.plugins.enforcer.test:with-plugin-repositories-child:1.0-SNAPSHOT,D:+ws+gitHub_old+maven-enforcer-enforcer-1.4.1+enforcer-rules+src+test+resources+requireNoRepositories+with-plugin-repositories+child+pom.xml
+org.apache.maven.plugins.enforcer.test
+    :with-plugin-repositories-child:1.0-SNAPSHOT,D:+ws+gitHub_old+maven-enforcer-enforcer-1.4.1+enforcer-rules+src+test+resources+requireNoRepositories+with-plugin-repositories+child+pom.xml
 com.thinkbiganalytics.kylo:kylo-security-auth-ldap:0.8.4-RC4,D:+ws+gitHub_old+kylo-0.8.4-RC4+security+security-auth-ldap+pom.xml
 org.apache.servicemix.bundles:org.apache.servicemix.bundles.jsr305:3.0.0_2-SNAPSHOT,D:+ws+gitHub_old+servicemix-bundles-org.apache.servicemix.bundles.zxing-3.3.0_1+jsr305-3.0.0+pom.xml
 org.apache.servicemix.specs:org.apache.servicemix.specs.saaj-api-1.3:2.1.0,D:+ws+gitHub_old+servicemix4-specs-specs-2.1.0+saaj-api-1.3+pom.xml

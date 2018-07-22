@@ -6,7 +6,6 @@ import java.util.Map;
 
 import neu.lab.autoexe.util.ExecUtil;
 import neu.lab.autoexe.util.FileSyn;
-import neu.lab.autotest.FileUtil;
 
 public class ProjectNeiborTester {
 	private String pomPath;
@@ -28,8 +27,8 @@ public class ProjectNeiborTester {
 			if (!doneNeibor.contains(neibor)) {
 				try {
 					String mvnCmd = getMvnCmd(pomPath, neibor, neibor2jarPath.get(neibor));
-					ExecUtil.exeMvn(mvnCmd);
-					FileUtil.delFolder(new File(pomPath).getParent() + "\\evosuite-report");
+					ExecUtil.exewxeCmd(mvnCmd);
+					neu.lab.autoexe.util.FileUtil.delFolder(new File(pomPath).getParent() + "\\evosuite-report");
 				} catch (Exception e) {
 					System.out.println("exe mvn error");
 					e.printStackTrace();

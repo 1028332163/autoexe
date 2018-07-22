@@ -29,7 +29,7 @@ public class MthdProbDistances extends MethodDistances {
 				String[] mmdh = line.split(">,");// method-method-distance-host
 				if ("true".equals(mmdh[2].split(",")[1])) {// from host
 					String bottom = mmdh[0] + ">";
-					if (addComplexMthd || (!addComplexMthd && !bottom.contains("$"))) {
+					if (shoudAdd(bottom)) {
 						String top = mmdh[1] + ">";
 						Double distance = Double.valueOf(mmdh[2].split(",")[2]);
 						Map<String, Double> t2d = m_b2t2p.get(bottom);
@@ -46,13 +46,13 @@ public class MthdProbDistances extends MethodDistances {
 		reader.close();
 	}
 
-	public List<TestParams> getTestParams() {
-		List<TestParams> params = new ArrayList<TestParams>();
+	public List<TestParam> getTestParams() {
+		List<TestParam> params = new ArrayList<TestParam>();
 		for (String bottom : m_b2t2d.keySet()) {
 			Map<String, Double> t2d = m_b2t2d.get(bottom);
 			Map<String, Double> t2p = m_b2t2p.get(bottom);
 			for (String top : t2d.keySet()) {
-				params.add(new TestParams(bottom, top, t2d.get(top), t2p.get(top), ditanceFile));
+				params.add(new TestParam(bottom, top, t2d.get(top), t2p.get(top), ditanceFile));
 			}
 		}
 		return params;
