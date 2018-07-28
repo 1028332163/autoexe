@@ -8,6 +8,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
 import neu.lab.autoexe.AutoExe;
 import neu.lab.autoexe.ExeParam;
@@ -21,37 +23,85 @@ public class AutoTest2En extends AutoExe {
 		super();
 	}
 
-	static String id2pathFile = MvnId2path.latestPath;
-	static String dir = "D:\\ws_testcase\\distance_mthdBranch";
+	 static String id2pathFile = MvnId2path.developPath;
+	 static String dir = "D:\\ws_testcase\\distance_mthdBranch";
+
+//	static String id2pathFile = MvnId2path.latestPath;
+//	static String dir = "D:\\ws_testcase\\image_latest_50_20M\\distance";
 
 	public static void main(String[] args) throws Exception {
-		for(String pomPath:new AutoTest2En().getAllProjectPath()) {
-			System.out.println(DebugUtil.getAddPomCode(pomPath));
-		}
+		// for (String pomPath : new AutoTest2En().getAllProjectPath()) {
+		// System.out.println(DebugUtil.getAddPomCode(pomPath));
+		// }
+		new AutoTest2En().printStaInfo();
 	}
-	public Set<String> getAllProjectPath(){
-		Set<String> projectPaths = new HashSet<String>();
-		 Map<String, String> id2path = MvnId2path.getId2path(id2pathFile);
-		for(ExeParam exeParam:this.exeParams) {
+
+	public void printStaInfo() {
+		Map<String, Map<String, Set<String>>> pom2conflict2mthds = new TreeMap<String, Map<String, Set<String>>>();
+		for (ExeParam exeParam : this.exeParams) {
 			TestParam param = (TestParam) exeParam;
-			String id = MvnId2path.filePath2mvnId(param.distanceFile);
-			String path = id2path.get(id);
-			if(path !=null) {
+			Map<String, Set<String>> conflict2mthd = pom2conflict2mthds.get(param.getPompath());
+			if (conflict2mthd == null) {
+				conflict2mthd = new TreeMap<String, Set<String>>();
+				pom2conflict2mthds.put(param.getPompath(), conflict2mthd);
+			}
+			Set<String> riskMthds = conflict2mthd.get(param.getDistanceFile());
+			if (riskMthds == null) {
+				riskMthds = new TreeSet<String>();
+				conflict2mthd.put(param.getDistanceFile(), riskMthds);
+			}
+			riskMthds.add(param.getBottom());
+		}
+
+		int conflictCnt = 0;
+		int riskMthdCnt = 0;
+		Set<String> projects = new TreeSet<String>();
+		for (String pomPath : pom2conflict2mthds.keySet()) {
+			 System.out.println("module:" + pomPath);
+		}
+		System.out.println();
+		
+		for (String pomPath : pom2conflict2mthds.keySet()) {
+			projects.add(pomPath.split("\\\\")[3]);
+			System.out.println("module:" + pomPath);
+			Map<String, Set<String>> conflict2mthd = pom2conflict2mthds.get(pomPath);
+			for (String conflict : conflict2mthd.keySet()) {
+				System.out.println("conflict:" + conflict);
+				conflictCnt++;
+				Set<String> riskMthds = conflict2mthd.get(conflict);
+				for (String riskMthd : riskMthds) {
+					System.out.println("riskMthd:" + riskMthd);
+					riskMthdCnt++;
+				}
+			}
+		}
+		System.out.println("project size:" + projects.size() + ",module size:" + pom2conflict2mthds.keySet().size()
+				+ ", conflict size:" + conflictCnt + ", riskMthd size:" + riskMthdCnt);
+	}
+
+	public Set<String> getAllProjectPath() {
+		Set<String> projectPaths = new HashSet<String>();
+		Map<String, String> id2path = MvnId2path.getId2path(id2pathFile);
+		for (ExeParam exeParam : this.exeParams) {
+			TestParam param = (TestParam) exeParam;
+			String path = param.getPompath();
+			if (path != null) {
 				projectPaths.add(path);
-//				System.out.println(path);
-//				System.out.println();
-			}else {
-				System.out.println("can't find path for "+id);
+				// System.out.println(path);
+				// System.out.println();
+			} else {
+				System.out.println("can't find path for " + MvnId2path.filePath2mvnId(param.distanceFile));
 			}
 		}
 		return projectPaths;
 	}
+
 	/**
 	 * bottomMthd-distanceFile as signature.
 	 */
 	public void printRiskMthdNum() {
-		Set<String> staSigs = new HashSet<String>();//bottomMthd-distanceFile
-		for(ExeParam exeParam:this.exeParams) {
+		Set<String> staSigs = new HashSet<String>();// bottomMthd-distanceFile
+		for (ExeParam exeParam : this.exeParams) {
 			TestParam param = (TestParam) exeParam;
 			String staSig = param.getBottom() + param.getDistanceFile();
 			if (!staSigs.contains(staSig)) {
@@ -75,14 +125,13 @@ public class AutoTest2En extends AutoExe {
 			}
 		}
 		Collections.sort(params);
-		
-		
-		//combine parameter that has same top class.
-		List<ExeParam> returnParams = new ArrayList<ExeParam>();
-		Set<String> sigs = new HashSet<String>();//bottomMthd-topClass-distanceFile.
 
-		for(TestParam param:params) {
-			if(!sigs.contains(param.getParamSig())) {
+		// combine parameter that has same top class.
+		List<ExeParam> returnParams = new ArrayList<ExeParam>();
+		Set<String> sigs = new HashSet<String>();// bottomMthd-topClass-distanceFile.
+
+		for (TestParam param : params) {
+			if (!sigs.contains(param.getParamSig())) {
 				sigs.add(param.getParamSig());
 				returnParams.add(param);
 			}

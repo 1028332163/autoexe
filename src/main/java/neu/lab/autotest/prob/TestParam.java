@@ -8,7 +8,7 @@ import neu.lab.autoexe.util.MvnId2path;
 public class TestParam implements Comparable<TestParam>, ExeParam {
 	static Map<String, String> id2path;
 	static {
-		id2path = MvnId2path.getNewId2path();
+		id2path = MvnId2path.getId2path(AutoTest2En.id2pathFile);
 	}
 	String bottom;
 	String top;
@@ -112,7 +112,7 @@ public class TestParam implements Comparable<TestParam>, ExeParam {
 		return top.split(":")[0].substring(1);
 	}
 
-	private String getPompath() {
+	public String getPompath() {
 		return id2path.get(MvnId2path.filePath2mvnId(distanceFile));
 	}
 
