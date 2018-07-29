@@ -15,14 +15,19 @@ public class AutoExeEntrance {
 	public static final String clsDetectProjectDir = "D:\\ws\\final_3\\gitHub_old\\";
 	public static final String upVerProjectDir = "D:\\ws\\solvebug\\ignite-master\\";
 	public static final String findVerDir = "D:\\ws\\solvebug\\ignite-master\\";
+	public static final String installProjectDir = "D:\\ws\\gitHub_develop\\";
 	// TODO which directory
 	public static final String debugDir = "D:\\ws\\gitHub_latest2\\";
 	public static final String debug2Dir = "D:\\ws\\gitHub_develop\\";
 
 	// D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
-		new neu.lab.autoexe.decca.AutoDebug().autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt"),
-				true);
+		//TODO which goal
+		//		new neu.lab.autoexe.decca.AutoDebug().autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt"),
+		//				true);
+		//		new neu.lab.autoexe.decca.AutoDebug2().autoExe(getPomPaths(),
+		//				true);
+		new neu.lab.autoexe.decca.AutoInstall().autoExe(true);
 		// for(String
 		// pomPath:getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt")) {
 		// System.out.println(pomPath);
@@ -81,6 +86,20 @@ public class AutoExeEntrance {
 
 	private static List<String> getPomPaths() {
 		List<String> list = new ArrayList<String>();
+		//		list.add("D:\\ws\\gitHub_new\\mqtt-spy-eclipse_paho_6\\spy-common");
+		//		list.add("D:\\ws\\gitHub_new\\drill-drill-1.4.0\\exec\\rpc");
+		//		list.add("D:\\ws\\gitHub_new\\maven-plugin-tools-maven-plugin-tools-3.5.1\\maven-plugin-tools-annotations");
+		//		list.add("D:\\ws\\gitHub_new\\flink-release-1.4.1-rc1\\flink-metrics\\flink-metrics-core");
+		//		list.add("D:\\ws\\gitHub_new\\flink-release-1.4.1-rc1\\flink-metrics\\flink-metrics-ganglia");
+		//		list.add("D:\\ws\\gitHub_new\\hadoop-common-release-2.5.0\\hadoop-common-project\\hadoop-minikdc");
+		//		list.add("D:\\ws\\gitHub_new\\nifi-rel-nifi-1.5.0\\nifi-nar-bundles\\nifi-spring-bundle\\nifi-spring-processors");
+		//		list.add("D:\\ws\\gitHub_new\\drill-drill-1.4.0\\exec\\memory\\impl");
+		//		list.add("D:\\ws\\gitHub_new\\hops-YARN-2.4.1\\hadoop-common-project\\hadoop-minikdc");
+		//		list.add("D:\\ws\\gitHub_new\\storm-1.1.2\\external\\storm-kafka-monitor");
+		//		list.add("D:\\ws\\gitHub_new\\continuum-continuum-1.4.3\\continuum-base\\continuum-scm");
+		//		list.add("D:\\ws\\gitHub_new\\sonatype-aether-aether-1.13.1\\aether-demo");
+		//		list.add("D:\\ws\\gitHub_new\\cxf-cxf-3.2.2\\distribution\\src\\main\\release\\samples\\jax_rs\\tracing_opentracing");
+
 		list.add("D:\\ws\\gitHub_develop\\googleads-java-lib-master\\modules\\ads_lib");
 		list.add(
 				"D:\\ws\\gitHub_develop\\azure-storage-java-master\\microsoft-azure-storage-samples\\src\\com\\microsoft\\azure\\storage\\logging");

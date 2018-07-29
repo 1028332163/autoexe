@@ -12,11 +12,9 @@ public class TempScript {
 	
 	public static void main(String[] args) throws Exception {
 		List<String> inFilePaths = new ArrayList<String>();
-		inFilePaths.add("D:\\ws_testcase\\image_develop_100_20M\\state_debug_0_50\\Project_build_success.txt");
-		inFilePaths.add("D:\\ws_testcase\\image_develop_100_20M\\state_debug_50_70\\Project_build_success.txt");
-		inFilePaths.add("D:\\ws_testcase\\image_develop_100_20M\\state_debug_71_100\\Project_build_success.txt");
-		inFilePaths.add("D:\\ws_testcase\\image_develop_100_20M\\state_debug_20M\\Project_build_success.txt");
-		String outPath = "D:\\ws_testcase\\image_develop_100_20M\\Project_build_success.txt";
+		inFilePaths.add("D:\\ws_testcase\\image_new_50_20M\\state_debug_50\\Project_build_success.txt");
+		inFilePaths.add("D:\\ws_testcase\\image_new_50_20M\\state_debug_20M\\Project_build_success.txt");
+		String outPath = "D:\\ws_testcase\\image_new_50_20M\\Project_build_success.txt";
 		combineFile(inFilePaths,outPath);
 	}
 	private static void combineFile(List<String> inFilePaths,String outPath) {

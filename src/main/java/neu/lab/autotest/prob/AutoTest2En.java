@@ -23,16 +23,19 @@ public class AutoTest2En extends AutoExe {
 		super();
 	}
 
-	 static String id2pathFile = MvnId2path.developPath;
-	 static String dir = "D:\\ws_testcase\\distance_mthdBranch";
+	static String id2pathFile = MvnId2path.newPath;
+	static String dir = "D:\\ws_testcase\\image_new_50_20M\\distance";
 
-//	static String id2pathFile = MvnId2path.latestPath;
-//	static String dir = "D:\\ws_testcase\\image_latest_50_20M\\distance";
+//		static String id2pathFile = MvnId2path.latestPath;
+//		static String dir = "D:\\ws_testcase\\image_latest_50_20M\\distance";
+
+	//		 static String id2pathFile = MvnId2path.developPath;
+//		 static String dir = "D:\\ws_testcase\\distance_mthdBranch";
 
 	public static void main(String[] args) throws Exception {
-		// for (String pomPath : new AutoTest2En().getAllProjectPath()) {
-		// System.out.println(DebugUtil.getAddPomCode(pomPath));
-		// }
+//		 for (String pomPath : new AutoTest2En().getAllProjectPath()) {
+//		 System.out.println(DebugUtil.getAddPomCode(pomPath));
+//		 }
 		new AutoTest2En().printStaInfo();
 	}
 
@@ -57,10 +60,10 @@ public class AutoTest2En extends AutoExe {
 		int riskMthdCnt = 0;
 		Set<String> projects = new TreeSet<String>();
 		for (String pomPath : pom2conflict2mthds.keySet()) {
-			 System.out.println("module:" + pomPath);
+			System.out.println("module:" + pomPath);
 		}
 		System.out.println();
-		
+
 		for (String pomPath : pom2conflict2mthds.keySet()) {
 			projects.add(pomPath.split("\\\\")[3]);
 			System.out.println("module:" + pomPath);
@@ -74,6 +77,7 @@ public class AutoTest2En extends AutoExe {
 					riskMthdCnt++;
 				}
 			}
+			System.out.println();
 		}
 		System.out.println("project size:" + projects.size() + ",module size:" + pom2conflict2mthds.keySet().size()
 				+ ", conflict size:" + conflictCnt + ", riskMthd size:" + riskMthdCnt);
@@ -120,7 +124,6 @@ public class AutoTest2En extends AutoExe {
 				MthdProbDistances distances = new MthdProbDistances(child.getAbsolutePath());
 				params.addAll(distances.getTestParams());
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

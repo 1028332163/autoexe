@@ -52,7 +52,6 @@ public class SecondChecker {
 			reader.close();
 			System.out.println(Projects.i().getNeededExpClses());
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 	}
@@ -99,7 +98,6 @@ public class SecondChecker {
 			}
 			reader.close();
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 		return riskClses;

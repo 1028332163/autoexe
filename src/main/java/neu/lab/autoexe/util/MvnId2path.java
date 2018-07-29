@@ -62,7 +62,6 @@ public class MvnId2path {
 			}
 			reader.close();
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 		return id2path;
