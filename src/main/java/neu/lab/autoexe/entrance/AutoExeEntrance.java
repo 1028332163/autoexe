@@ -16,7 +16,7 @@ public class AutoExeEntrance {
 	// D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
 		//TODO which goal
-				new neu.lab.autoexe.decca.AutoDebug(projectDir).autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt"),
+				new neu.lab.autoexe.decca.AutoDebug(projectDir).autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_develop.txt"),
 						true);
 		//		new neu.lab.autoexe.decca.AutoDebug2().autoExe(getPomPaths(),
 		//				true);
