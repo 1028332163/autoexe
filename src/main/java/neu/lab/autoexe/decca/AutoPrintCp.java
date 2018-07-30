@@ -8,7 +8,7 @@ public class AutoPrintCp extends AutoDecca{
 
 	@Override
 	public String getCommand() {
-		return "mvn -Dmaven.test.skip=true package neu.lab:decca:1.0:printCp -e";
+		return "mvn -Dmaven.test.skip=true neu.lab:decca:1.0:printCp -e";
 	}
 
 }
