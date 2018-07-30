@@ -16,11 +16,12 @@ public class AutoExeEntrance {
 	// D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
 		//TODO which goal
-		//		new neu.lab.autoexe.decca.AutoDebug().autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt"),
-		//				true);
+				new neu.lab.autoexe.decca.AutoDebug(projectDir).autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt"),
+						true);
 		//		new neu.lab.autoexe.decca.AutoDebug2().autoExe(getPomPaths(),
 		//				true);
-		new neu.lab.autoexe.decca.AutoPrintCp(projectDir).autoExe(true);
+//		new neu.lab.autoexe.decca.AutoPrintCp(projectDir).autoExe(true);
+		
 		// for(String
 		// pomPath:getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt")) {
 		// System.out.println(pomPath);
