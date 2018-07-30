@@ -31,12 +31,12 @@ public abstract class AutoDecca {
 	
 
 	public String getBatPath() {
-		return wsDir+"findVer.bat";
+		return wsDir+"decca.bat";
 	}
-	
+
 
 	protected String getStateDir() {
-		return wsDir+"state_findVer\\";
+		return wsDir+"state_decca\\";
 	}
 
 	public abstract String getCommand();
