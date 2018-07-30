@@ -20,6 +20,7 @@ import neu.lab.autoexe.util.FileSyn;
 import neu.lab.autoexe.util.PomReader;
 
 public abstract class AutoDecca {
+	private static String wsDir = "D:\\ws_testcase\\image\\";
 	public FileSyn donePjct;// project has done;
 	public FileSyn mvnExpPjt;// project that throws exception when executes maven command
 	public FileSyn notJarPjct;// record project that hasn't conflict
@@ -27,6 +28,18 @@ public abstract class AutoDecca {
 	public int allTask;
 	public int completeSize;
 	private String projectDir;
+	
+
+	public String getBatPath() {
+		return wsDir+"findVer.bat";
+	}
+	
+
+	protected String getStateDir() {
+		return wsDir+"state_findVer\\";
+	}
+
+	public abstract String getCommand();
 	
 	public AutoDecca(String projectDir) {
 		this.projectDir = projectDir;
@@ -39,7 +52,6 @@ public abstract class AutoDecca {
 		successPjt = new FileSyn(getStateDir(), "Project_build_success.txt");
 	}
 
-	protected abstract String getStateDir();
 
 	private void writeState() {
 		donePjct.closeOut();
@@ -155,7 +167,6 @@ public abstract class AutoDecca {
 		return outResult.toString();
 	}
 
-//	protected abstract String getProjectDir();
 
 	private void mvnOnePom(String pomPath) throws Exception {
 		// try {
@@ -227,7 +238,5 @@ public abstract class AutoDecca {
 		printer.close();
 	}
 
-	public abstract String getBatPath();
 
-	public abstract String getCommand();
 }
