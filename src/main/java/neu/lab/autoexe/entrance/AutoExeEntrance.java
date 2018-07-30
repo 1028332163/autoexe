@@ -10,15 +10,8 @@ import java.util.TreeMap;
 
 public class AutoExeEntrance {
 
-	public static final String staProjectDir = "D:\\ws\\final_3\\gitHub_old\\";
-	public static final String detectProjectDir = "D:\\ws\\final_3\\gitHub_old\\";
-	public static final String clsDetectProjectDir = "D:\\ws\\final_3\\gitHub_old\\";
-	public static final String upVerProjectDir = "D:\\ws\\solvebug\\ignite-master\\";
-	public static final String findVerDir = "D:\\ws\\solvebug\\ignite-master\\";
-	public static final String installProjectDir = "D:\\ws\\gitHub_develop\\";
 	// TODO which directory
-	public static final String debugDir = "D:\\ws\\gitHub_latest2\\";
-	public static final String debug2Dir = "D:\\ws\\gitHub_develop\\";
+	public static final String projectDir = "D:\\ws\\gitHub_develop\\";
 
 	// D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
@@ -27,7 +20,7 @@ public class AutoExeEntrance {
 		//				true);
 		//		new neu.lab.autoexe.decca.AutoDebug2().autoExe(getPomPaths(),
 		//				true);
-		new neu.lab.autoexe.decca.AutoInstall().autoExe(true);
+		new neu.lab.autoexe.decca.AutoPrintCp(projectDir).autoExe(true);
 		// for(String
 		// pomPath:getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt")) {
 		// System.out.println(pomPath);

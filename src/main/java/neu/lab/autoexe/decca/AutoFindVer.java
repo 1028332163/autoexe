@@ -1,17 +1,15 @@
 package neu.lab.autoexe.decca;
 
-import neu.lab.autoexe.entrance.AutoExeEntrance;
 
 public class AutoFindVer extends AutoDecca{
+
+	public AutoFindVer(String projectDir) {
+		super(projectDir);
+	}
 
 	@Override
 	protected String getStateDir() {
 		return "D:\\ws\\state_findVer\\";
-	}
-
-	@Override
-	protected String getProjectDir() {
-		return AutoExeEntrance.findVerDir;
 	}
 
 	@Override

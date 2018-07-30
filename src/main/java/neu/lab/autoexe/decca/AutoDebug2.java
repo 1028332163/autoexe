@@ -4,6 +4,10 @@ import neu.lab.autoexe.entrance.AutoExeEntrance;
 
 public class AutoDebug2 extends AutoDecca{
 
+	public AutoDebug2(String projectDir) {
+		super(projectDir);
+	}
+
 	public String getBatPath() {
 		return "D:\\ws\\debug2.bat";
 	}
@@ -17,9 +21,5 @@ public class AutoDebug2 extends AutoDecca{
 		return "D:\\ws_testcase\\image\\state_debug2\\";
 	}
 
-	@Override
-	protected String getProjectDir() {
-		return AutoExeEntrance.debug2Dir;
-	}
 
 }

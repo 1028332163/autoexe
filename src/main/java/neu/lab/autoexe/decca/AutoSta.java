@@ -1,8 +1,11 @@
 package neu.lab.autoexe.decca;
 
-import neu.lab.autoexe.entrance.AutoExeEntrance;
 
 public class AutoSta extends AutoDecca {
+	public AutoSta(String projectDir) {
+		super(projectDir);
+	}
+
 	public String getBatPath() {
 		return "D:\\ws\\sta.bat";
 	}
@@ -16,8 +19,4 @@ public class AutoSta extends AutoDecca {
 		return "D:\\ws\\state_sta\\";
 	}
 
-	@Override
-	protected String getProjectDir() {
-		return AutoExeEntrance.staProjectDir;
-	}
 }

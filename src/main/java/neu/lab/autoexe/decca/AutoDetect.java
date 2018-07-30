@@ -1,8 +1,11 @@
 package neu.lab.autoexe.decca;
 
-import neu.lab.autoexe.entrance.AutoExeEntrance;
 
 public class AutoDetect extends AutoDecca {
+	public AutoDetect(String projectDir) {
+		super(projectDir);
+	}
+
 	public String getBatPath() {
 		return "D:\\ws\\detect.bat";
 	}
@@ -15,10 +18,4 @@ public class AutoDetect extends AutoDecca {
 	protected String getStateDir() {
 		return "D:\\ws\\state_detect\\";
 	}
-
-	@Override
-	protected String getProjectDir() {
-		return AutoExeEntrance.detectProjectDir;
-	}
-
 }

@@ -26,6 +26,11 @@ public abstract class AutoDecca {
 	public FileSyn successPjt;// record project that build success(but may be has exception caught by Maven)
 	public int allTask;
 	public int completeSize;
+	private String projectDir;
+	
+	public AutoDecca(String projectDir) {
+		this.projectDir = projectDir;
+	}
 
 	protected void readState() throws IOException {
 		donePjct = new FileSyn(getStateDir(), "Project_done.txt");
@@ -150,7 +155,7 @@ public abstract class AutoDecca {
 		return outResult.toString();
 	}
 
-	protected abstract String getProjectDir();
+//	protected abstract String getProjectDir();
 
 	private void mvnOnePom(String pomPath) throws Exception {
 		// try {
@@ -168,7 +173,7 @@ public abstract class AutoDecca {
 
 	private String path2name(String path) {
 		// D:\test_apache\simple\commons-logging-1.2-src
-		return path.replace(this.getProjectDir(), "");
+		return path.replace(projectDir, "");
 	}
 
 	private boolean isSingle(File pomFile) {
@@ -192,7 +197,7 @@ public abstract class AutoDecca {
 
 	protected List<String> getPomDirs() {
 		// return AutoExeEntrance.findPomPaths(new File(getProjectDir()));
-		return findPomPaths(new File(getProjectDir()));
+		return findPomPaths(new File(projectDir));
 	}
 
 	private List<String> findPomPaths(File father) {

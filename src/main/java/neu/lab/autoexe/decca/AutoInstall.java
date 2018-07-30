@@ -1,17 +1,15 @@
 package neu.lab.autoexe.decca;
 
-import neu.lab.autoexe.entrance.AutoExeEntrance;
 
 public class AutoInstall extends AutoDecca{
+
+	public AutoInstall(String projectDir) {
+		super(projectDir);
+	}
 
 	@Override
 	protected String getStateDir() {
 		return "D:\\ws\\state_install\\";
-	}
-
-	@Override
-	protected String getProjectDir() {
-		return AutoExeEntrance.installProjectDir;
 	}
 
 	@Override

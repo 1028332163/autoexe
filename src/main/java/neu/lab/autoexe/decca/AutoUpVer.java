@@ -1,17 +1,15 @@
 package neu.lab.autoexe.decca;
 
-import neu.lab.autoexe.entrance.AutoExeEntrance;
 
 public class AutoUpVer extends AutoDecca{
+
+	public AutoUpVer(String projectDir) {
+		super(projectDir);
+	}
 
 	@Override
 	protected String getStateDir() {
 		return "D:\\ws\\state_upVer\\";
-	}
-
-	@Override
-	protected String getProjectDir() {
-		return AutoExeEntrance.upVerProjectDir;
 	}
 
 	@Override

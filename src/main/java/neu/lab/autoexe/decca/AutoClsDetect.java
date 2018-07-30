@@ -4,14 +4,13 @@ import neu.lab.autoexe.entrance.AutoExeEntrance;
 
 public class AutoClsDetect extends AutoDecca{
 
-	@Override
-	protected String getStateDir() {
-		return "D:\\ws\\state_clsDetect\\";
+	public AutoClsDetect(String projectDir) {
+		super(projectDir);
 	}
 
 	@Override
-	protected String getProjectDir() {
-		return AutoExeEntrance.clsDetectProjectDir;
+	protected String getStateDir() {
+		return "D:\\ws\\state_clsDetect\\";
 	}
 
 	@Override

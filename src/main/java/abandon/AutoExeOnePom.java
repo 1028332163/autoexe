@@ -10,15 +10,16 @@ import neu.lab.autoexe.decca.AutoDecca;
 
 public class AutoExeOnePom extends AutoDecca{
 
+	public AutoExeOnePom(String projectDir) {
+		super(projectDir);
+	}
+
+
 	@Override
 	protected String getStateDir() {
 		return "D:\\ws\\state_onepom\\";
 	}
 
-	@Override
-	protected String getProjectDir() {
-		return Conf.OnePomProjectDir;
-	}
 
 	@Override
 	public String getBatPath() {
