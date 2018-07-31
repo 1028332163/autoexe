@@ -26,19 +26,18 @@ public class MthdProbDistances extends MethodDistances {
 		String line = reader.readLine();
 		while (line != null) {
 			if (!"".equals(line)) {
-				String[] mmdh = line.split(">,");// method-method-distance-host
-				if ("true".equals(mmdh[2].split(",")[1])) {// from host
+				// method-method-distance-host
+				String[] mmdh = line.split(">,");
+				if (shoudAdd(mmdh)) {
 					String bottom = mmdh[0] + ">";
-					if (shoudAdd(bottom)) {
-						String top = mmdh[1] + ">";
-						Double distance = Double.valueOf(mmdh[2].split(",")[2]);
-						Map<String, Double> t2d = m_b2t2p.get(bottom);
-						if (null == t2d) {
-							t2d = new HashMap<String, Double>();
-							m_b2t2p.put(bottom, t2d);
-						}
-						t2d.put(top, distance);
+					String top = mmdh[1] + ">";
+					Double distance = Double.valueOf(mmdh[2].split(",")[2]);
+					Map<String, Double> t2d = m_b2t2p.get(bottom);
+					if (null == t2d) {
+						t2d = new HashMap<String, Double>();
+						m_b2t2p.put(bottom, t2d);
 					}
+					t2d.put(top, distance);
 				}
 			}
 			line = reader.readLine();

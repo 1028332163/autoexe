@@ -11,16 +11,16 @@ import java.util.TreeMap;
 public class AutoExeEntrance {
 
 	// TODO which directory
-	public static final String projectDir = "D:\\ws\\gitHub_develop\\";
+	public static final String projectDir = "D:\\ws\\gitHub_latest\\";
 
 	// D:\ws\gitHub_old\
 	public static void main(String[] args) throws IOException {
 		//TODO which goal
-				new neu.lab.autoexe.decca.AutoDebug(projectDir).autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_develop.txt"),
-						true);
+//				new neu.lab.autoexe.decca.AutoDebug(projectDir).autoExe(getPomPathBySize("D:\\ws_testcase\\projectSize_develop.txt"),
+//						true);
 		//		new neu.lab.autoexe.decca.AutoDebug2().autoExe(getPomPaths(),
 		//				true);
-//		new neu.lab.autoexe.decca.AutoPrintCp(projectDir).autoExe(true);
+		new neu.lab.autoexe.decca.AutoPrintSize(projectDir).autoExe(true);
 		
 		// for(String
 		// pomPath:getPomPathBySize("D:\\ws_testcase\\projectSize_latest2.txt")) {

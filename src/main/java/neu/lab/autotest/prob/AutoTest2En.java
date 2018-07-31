@@ -23,14 +23,14 @@ public class AutoTest2En extends AutoExe {
 		super();
 	}
 
-	static String id2pathFile = MvnId2path.newPath;
-	static String dir = "D:\\ws_testcase\\image_new_50_20M\\distance";
+//	static String id2pathFile = MvnId2path.newPath;
+//	static String dir = "D:\\ws_testcase\\image_new_50_20M\\distance";
 
 //		static String id2pathFile = MvnId2path.latestPath;
 //		static String dir = "D:\\ws_testcase\\image_latest_50_20M\\distance";
 
-	//		 static String id2pathFile = MvnId2path.developPath;
-//		 static String dir = "D:\\ws_testcase\\distance_mthdBranch";
+			 static String id2pathFile = MvnId2path.developPath;
+		 static String dir = "D:\\ws_testcase\\distance_mthdBranch";
 
 	public static void main(String[] args) throws Exception {
 //		 for (String pomPath : new AutoTest2En().getAllProjectPath()) {

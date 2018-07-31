@@ -29,9 +29,9 @@ public class MethodDistances implements NodeDistance {
 		while (line != null) {
 			if (!"".equals(line)) {
 				String[] mmdh = line.split(">,");// method-method-distance-host
-				if ("true".equals(mmdh[2].split(",")[1])) {
-					String bottom = mmdh[0] + ">";
-					if (shoudAdd(bottom)) {
+					
+					if (shoudAdd(mmdh)) {
+						String bottom = mmdh[0] + ">";
 						String top = mmdh[1] + ">";
 						Double distance = Double.valueOf(mmdh[2].split(",")[0]);
 						Map<String, Double> t2d = m_b2t2d.get(bottom);
@@ -41,14 +41,16 @@ public class MethodDistances implements NodeDistance {
 						}
 						t2d.put(top, distance);
 					}
-				}
 			}
 			line = reader.readLine();
 		}
 		reader.close();
 	}
 
-	protected boolean shoudAdd(String bottom) {
+	protected boolean shoudAdd(String[] mmdh) {
+		if("false".equals(mmdh[2].split(",")[1]))
+				return false;
+		String bottom = mmdh[0] + ">";
 		if (!bottom.contains("<clinit>")) {
 			if (addComplexMthd || (!addComplexMthd && !bottom.contains("$")))
 				return true;

@@ -1,8 +1,8 @@
 package neu.lab.autoexe.decca;
 
-public class AutoPrintCp extends AutoDecca{
+public class AutoPrintSize extends AutoDecca{
 
-	public AutoPrintCp(String projectDir) {
+	public AutoPrintSize(String projectDir) {
 		super(projectDir);
 	}
 
