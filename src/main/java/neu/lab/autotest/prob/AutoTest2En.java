@@ -27,10 +27,20 @@ public class AutoTest2En extends AutoExe {
 //	static String dir = "D:\\ws_testcase\\image_new_50_20M\\distance";
 
 //		static String id2pathFile = MvnId2path.latestPath;
-//		static String dir = "D:\\ws_testcase\\image_latest_50_20M\\distance";
+//		static String dir = "D:\\ws_testcase\\image_latest\\distance";
 
-			 static String id2pathFile = MvnId2path.developPath;
-		 static String dir = "D:\\ws_testcase\\distance_mthdBranch";
+//		static String id2pathFile = MvnId2path.latest2Path;
+//		static String dir = "D:\\ws_testcase\\image_latest2\\distance";
+		
+//	static String id2pathFile = MvnId2path.latest3Path;
+//	static String dir = "D:\\ws_testcase\\image_latest3\\distance";
+		
+
+		static String id2pathFile = MvnId2path.latest4Path;
+		static String dir = "D:\\ws_testcase\\image_latest4\\distance";
+	
+//			 static String id2pathFile = MvnId2path.developPath;
+//		 static String dir = "D:\\ws_testcase\\image_develop\\distance";
 
 	public static void main(String[] args) throws Exception {
 //		 for (String pomPath : new AutoTest2En().getAllProjectPath()) {
@@ -69,7 +79,7 @@ public class AutoTest2En extends AutoExe {
 			System.out.println("module:" + pomPath);
 			Map<String, Set<String>> conflict2mthd = pom2conflict2mthds.get(pomPath);
 			for (String conflict : conflict2mthd.keySet()) {
-				System.out.println("conflict:" + conflict);
+				System.out.println("conflictJar:" + conflict);
 				conflictCnt++;
 				Set<String> riskMthds = conflict2mthd.get(conflict);
 				for (String riskMthd : riskMthds) {
@@ -127,7 +137,7 @@ public class AutoTest2En extends AutoExe {
 				e.printStackTrace();
 			}
 		}
-		Collections.sort(params);
+//		Collections.sort(params);
 
 		// combine parameter that has same top class.
 		List<ExeParam> returnParams = new ArrayList<ExeParam>();

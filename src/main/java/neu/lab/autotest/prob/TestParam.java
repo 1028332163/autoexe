@@ -33,28 +33,32 @@ public class TestParam implements Comparable<TestParam>, ExeParam {
 	}
 
 	public int compareTo(TestParam o) {
-		 if (this.distance - o.distance > 0) {
-			return 1;
-		} else if (this.distance - o.distance < 0) {
-			return -1;
-		} else
-		if (this.prob - o.prob > 0) {
-			return 1;// des
-		} else if (this.prob - o.prob < 0) {
-			return -1;
-		} else {
-			return bottom.hashCode() + top.hashCode() - (o.bottom.hashCode() + o.top.hashCode());
-		}
+//		if (this.distance - o.distance > 0) {
+//			return 1;
+//		} else if (this.distance - o.distance < 0) {
+//			return -1;
+//		} else if (this.prob - o.prob > 0) {
+//			return 1;// des
+//		} else if (this.prob - o.prob < 0) {
+//			return -1;
+//		} else if (this.bottom.hashCode() - o.bottom.hashCode() > 0) {
+//			return 1;
+//		} else if (this.bottom.hashCode() - o.bottom.hashCode() < 0) {
+//			return -1;
+//		} else {
+//			return top.hashCode() - o.top.hashCode();
+//		}
+		return this.hashCode()-o.hashCode();
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((bottom == null) ? 0 : bottom.hashCode());
-		result = prime * result + ((distance == null) ? 0 : distance.hashCode());
-		result = prime * result + ((prob == null) ? 0 : prob.hashCode());
 		result = prime * result + ((top == null) ? 0 : top.hashCode());
+		result = prime * result + ((bottom == null) ? 0 : bottom.hashCode());
+		result = prime * result + ((prob == null) ? 0 : prob.hashCode());
+		result = prime * result + ((distance == null) ? 0 : distance.hashCode());
 		return result;
 	}
 
@@ -103,8 +107,8 @@ public class TestParam implements Comparable<TestParam>, ExeParam {
 
 	@Override
 	public String toString() {
-		return  bottom + "\n" + top + "\ndistance=" + distance + ", prob=" + prob + ", distanceFile="
-				+ distanceFile + "]+\n"+getMvnCmd();
+		return bottom + "\n" + top + "\ndistance=" + distance + ", prob=" + prob + ", distanceFile=" + distanceFile
+				+ "]+\n" + getMvnCmd();
 	}
 
 	private String getTopClass() {
@@ -118,9 +122,9 @@ public class TestParam implements Comparable<TestParam>, ExeParam {
 
 	public String getMvnCmd() {
 		String mvnCmd = "cmd.exe /C ";
-		mvnCmd += ("mvn org.evosuite.plugins:evosuite-maven-plugin:8.15:generate -f="
-				+ getPompath() + " -Dclass=" + getTopClass() + " -Dcriterion=MTHD_PROB_RISK " + "-Drisk_method=\""
-				+ bottom + "\" " + "-Dmthd_prob_distance_file=" + distanceFile + " -Dmaven.test.skip=true -e");
+		mvnCmd += ("mvn org.evosuite.plugins:evosuite-maven-plugin:8.15:generate -f=" + getPompath() + " -Dclass="
+				+ getTopClass() + " -Dcriterion=MTHD_PROB_RISK " + "-Drisk_method=\"" + bottom + "\" "
+				+ "-Dmthd_prob_distance_file=" + distanceFile + " -Dmaven.test.skip=true -e");
 		return mvnCmd;
 	}
 
