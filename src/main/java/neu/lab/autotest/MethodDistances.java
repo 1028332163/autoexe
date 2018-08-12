@@ -48,8 +48,8 @@ public class MethodDistances implements NodeDistance {
 	}
 
 	protected boolean shoudAdd(String[] mmdh) {
-		if("false".equals(mmdh[2].split(",")[1]))
-				return false;
+//		if("false".equals(mmdh[2].split(",")[1]))
+//				return false;
 		String bottom = mmdh[0] + ">";
 		if (!bottom.contains("<clinit>")) {
 			if (addComplexMthd || (!addComplexMthd && !bottom.contains("$")))

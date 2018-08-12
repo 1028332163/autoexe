@@ -28,19 +28,17 @@ public abstract class AutoDecca {
 	public int allTask;
 	public int completeSize;
 	private String projectDir;
-	
 
 	public String getBatPath() {
-		return wsDir+"decca.bat";
+		return wsDir + "decca.bat";
 	}
 
-
 	protected String getStateDir() {
-		return wsDir+"state_decca\\";
+		return wsDir + "state_decca\\";
 	}
 
 	public abstract String getCommand();
-	
+
 	public AutoDecca(String projectDir) {
 		this.projectDir = projectDir;
 	}
@@ -51,7 +49,6 @@ public abstract class AutoDecca {
 		notJarPjct = new FileSyn(getStateDir(), "Project_not_jar.txt");
 		successPjt = new FileSyn(getStateDir(), "Project_build_success.txt");
 	}
-
 
 	private void writeState() {
 		donePjct.closeOut();
@@ -88,7 +85,7 @@ public abstract class AutoDecca {
 				String pomPath = leftProjects.get(exeIndex);
 				handleProject(pomPath);
 				leftProjects.remove(exeIndex);
-				
+
 			}
 		}
 
@@ -99,7 +96,7 @@ public abstract class AutoDecca {
 		List<String> pomDirs = getPomDirs();
 		autoExe(pomDirs, exeByOrder);
 	}
-	
+
 	private void handleProject(String pomPath) {
 		String handleResult = getProjectResult(pomPath);
 		System.out.println(handleResult);
@@ -110,20 +107,19 @@ public abstract class AutoDecca {
 	protected String getProjectResult(String pomPath) {
 		System.out.println("complete/all: " + completeSize + "/" + allTask);
 		System.out.println("handle pom for:" + pomPath);
-		
+
 		StringBuilder outResult = new StringBuilder("exeResult for ");
 		neu.lab.autoexe.util.FileUtil.delFolder(pomPath + "\\evosuite-report");
 
-
 		String projectName = path2name(pomPath);
-		
+
 		long startTime = System.currentTimeMillis();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		System.out.println("start time：" + sdf.format(new Date()));
 		try {
 			PomReader reader = new PomReader(pomPath + "\\pom.xml");
 			outResult.append(reader.getCoordinate() + " ");
-			
+			//skip too long project
 			if (pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-release-3.0.0-alpha1-RC0")
 					|| pomPath.startsWith("D:\\ws\\gitHub_old\\hadoop-common-release-2.5.0-rc0")
 					|| pomPath.startsWith("D:\\ws\\gitHub_old\\flink-release-1.4.0-rc2\\")) {
@@ -131,32 +127,31 @@ public abstract class AutoDecca {
 				outResult.append("skip-long");
 				return outResult.toString();
 			}
-			if (pomPath.contains("\\example") || pomPath.contains("\\tests")) {
+			//skip test
+			boolean isTest = pomPath.contains("\\example") || pomPath.contains("\\tests");
+			//TODO execute test?
+			if (!isTest) {
 				System.out.println("skip example project:" + pomPath);
 				outResult.append("skip-example");
 				return outResult.toString();
 			}
-			
-			if ("jar".equals(reader.getPckType())) {
-				if (!donePjct.contains(projectName) && !mvnExpPjt.contains(projectName)
-						&& !notJarPjct.contains(projectName)) {
-					try {
-						mvnOnePom(pomPath);
-						// success
-						successPjt.add(path2name(pomPath));
-						outResult.append("success");
-					} catch (Exception e) {// failed
-						e.printStackTrace();
-						mvnExpPjt.add(path2name(pomPath));
-						outResult.append("failed");
-					}
-				} else {// executed
-					outResult.append("executed");
+			//skip project has executed.
+			if (!donePjct.contains(projectName) && !mvnExpPjt.contains(projectName)
+					&& !notJarPjct.contains(projectName)) {
+				try {
+					mvnOnePom(pomPath);
+					// success
+					successPjt.add(path2name(pomPath));
+					outResult.append("success");
+				} catch (Exception e) {// failed
+					e.printStackTrace();
+					mvnExpPjt.add(path2name(pomPath));
+					outResult.append("failed");
 				}
-			} else {// not-jar
-				notJarPjct.add(path2name(pomPath));
-				outResult.append("not-jar");
+			} else {// executed
+				outResult.append("executed");
 			}
+
 		} catch (DocumentException e) {// can't read pom
 			outResult.append(pomPath);
 			outResult.append("pom-error");
@@ -166,7 +161,6 @@ public abstract class AutoDecca {
 		outResult.append(" " + runtime);
 		return outResult.toString();
 	}
-
 
 	private void mvnOnePom(String pomPath) throws Exception {
 		// try {
@@ -237,6 +231,5 @@ public abstract class AutoDecca {
 		printer.println(getCommand());
 		printer.close();
 	}
-
 
 }

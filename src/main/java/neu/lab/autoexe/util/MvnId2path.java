@@ -14,6 +14,9 @@ public class MvnId2path {
 	public static String oldPath = "projectFile\\id2path_old.txt";
 	public static String newPath = "projectFile\\id2path_new.txt";
 	public static String latestPath = "projectFile\\id2path_latest.txt";
+	public static String latest2Path = "projectFile\\id2path_latest2.txt";
+	public static String latest3Path = "projectFile\\id2path_latest3.txt";
+	public static String latest4Path = "projectFile\\id2path_latest4.txt";
 	public static String developPath = "projectFile\\id2path_develop.txt";
 	// projectFile\\id2path_new.txt
 	// "projectFile\\id2path_latest.txt";
@@ -69,12 +72,20 @@ public class MvnId2path {
 
 	public static void main(String[] args) throws Exception {
 		// System.out.println(MvnId2path.getNewPath("org.apache.continuum:continuum-scm:1.4.3"));
-		writeId2PathFile("D:\\ws\\gitHub_old\\",oldPath);
-		writeId2PathFile("D:\\ws\\gitHub_new\\",newPath);
-		writeId2PathFile("D:\\ws\\gitHub_snapshot\\",latestPath);
-		writeId2PathFile("D:\\ws\\gitHub_develop\\",developPath);
+//		writeId2PathFile("D:\\ws\\gitHub_old\\",oldPath);
+//		writeId2PathFile("D:\\ws\\gitHub_new\\",newPath);
+//		writeId2PathFile("D:\\ws\\gitHub_snapshot\\",latestPath);
+//		writeId2PathFile("D:\\ws\\gitHub_latest2\\",latest2Path);
+//		writeId2PathFile("D:\\ws\\gitHub_latest3\\",latest3Path);
+		writeId2PathFile("D:\\ws\\gitHub_latest4\\",latest4Path);
+//		writeId2PathFile("D:\\ws\\gitHub_develop\\",developPath);
 	}
 	
+	/**
+	 * @param prjDir: directory to find project.
+	 * @param outPath: result file
+	 * @throws Exception
+	 */
 	private static void writeId2PathFile(String prjDir,String outPath)throws Exception {
 		Map<String, String> id2path = new PomFinder().getId2path(new File(prjDir));
 		PrintWriter printer = new PrintWriter(new BufferedWriter(new FileWriter(outPath)));
